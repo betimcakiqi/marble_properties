@@ -36,20 +36,27 @@ input, select:focus{
 .textwithimage{
     display: flex;
     align-items: center;
+    margin-right: 440px;
     justify-content: center;
-    margin-top: 10em;
+    margin-top: 10em;   
     font-family: 'Open Sans';
 }
 .text-and-buttons{
     z-index: 100;
 }
 .textwithimage h1 {
+    color: #091638;
     font-family: 'Merriweather';
-    margin-block-end: 20px;
-    font-size: 45px;
+    margin-block-end: 30px;
+    font-size: 64.85px;
+    font-weight: bold;
+}
+.lefttext{
+    color: #091638;
+    font-size: 34.2px;
 }
 .titlewithtext {
-    margin-block-end: 20px;
+    margin-block-end: 30px;
 }
 .propertyandsearch{
     position: relative;
@@ -63,6 +70,7 @@ input, select:focus{
     padding-inline: 30px;
 }
 .propertyandsearch form{
+    color: #1C3988;
     display: flex;
     gap: 20px;
 }
@@ -98,6 +106,7 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-inline-start: 20px;
     font-family: 'Open Sans';
     font-size: 14.5px;
+    color: #1C3988;
     border: 1px solid #4764C3;
 }
 .property-type-select-option select:focus{
@@ -128,7 +137,6 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-inline-start: 10px;
 }
 #imagehomepage{
-    display: flex;
     position: absolute;
     margin-left: 1050px;
 

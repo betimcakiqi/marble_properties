@@ -1,6 +1,5 @@
 header{
     font-size: 17.5px;    
-    width: 100%;
 }
 nav{
     margin-block: 40px;
@@ -11,15 +10,15 @@ nav{
     display: flex;
 }
 .logoandnavbar ul{
-    margin-inline: 125px;
+    margin-inline: 100px;
     align-items: center;
 }
 ul {
-    gap: 40px;
+    gap: 30px;
     display:flex;
 }
 .navlinks-items a{
-    color: #141B2D;
+    color: #091638;
     font-weight: 500;
     text-decoration: none;
 }
@@ -30,6 +29,7 @@ ul {
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    margin-inline-start: 100px;
 }
 #contactus, #contactus a{
     font-size: 16px;
