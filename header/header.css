@@ -1,0 +1,46 @@
+header{
+    font-size: 17.5px;    
+    width: 100%;
+}
+nav{
+    margin-block: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logoandnavbar{
+    display: flex;
+}
+.logoandnavbar ul{
+    margin-inline: 125px;
+    align-items: center;
+}
+ul {
+    gap: 40px;
+    display:flex;
+}
+.navlinks-items a{
+    color: #141B2D;
+    font-weight: 500;
+    text-decoration: none;
+}
+#contactus button{
+    width: 134px;
+    height: 48px;
+    background-color: #1C3988;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#contactus, #contactus a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+    list-style: none;
+}
+#contactus button:hover{
+    background-color: #6E8AE9;
+    transition: background-color;
+    transition-duration: 0.2s;
+
+}
