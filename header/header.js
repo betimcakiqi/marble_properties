@@ -49,7 +49,7 @@ class HeaderComponent extends HTMLElement {
         <nav>
             <div class="logoandnavbar">
                 <div class="logo">
-                    <a href="index.html"><img src="../svg/logo.svg" alt=""></a>
+                    <a href="../pages/index.html#home"><img src="../svg/logo.svg" alt=""></a>
                 </div>
                 <div class="navbar">
                     <ul id="menuList">
