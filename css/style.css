@@ -19,10 +19,6 @@
 body{
     font-family: 'Open Sans';
 }
-
-/* NAVBAR START */
-/* NAVBAR END */
-
 /* SEARCHBAR, TEXT, IMAGE START */
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -32,7 +28,14 @@ input[type="search"]::-webkit-search-cancel-button {
 input, select:focus{
     outline: none;
 }
+/* SECTION 1 START */
 
+
+section{
+    height: 100vh;
+    display: block;
+    width: 100%;
+}
 .textwithimage{
     display: flex;
     align-items: center;
@@ -142,3 +145,5 @@ input[type="search"]::-webkit-search-cancel-button {
 
 }
 /* SEARCHBAR, TEXT, IMAGE END */
+
+/* SECTION 1 END */

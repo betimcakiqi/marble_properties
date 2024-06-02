@@ -13,73 +13,92 @@
     <!-- NAVBAR STARTS -->
     <custom-header></custom-header>
     <!-- NAVBAR ENDS -->
-    <section></section>
-    <div class="textwithimage">
-        <div class="text-and-buttons">
-            <div class="titlewithtext">
-                <h1 id="leftheader">
-                    Modern living<br>
-                    for everyone
-                </h1>
-                <span id="lefttext">We provide a complete service for the sale, purchase<br>
-                    or rental of real estate. We have been operating in<br>
-                    Madrid and Barcelona more than 15 years.
-                </span>
-            </div>
 
-            <div class="propertyandsearch">
-                <div class="property-type-select-option">
-                    <select name="property type" id="proptype">
-                        <option value="selectprop">Property Type</option>
-                        <option value="selectprop">Residential</option>
-                        <option value="selectprop">Commercial</option>
-                        <option value="selectprop">Industrial</option>
-                        <option value="selectprop">Raw land</option>
-                        <option value="selectprop">Special use</option>
-                    </select>
+<!-- SECTION 1 START -->
+
+    <section id="home">
+        <div class="textwithimage">
+            <div class="text-and-buttons">
+                <div class="titlewithtext">
+                    <h1 id="leftheader">
+                        Modern living<br>
+                        for everyone
+                    </h1>
+                    <span id="lefttext">We provide a complete service for the sale, purchase<br>
+                        or rental of real estate. We have been operating in<br>
+                        Madrid and Barcelona more than 15 years.
+                    </span>
                 </div>
 
-
-                <form action="https://www.google.com/maps" method="get">
-
-                    <div class="search-location-bar">
-
-                        <svg id="locationsvgimg" width="16" height="23" viewBox="0 0 16 23" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.35"
-                                d="M7.82089 0C3.50848 0 0 3.50848 0 7.82089C0 13.2411 7.82858 22.5 7.82858 22.5C7.82858 22.5 15.6418 12.9746 15.6418 7.82089C15.6418 3.50848 12.1334 0 7.82089 0ZM10.1806 10.1109C9.52995 10.7614 8.67549 11.0867 7.82089 11.0867C6.96643 11.0867 6.11169 10.7614 5.4613 10.1109C4.16011 8.8098 4.16011 6.69273 5.4613 5.39154C6.09137 4.7612 6.92949 4.41403 7.82089 4.41403C8.7123 4.41403 9.55028 4.76134 10.1806 5.39154C11.4818 6.69273 11.4818 8.8098 10.1806 10.1109Z"
-                                fill="#1C3988" />
-                        </svg>
-                        <input type="search" name="searchlocation" id="searchlocation" placeholder="Search of location">
-
+                <div class="propertyandsearch">
+                    <div class="property-type-select-option">
+                        <select name="property type" id="proptype">
+                            <option value="selectprop">Property Type</option>
+                            <option value="selectprop">Residential</option>
+                            <option value="selectprop">Commercial</option>
+                            <option value="selectprop">Industrial</option>
+                            <option value="selectprop">Raw land</option>
+                            <option value="selectprop">Special use</option>
+                        </select>
                     </div>
 
 
-                    <div class="searchbuton">
+                    <form action="https://www.google.com/maps" method="get">
 
+                        <div class="search-location-bar">
 
-                        <button id="searchbuton">
-
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            <svg id="locationsvgimg" width="16" height="23" viewBox="0 0 16 23" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.04604 0C3.16096 0 0 3.16096 0 7.04604C0 10.9313 3.16096 14.0921 7.04604 14.0921C10.9313 14.0921 14.0921 10.9313 14.0921 7.04604C14.0921 3.16096 10.9313 0 7.04604 0ZM7.04604 12.7913C3.87815 12.7913 1.30081 10.214 1.30081 7.04607C1.30081 3.87818 3.87815 1.30081 7.04604 1.30081C10.2139 1.30081 12.7913 3.87815 12.7913 7.04604C12.7913 10.2139 10.2139 12.7913 7.04604 12.7913Z"
-                                    fill="white" />
-                                <path
-                                    d="M15.8095 14.8897L12.0805 11.1607C11.8264 10.9066 11.4149 10.9066 11.1608 11.1607C10.9067 11.4146 10.9067 11.8265 11.1608 12.0804L14.8898 15.8094C15.0168 15.9364 15.1831 16 15.3496 16C15.5159 16 15.6824 15.9364 15.8095 15.8094C16.0636 15.5555 16.0636 15.1436 15.8095 14.8897Z"
-                                    fill="white" />
+                                <path opacity="0.35"
+                                    d="M7.82089 0C3.50848 0 0 3.50848 0 7.82089C0 13.2411 7.82858 22.5 7.82858 22.5C7.82858 22.5 15.6418 12.9746 15.6418 7.82089C15.6418 3.50848 12.1334 0 7.82089 0ZM10.1806 10.1109C9.52995 10.7614 8.67549 11.0867 7.82089 11.0867C6.96643 11.0867 6.11169 10.7614 5.4613 10.1109C4.16011 8.8098 4.16011 6.69273 5.4613 5.39154C6.09137 4.7612 6.92949 4.41403 7.82089 4.41403C8.7123 4.41403 9.55028 4.76134 10.1806 5.39154C11.4818 6.69273 11.4818 8.8098 10.1806 10.1109Z"
+                                    fill="#1C3988" />
                             </svg>
-                            <p>Search</p>
-                        </button>
+                            <input type="search" name="searchlocation" id="searchlocation"
+                                placeholder="Search of location">
 
-                    </div>
-                </form>
+                        </div>
+
+
+                        <div class="searchbuton">
+
+
+                            <button id="searchbuton">
+
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04604 0C3.16096 0 0 3.16096 0 7.04604C0 10.9313 3.16096 14.0921 7.04604 14.0921C10.9313 14.0921 14.0921 10.9313 14.0921 7.04604C14.0921 3.16096 10.9313 0 7.04604 0ZM7.04604 12.7913C3.87815 12.7913 1.30081 10.214 1.30081 7.04607C1.30081 3.87818 3.87815 1.30081 7.04604 1.30081C10.2139 1.30081 12.7913 3.87815 12.7913 7.04604C12.7913 10.2139 10.2139 12.7913 7.04604 12.7913Z"
+                                        fill="white" />
+                                    <path
+                                        d="M15.8095 14.8897L12.0805 11.1607C11.8264 10.9066 11.4149 10.9066 11.1608 11.1607C10.9067 11.4146 10.9067 11.8265 11.1608 12.0804L14.8898 15.8094C15.0168 15.9364 15.1831 16 15.3496 16C15.5159 16 15.6824 15.9364 15.8095 15.8094C16.0636 15.5555 16.0636 15.1436 15.8095 14.8897Z"
+                                        fill="white" />
+                                </svg>
+                                <p>Search</p>
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="imagehomepage">
+                <img src="../svg/realestate.svg" alt="">
             </div>
         </div>
-        <div id="imagehomepage">
-            <img src="../svg/realestate.svg" alt="">
+    </section>
+
+<!-- SECTION 1 END -->
+<!-- SECTION 2 START -->
+
+
+    <section id="top-offer">
+        <div class="left-title">
+            <h1>Top offers</h1>
         </div>
-    </div>
+        <div class="left-text">
+            Fulfill your career dreams, enjoy all the achievements of the<br>
+             city center and luxury housing to the fullest.
+        </div>
+    </section>
 </body>
 
 </html>

@@ -15,11 +15,11 @@ class HeaderComponent extends HTMLElement {
                 </div>
                 <div class="navbar">
                     <ul id="menuList">
-                        <li><a class="nav-link" href="index.html">Top offers</a></li>
+                        <li><a class="nav-link" href="#top-offer">Top offers</a></li>
                         <li><a class="nav-link" href="special_offers_page.html">Search in offers</a></li>
-                        <li><a class="nav-link" href="#">References</a></li>
-                        <li><a class="nav-link" href="#">About us</a></li>
-                        <li><a class="nav-link" href="#">Our team</a></li>
+                        <li><a class="nav-link" href="#references">References</a></li>
+                        <li><a class="nav-link" href="#aboutus">About us</a></li>
+                        <li><a class="nav-link" href="#ourteam">Our team</a></li>
                     </ul>
                 </div>
             </div>
