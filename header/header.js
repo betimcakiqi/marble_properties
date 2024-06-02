@@ -1,7 +1,21 @@
 
 
 
+// Title
 
+// Define the title you want to set
+const newTitle = 'Marble Properties';
+
+// Function to update the page title
+function updateTitle(title) {
+    document.title = title;
+}
+
+// Call the function to set the new title
+updateTitle(newTitle);
+
+
+// Title
 // Favicon 
 
 // Define the path to the new favicon SVG file
@@ -41,9 +55,9 @@ class HeaderComponent extends HTMLElement {
                     <ul id="menuList">
                         <li><a class="nav-link" href="../pages/index.html#top-offer">Top offers</a></li>
                         <li><a class="nav-link" href="../pages/special_offers_page.html">Search in offers</a></li>
-                        <li><a class="nav-link" href="#references">References</a></li>
-                        <li><a class="nav-link" href="#aboutus">About us</a></li>
-                        <li><a class="nav-link" href="#ourteam">Our team</a></li>
+                        <li><a class="nav-link" href="../pages/index.html#references">References</a></li>
+                        <li><a class="nav-link" href="../pages/index.html#aboutus">About us</a></li>
+                        <li><a class="nav-link" href="../pages/index.html#ourteam">Our team</a></li>
                     </ul>
                 </div>
             </div>
