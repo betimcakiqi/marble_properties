@@ -19,8 +19,9 @@ class HeaderComponent extends HTMLElement {
                         </svg></a>
                 </div>
                 <ul class="navlinks-items">
-                    <li><a href="#">Top offers</a></li>
-                    <li><a href="#">Search in offers</a></li>
+
+                    <li><a href="index.html">Top offers</a></li>
+                    <li><a href="special_offers_page.html">Search in offers</a></li>
                     <li><a href="#">References</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Our team</a></li>
