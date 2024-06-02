@@ -1,3 +1,27 @@
+
+
+
+
+// Favicon 
+
+// Define the path to the new favicon SVG file
+const newFaviconUrl = '../svg/logo.svg';
+
+// Function to update the favicon
+function updateFavicon() {
+    let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/svg+xml';
+    link.rel = 'icon';
+    link.href = newFaviconUrl;
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+
+// Call the function to update the favicon
+updateFavicon();
+
+// Favicon 
+// Header Nav Bar
+
 class HeaderComponent extends HTMLElement {
     connectedCallback() {
         this.render()
