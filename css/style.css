@@ -57,7 +57,7 @@ section{
     font-family: 'Open Sans';
 }
 .text-and-buttons{
-    z-index: 100;
+    z-index: 1;
 }
 .textwithimage h1 {
     color: #091638;
@@ -249,7 +249,6 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
     justify-content: space-around;
     grid-template-columns: auto auto auto;
-
 }
 .image-grid-section2 img{
     width: 400px;
@@ -297,8 +296,7 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-block: 11.5em;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 .aboutus-title-text{
         margin-inline-start: 50px;
