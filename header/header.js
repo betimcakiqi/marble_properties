@@ -46,28 +46,34 @@ class HeaderComponent extends HTMLElement {
             `
         <link rel="stylesheet" href="../header/header.css">
         <header>
-        <nav>
-            <div class="logoandnavbar">
-                <div class="logo">
-                    <a href="../pages/index.html#home"><img src="../svg/logo.svg" alt=""></a>
+            <nav class="navigation-bar">
+                    <div class="logoandnavbar">
+                        <div class="logo">
+                            <a href="../pages/index.html#home"><img src="../svg/logo.svg" alt=""></a>
+                        </div>
+                        <div class="navbar">
+                            <ul id="menuList">
+                                <li><a class="nav-link" href="../pages/index.html#top-offer">Top offers</a></li>
+                                <li><a class="nav-link" href="../pages/special_offers_page.html">Search in offers</a></li>
+                                <li><a class="nav-link" href="../pages/index.html#references">References</a></li>
+                                <li><a class="nav-link" href="../pages/index.html#aboutus">About us</a></li>
+                                <li><a class="nav-link" href="../pages/index.html#ourteam">Our team</a></li>
+                                <li id="contactus"><button><a href="tel:+38345384290">Contact us</a></button></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="navbar">
-                    <ul id="menuList">
-                        <li><a class="nav-link" href="../pages/index.html#top-offer">Top offers</a></li>
-                        <li><a class="nav-link" href="../pages/special_offers_page.html">Search in offers</a></li>
-                        <li><a class="nav-link" href="../pages/index.html#references">References</a></li>
-                        <li><a class="nav-link" href="../pages/index.html#aboutus">About us</a></li>
-                        <li><a class="nav-link" href="../pages/index.html#ourteam">Our team</a></li>
-                    </ul>
-                </div>
-            </div>
-            <li id="contactus"><button><a href="tel:+38345384290">Contact us</a></button></li>
-        </nav>
+            </nav>
     </header>
         `
     }
 }
 customElements.define('custom-header', HeaderComponent)
+
+
+// HEADER END // FOOTER START
+
+
 
 class FooterComponent extends HTMLElement {
     connectedCallback() {
@@ -112,7 +118,7 @@ class FooterComponent extends HTMLElement {
                         <img class="copyrigt-marble-footer-logo" src="../svg/footer-logo.svg" alt="">
 
                         <p class="copyrigt-marble-footer-name">
-                            Marble Properties
+                            &&c;Marble Properties
                         </p>
                     </div>
                 </div>

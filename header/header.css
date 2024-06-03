@@ -1,18 +1,30 @@
 /* HEADER START */
 header{
-    font-size: 17.5px;    
-}
-nav{
-    margin-block: 40px;
     display: flex;
-    justify-content: space-evenly;
+    font-size: 17.5px;
+    position: relative;
+    justify-content: center;
+}
+.navigation-bar{
+    padding-block: 15px;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+.logo-navbar-contactus-container{
+    padding-block: 30px;
+    background-color: #FFFFFF;
+    display: flex;
 }
 .logoandnavbar  {
     display: flex;
     align-items: center;
 }
 .logoandnavbar ul{
-    margin-inline: 100px;
+    padding-inline-start: 30px;
 }
 ul {
     gap: 30px;
@@ -57,7 +69,7 @@ ul {
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    margin-inline-start: 100px;
+    margin-inline-start: 339px;
 }
 #contactus, #contactus a{
     font-size: 16px;
