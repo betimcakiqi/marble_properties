@@ -4,9 +4,11 @@ header{
     font-size: 17.5px;
     position: relative;
     justify-content: center;
+    margin-bottom: 30px;
+
 }
 .navigation-bar{
-    padding-block: 15px;
+    padding-block: 20px;
     display: flex;
     position: fixed;
     z-index: 2;
