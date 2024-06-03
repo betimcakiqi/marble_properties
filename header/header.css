@@ -1,3 +1,4 @@
+/* HEADER START */
 header{
     font-size: 17.5px;    
 }
@@ -68,6 +69,107 @@ ul {
 #contactus button:hover{
     background-color: #6E8AE9;
     transition: background-color;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
 
 }
+
+/* HEADER END */
+
+/* FOOTER NEWS-LETTER START */
+
+.sub-newsletter-footer{
+    width: 100%;
+    height: auto;
+    background-color: #F3F3FA;
+    display: block;
+    position: relative;
+}
+.sub-newsletter-title-description{
+    height: 398px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.sub-news-letter-title-text{
+    margin-block-end: 15px;
+}
+.sub-newsletter-title{
+    margin-block-end: 15px;
+    font-family: 'Merriweather';
+}
+.sub-newsletter-description{
+}
+.sub-news-letter-form-container{
+    display: flex;
+    column-gap: 20px;
+
+}
+.sub-news-letter-form-container input{
+    font-size: 16px;
+    height: 48px;
+    border-radius: 4px;
+    outline: none;
+}
+#sub-news-letter-email-address-bar{
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    padding-left: 20px;
+    opacity: 0.5;
+}
+#sub-news-letter-subscribe-button{
+    width: 125px;
+    background-color: transparent;
+    border: 2px solid #1C3988;
+    color: #1C3988;
+    font-weight: 600;
+    cursor: pointer;
+}
+#sub-news-letter-subscribe-button:hover{
+    background-color: #6E8AE9;
+    border: 2px solid #6E8AE9;
+    color: #FFFFFF;
+    transition: background-color 0.3s;
+}
+.sub-newsletter-icon-svg{
+    margin-inline-end: 150px;
+    opacity: 0.15;
+}
+
+/* FOOTER NEWS-LETTER END */
+
+/* FOOTER COPYRIGHT START */
+
+.copyright-marble-footer{
+    width: 100%;
+    background-color: #1C3988;
+    height: auto;
+    display: block;
+}
+.copyright-marble-footer-full-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+}
+.copyright-marble-footer-container{
+    flex-direction: column;
+
+}
+.copyrigt-marble-footer-logo{
+    width: 55px;
+    height: 35px;
+
+}
+.copyrigt-marble-footer-name{
+    font-family: 'Merriweather';
+    font-size: 18px;
+    font-weight: 550;
+    color: #F3F3FA;
+}
+
+/* FOOTER COPYRIGHT END */

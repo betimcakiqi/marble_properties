@@ -69,3 +69,58 @@ class HeaderComponent extends HTMLElement {
 }
 customElements.define('custom-header', HeaderComponent)
 
+class FooterComponent extends HTMLElement {
+    connectedCallback() {
+        this.render()
+    }
+
+    render() {
+        this.innerHTML =
+        `
+        <footer>
+        <div class="sub-newsletter-footer">
+            <div class="sub-newsletter-title-description">
+
+                <img class="sub-newsletter-icon-svg" src="../svg/news-letter-icon.svg" alt="">
+
+                <div class="sub-news-letter-without-img">
+                    <div class="sub-news-letter-title-text">
+                        <h1 class="sub-newsletter-title">
+                            Subscribe to newsletter
+                        </h1>
+
+                        <span class="sub-newsletter-description">
+                            Get the latest news and interesting offers and real estate
+                        </span>
+                    </div>
+
+                    <form action="" class="sub-news-letter-form-container">
+                        <div class="sub-news-letter-email-address-container">
+                            <input id="sub-news-letter-email-address-bar" type="email" name="email-addres"
+                                placeholder="Your e-mail address">
+                        </div>
+                        <div class="sub-news-letter-subscribe-container">
+                            <input id="sub-news-letter-subscribe-button" type="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-marble-footer">
+            <div class="copyright-marble-footer-full-container">
+                <div class="copyright-marble-footer-container">
+                        <img class="copyrigt-marble-footer-logo" src="../svg/footer-logo.svg" alt="">
+
+                        <p class="copyrigt-marble-footer-name">
+                            Marble Properties
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        `
+    }
+}
+customElements.define('custom-footer', FooterComponent)
+
