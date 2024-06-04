@@ -1,14 +1,14 @@
 /* HEADER START */
 header{
     display: flex;
-    font-size: 17.5px;
     position: relative;
+    font-family: 'Open Sans';
     justify-content: center;
     margin-bottom: 30px;
-
 }
 .navigation-bar{
     padding-block: 20px;
+    padding-inline: 100px;
     display: flex;
     position: fixed;
     z-index: 2;
@@ -26,7 +26,7 @@ header{
     align-items: center;
 }
 .logoandnavbar ul{
-    padding-inline-start: 100px;
+    padding-inline-start: 65px;
 }
 ul {
     gap: 30px;
@@ -65,13 +65,14 @@ ul {
     opacity: 1;
 }
 #contactus button{
+    font-family: 'Open Sans';
     width: 134px;
     height: 48px;
     background-color: #1C3988;
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    margin-inline-start: 339px;
+    margin-inline-start: 300px;
 }
 #contactus, #contactus a{
     font-size: 16px;
@@ -89,7 +90,17 @@ ul {
 
 /* HEADER END */
 /* MOBILE HEADER START */
-
+@media screen and (max-width: 1382px) and (min-width: 1167px){
+    .navigation-bar{
+        padding-inline: 50px;
+    }
+    .logoandnavbar ul{
+        padding-inline-start: 25px;
+    }
+    ul {
+        gap: 15px;
+    }
+}
 
 
 

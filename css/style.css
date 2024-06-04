@@ -16,10 +16,11 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'Open Sans';
+    color: #091638;
 }
 body{
-    color: #091638;
-    font-family: 'Open Sans';
+    /* color: #091638; */
 }
 /* SEARCHBAR, TEXT, IMAGE START */
 
@@ -48,12 +49,12 @@ section{
     display: block;
 }
 .textwithimage{
-    margin-block: 20em;
+    margin-block-start: 15em;
+    margin-block-end: 20em;
     display: flex;
     align-items: center;
     margin-right: 440px;
     justify-content: center;
-    font-family: 'Open Sans';
 }
 .text-and-buttons{
     z-index: 1;
@@ -101,7 +102,6 @@ section{
     width: 205px;
     border-radius: 4px;
     padding-inline-start: 20px;
-    font-family: 'Open Sans';
     font-size: 15.3px;
     color: #1C3988;
     border: 1px solid #4764C3;
@@ -128,7 +128,6 @@ section{
 }
 .search-location-bar input{
     outline: none;
-    font-family: 'Open Sans';
     font-size: 15.3px;
     font-weight: 500;
     width: 302px;
