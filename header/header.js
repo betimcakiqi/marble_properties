@@ -118,7 +118,7 @@ class FooterComponent extends HTMLElement {
                         <img class="copyrigt-marble-footer-logo" src="../svg/footer-logo.svg" alt="">
 
                         <p class="copyrigt-marble-footer-name">
-                            &copy;Marble Properties
+                            ©2024 Marble Properties
                         </p>
                     </div>
                 </div>

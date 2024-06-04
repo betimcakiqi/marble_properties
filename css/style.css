@@ -359,9 +359,10 @@ input[type="search"]::-webkit-search-cancel-button {
 .aboutus-title {
     font-size: 35px;
     color: #091638;
+}
+#aboutus-title{
     font-family: 'Merriweather';
 }
-
 .aboutus-paragraph p {
     color: #091638;
     padding-block-start: 35px;
