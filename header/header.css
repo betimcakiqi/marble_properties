@@ -29,6 +29,7 @@ header{
     padding-inline-start: 65px;
 }
 ul {
+    list-style-type: none;
     gap: 30px;
     display:flex;
     align-items: center;
@@ -90,15 +91,19 @@ ul {
 
 /* HEADER END */
 /* MOBILE HEADER START */
-@media screen and (max-width: 1382px) and (min-width: 1167px){
+@media screen and (max-width: 1446px) and (min-width: 1167px){
     .navigation-bar{
         padding-inline: 50px;
     }
     .logoandnavbar ul{
         padding-inline-start: 25px;
+        padding-inline-end: 25px;
     }
     ul {
         gap: 15px;
+    }
+    #contactus button{
+        margin-inline-start: 270px;
     }
 }
 
