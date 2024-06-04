@@ -14,12 +14,19 @@
 
 * {
     scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     font-family: 'Open Sans';
     color: #091638;
+}
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 /* SEARCHBAR, TEXT, IMAGE START */
@@ -375,30 +382,43 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* SECTION 3 END */
 /* SECTION 4 START */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    height: calc((100% - 30px) / 2) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #ourteam {
     position: relative;
     width: 100%;
     height: auto;
     display: block;
+    max-width: 1000px;
+    padding: 1vh;
 }
 
 .ourteam-grid-avatars {
-    display: grid;
+    padding-block: 60px;
     flex-direction: row;
-    grid-template-columns: auto auto auto;
-    column-gap: 25px;
     align-items: center;
     justify-content: center;
-    height: 1010px;
+    height: 756px;
 }
 
 .ourteam-item {
     display: flex;
     flex-direction: column;
-    width: 290px;
-    height: 320px;
+    height: 340px;
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 10px #F3F3FA, 0 6px 20px 0 #F3F3FA;
     border-radius: 4px;
     align-items: center;
 
@@ -417,7 +437,7 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
 }
 
-#fullname {
+.our-team-fullname {
     display: flex;
     font-family: 'Merriweather';
     font-weight: 600;
@@ -426,8 +446,23 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #091638;
     margin-block-start: 10px;
 }
-
-#position {
+.our-team-title{
+    display: flex;
+    font-family: 'Merriweather';
+    font-weight: 600;
+    font-size: 50px;
+    color: #091638;
+    padding-block-start: 50px;
+}
+.our-team-description{
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    align-items: center;
+    color: #091638;
+    padding-block-end: 50px;
+}
+.our-team-position {
     display: flex;
     flex-direction: column;
     margin-block-start: 10px;
@@ -507,7 +542,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .references-box-description,
 .references-box-description2 {
     position: relative;
-    padding-block: 55px;
+    padding-block: 30px;
     padding-inline-start: 80px;
     font-size: 22px;
     align-items: center;
