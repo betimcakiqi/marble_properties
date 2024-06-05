@@ -1,12 +1,13 @@
 /* HEADER START */
-header{
-    display: flex;
+header {
+    display: block;
     position: relative;
     font-family: 'Open Sans';
     justify-content: center;
     margin-bottom: 30px;
 }
-.navigation-bar{
+
+.navigation-bar {
     padding-block: 20px;
     padding-inline: 100px;
     display: flex;
@@ -16,32 +17,45 @@ header{
     background-color: #FFFFFF;
     width: 100%;
 }
-.logo-navbar-contactus-container{
+
+.logo-navbar-contactus-container {
     padding-block: 30px;
     background-color: #FFFFFF;
     display: flex;
 }
-.logoandnavbar  {
+
+.logoandnavbar {
     display: flex;
     align-items: center;
 }
-.logoandnavbar ul{
+
+.logoandnavbar ul {
     padding-inline-start: 65px;
 }
+
 ul {
     list-style-type: none;
     gap: 30px;
-    display:flex;
+    display: flex;
     align-items: center;
 }
-.navbar li, li{
+
+.navbar li,
+li {
     padding-block-end: 5px;
 }
-.navbar a{
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
     color: #091638;
     font-weight: 500;
     text-decoration: none;
 }
+
 .nav-link {
     text-decoration: none;
     color: white;
@@ -62,10 +76,12 @@ ul {
     opacity: 0;
     transition: opacity 0.27s ease;
 }
+
 .nav-link:hover::after {
     opacity: 1;
 }
-#contactus button{
+
+#contactus button {
     font-family: 'Open Sans';
     width: 134px;
     height: 48px;
@@ -75,35 +91,120 @@ ul {
     border-radius: 4px;
     margin-inline-start: 300px;
 }
-#contactus, #contactus a{
+
+#contactus,
+#contactus a {
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     color: #FFFFFF;
     list-style: none;
 }
-#contactus button:hover{
+
+#contactus button:hover {
     background-color: #6E8AE9;
     transition: background-color;
     transition-duration: 0.3s;
 
 }
 
+#burgerMenu {
+    display: flex;
+}
+
+#menuIcon,
+#closeIcon {
+    display: none;
+}
+
 /* HEADER END */
 /* MOBILE HEADER START */
-@media screen and (max-width: 1446px) and (min-width: 1167px){
-    .navigation-bar{
+@media screen and (max-width: 1446px) and (min-width: 1167px) {
+    .navigation-bar {
         padding-inline: 50px;
     }
-    .logoandnavbar ul{
+
+    .logoandnavbar ul {
         padding-inline-start: 25px;
         padding-inline-end: 25px;
     }
+
     ul {
         gap: 15px;
     }
-    #contactus button{
-        margin-inline-start: 270px;
+
+    #contactus button {
+        margin-inline-start: 258px;
+    }
+}
+
+@media screen and (max-width: 1166px) {
+    header {
+        margin-bottom: 35px;
+    }
+
+    .navigation-bar {
+        justify-content: left;
+    }
+
+    .navigation-bar {
+        padding-inline: 50px;
+        flex-direction: column-reverse
+    }
+
+    .logoandnavbar {
+        display: block;
+    }
+
+    .logoandnavbar ul {
+        padding-inline-start: 0;
+    }
+
+    .navbar li,
+    li {
+        padding-block-end: 5px;
+    }
+
+    #contactus button {
+        margin-inline-start: 0px;
+    }
+
+    #burgerMenu img {
+        width: 50px;
+        height: 50px
+    }
+
+    #menuList {
+        text-align: center;
+        display: block;
+        max-height: 0px;
+        transition: max-height 0.5s ease-out;
+        overflow: hidden;
+    }
+
+    #menuIcon {
+        display: block;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #closeIcon {
+        opacity: 0;
+        display: block;
+        z-index: 2;
+    }
+
+    #menuIcon,
+    #closeIcon {
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+    right: 100px;
+    transform: translateX(100%) scale(1) rotateY(0deg); /* Change to rotateY(0deg) */
+    top: 16px;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 }
 
@@ -117,14 +218,15 @@ ul {
 
 /* FOOTER NEWS-LETTER START */
 
-.sub-newsletter-footer{
+.sub-newsletter-footer {
     width: 100%;
     height: auto;
     background-color: #F3F3FA;
     display: block;
     position: relative;
 }
-.sub-newsletter-title-description{
+
+.sub-newsletter-title-description {
     height: 398px;
     width: 100%;
     display: flex;
@@ -132,27 +234,30 @@ ul {
     align-items: center;
     justify-content: center;
 }
-.sub-news-letter-title-text{
+
+.sub-news-letter-title-text {
     margin-block-end: 15px;
 }
-.sub-newsletter-title{
+
+.sub-newsletter-title {
     margin-block-end: 15px;
     font-family: 'Merriweather';
 }
-.sub-newsletter-description{
-}
-.sub-news-letter-form-container{
+
+.sub-news-letter-form-container {
     display: flex;
     column-gap: 20px;
 
 }
-.sub-news-letter-form-container input{
+
+.sub-news-letter-form-container input {
     font-size: 16px;
     height: 48px;
     border-radius: 4px;
     outline: none;
 }
-#sub-news-letter-email-address-bar{
+
+#sub-news-letter-email-address-bar {
     background: #FFFFFF;
     border: 1px solid #DDDDDD;
     box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
@@ -160,7 +265,8 @@ ul {
     padding-left: 20px;
     opacity: 0.4;
 }
-#sub-news-letter-subscribe-button{
+
+#sub-news-letter-subscribe-button {
     width: 125px;
     background-color: transparent;
     border: 2px solid #1C3988;
@@ -168,13 +274,15 @@ ul {
     font-weight: 600;
     cursor: pointer;
 }
-#sub-news-letter-subscribe-button:hover{
+
+#sub-news-letter-subscribe-button:hover {
     background-color: #6E8AE9;
     border: 2px solid #6E8AE9;
     color: #FFFFFF;
     transition: background-color 0.3s;
 }
-.sub-newsletter-icon-svg{
+
+.sub-newsletter-icon-svg {
     margin-inline-end: 150px;
     opacity: 0.15;
 }
@@ -183,29 +291,33 @@ ul {
 
 /* FOOTER COPYRIGHT START */
 
-.copyright-marble-footer{
+.copyright-marble-footer {
     width: 100%;
     background-color: #1C3988;
     height: auto;
     display: block;
 }
-.copyright-marble-footer-full-container{
+
+.copyright-marble-footer-full-container {
     text-align: center;
     display: flex;
     flex-direction: column;
     padding: 50px;
     align-items: center;
 }
-.copyright-marble-footer-container{
+
+.copyright-marble-footer-container {
     flex-direction: column;
 
 }
-.copyrigt-marble-footer-logo{
+
+.copyrigt-marble-footer-logo {
     width: 55px;
     height: 35px;
 
 }
-.copyrigt-marble-footer-name{
+
+.copyrigt-marble-footer-name {
     font-family: 'Merriweather';
     font-size: 18px;
     font-weight: 550;
