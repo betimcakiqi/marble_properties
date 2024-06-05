@@ -1,4 +1,4 @@
-var swiper = new Swiper(".sectiongrid", {
+var swiper = new Swiper(".section-grid", {
   slidesPerView: 3,
   grid: {
     rows: 2,
