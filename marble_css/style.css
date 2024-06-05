@@ -1,32 +1,29 @@
 @font-face {
     font-family: 'Merriweather';
-    src: url(../fonts/Merriweather-Regular.ttf);
+    src: url(../marble_fonts/Merriweather-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    src: url(../marble_fonts/OpenSans-VariableFont_wdth\,wght.ttf);
     font-weight: auto;
     font-style: normal;
 }
 
 * {
     scroll-behavior: smooth;
+    overflow-x: hidden;
     box-sizing: border-box;
     font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
     color: #091638;
 }
 html,
 body {
     position: relative;
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 /* SEARCHBAR, TEXT, IMAGE START */
@@ -83,9 +80,9 @@ section {
     font-weight: bold;
 }
 
-.lefttext {
+#lefttext {
     color: #091638;
-    font-size: 34.2px;
+    font-size: 21.2px;
 }
 
 .titlewithtext {
@@ -243,7 +240,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .text-sections {
     display: flex;
     justify-content: center;
-    margin-block: 10em;
+    margin-block: 9em;
     margin-inline: 30px;
 }
 
@@ -254,18 +251,17 @@ input[type="search"]::-webkit-search-cancel-button {
     margin: 20px 0;
 }
 
-.section2-left-title {
+.section2-left-title-container, .section2-left-title {
     font-family: 'Merriweather';
-    font-size: 40px;
+    font-size: 60px;
 }
 
-.section2-left-text {
-    margin-block-start: 20px;
+.section2-left-text-container, .section2-left-text {
     font-size: 20px;
 }
 
 .showall-button {
-    margin-inline-start: 700px;
+    margin-inline-start: 584px;
     display: flex;
     align-items: flex-end;
 }
@@ -294,7 +290,7 @@ input[type="search"]::-webkit-search-cancel-button {
     flex-direction: row;
     row-gap: 100px;
     justify-content: center;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;    
 }
 
 .image-grid-section2 img {
@@ -315,12 +311,7 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-block-start: 20px;
 }
 
-#grid-item1,
-#grid-item2,
-#grid-item3,
-#grid-item4,
-#grid-item5,
-#grid-item6 {
+#top-offer-grid-item {
     border-radius: 4px;
     background-color: #FFFFFF;
     margin-inline: 30px;
@@ -360,11 +351,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .aboutus-title-text {
-    margin-inline-start: 50px;
+    margin-inline-start: 100px;
 }
 
 .aboutus-title {
-    font-size: 35px;
+    font-size: 40px;
     color: #091638;
 }
 #aboutus-title{
@@ -372,12 +363,13 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .aboutus-paragraph p {
     color: #091638;
-    padding-block-start: 35px;
-    width: 330px;
+    padding-block-start: 30px;
+    width: 360px;
+    font-size: 17px;
 }
 
 #aboutus-2 {
-    padding-block-start: 35px;
+    padding-block-start: 30px;
 }
 
 /* SECTION 3 END */
@@ -542,7 +534,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .references-box-description,
 .references-box-description2 {
     position: relative;
-    padding-block: 30px;
+    padding-block: 52px;
     padding-inline-start: 80px;
     font-size: 22px;
     align-items: center;
@@ -590,7 +582,9 @@ input[type="search"]::-webkit-search-cancel-button {
     .textwithimage {
         margin-right: 400px;
     }
-
+    #lefttext{
+        font-size: 19px
+    }
     /* section 1 media */
     #imagehomepage {
         margin-left: 900px;
@@ -629,15 +623,16 @@ input[type="search"]::-webkit-search-cancel-button {
 
     .references-box-with-txt,
     .references-box-with-txt2 {
-        width: 600px;
+        width: 700px;
         height: 350px;
     }
 
     .references-box-description,
     .references-box-description2 {
-        padding-inline-start: 80px;
+        padding-block-start: 70px;
+        padding-inline-start: 60px;
         padding-inline-end: 30px;
-        font-size: 17.5px;
+        font-size: 16.2px;
     }
 
     .references-box-end-title {
@@ -652,11 +647,11 @@ input[type="search"]::-webkit-search-cancel-button {
 
     .references-box-big-description::before,
     .references-box-big-description2::before {
-        padding-inline-start: 45px;
-        padding-block-start: 45px;
+        padding-inline-start: 27px;
+        padding-block-start: 58px;
         font-family: 'Merriweather';
         top: 0;
         left: 0;
-        font-size: 50px;
+        font-size: 47px;
     }
 }
