@@ -14,7 +14,6 @@
 
 * {
     scroll-behavior: smooth;
-    overflow-x: hidden;
     box-sizing: border-box;
     font-family: 'Open Sans';
     margin: 0;
@@ -24,8 +23,8 @@
 html,
 body {
     position: relative;
+    overflow-x: hidden;
 }
-
 /* SEARCHBAR, TEXT, IMAGE START */
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -53,6 +52,7 @@ section {
 }
 
 #home {
+    overflow-x: hidden;
     position: relative;
     width: 100%;
     height: auto;
@@ -230,6 +230,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* SECTION 1 END */
 /* SECTION 2 START */
 #top-offer {
+    overflow-x: hidden;
     position: relative;
     background-color: #F3F3FA;
     width: 100%;
@@ -337,6 +338,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* SECTION 3 START */
 
 #aboutus {
+    overflow-x: hidden;
     position: relative;
     width: 100%;
     height: auto;
@@ -389,6 +391,7 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
 }
 #ourteam {
+    overflow-x: hidden;
     position: relative;
     width: 100%;
     height: auto;
@@ -481,11 +484,12 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     justify-content: center;
 }
-
 .references-title-txt-box {
+    overflow-x: hidden;
     margin-block: 10em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .references-title-txt {
@@ -493,13 +497,13 @@ input[type="search"]::-webkit-search-cancel-button {
     flex-direction: column;
     align-items: flex-start;
     margin-block: 50px;
-    margin-inline-end: 105px;
 }
-
+#references-space-gap{
+    gap: 50px;
+}
 .references-box-txt-full-div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
 .references-title {
@@ -516,9 +520,7 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-block-end: 30px;
     justify-content: space-around;
 }
-
-.references-box-with-txt,
-.references-box-with-txt2 {
+.references-box-with-txt{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -531,18 +533,18 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-inline-start: 50px;
 }
 
-.references-box-description,
-.references-box-description2 {
+.references-box-description {
+    overflow-y: hidden;
     position: relative;
-    padding-block: 52px;
-    padding-inline-start: 80px;
+    padding-block-start: 54px;
     font-size: 22px;
     align-items: center;
     justify-content: center;
 }
-
-.references-box-big-description::before,
-.references-box-big-description2::before {
+.references-box-big-description{
+    padding-inline-start: 80px;
+}
+.references-box-description::before {
     padding-inline-start: 30px;
     padding-block-start: 35px;
     font-family: 'Merriweather';
@@ -556,10 +558,13 @@ input[type="search"]::-webkit-search-cancel-button {
     position: absolute;
 }
 
-.references-box-title-txt {
-    display: flex;
-    flex-direction: column;
+.references-box-big-description::before {
+    opacity: 0.5;
+}
+
+.references-box-head-title {
     padding-inline-start: 30px;
+    padding-block: 55px;
 }
 
 .references-box-end-title {

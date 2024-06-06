@@ -1,5 +1,6 @@
 /* HEADER START */
 header {
+    overflow-x: hidden;
     display: block;
     position: relative;
     font-family: 'Open Sans';
