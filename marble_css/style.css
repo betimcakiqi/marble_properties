@@ -528,11 +528,6 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 400px;
     background-color: #F3F3FA;
 }
-
-.references-box-with-txt2 {
-    margin-inline-start: 50px;
-}
-
 .references-box-description {
     overflow-y: hidden;
     position: relative;
