@@ -104,7 +104,7 @@ section {
 .property-type-select-option svg {
     position: absolute;
     top: 50%;
-    left: 27%;
+    left: 26.5%;
     width: 14px;
     height: 11px;
     pointer-events: none;
@@ -653,5 +653,118 @@ input[type="search"]::-webkit-search-cancel-button {
         top: 0;
         left: 0;
         font-size: 47px;
+    }
+}
+@media screen and (max-width: 1166px) and (min-width: 900px){
+    /* SECTION 1 START */
+    .textwithimage {
+        margin-right: 150px;
+    }
+    #lefttext{
+        font-size: 20.5px;
+    }
+    .property-type-select-option svg {
+        left: 29.5%;
+    }
+    .property-type-select-option select {
+        width: 185px;
+    }
+    .search-location-bar input {
+        width: 219px;
+    }
+    .searchbuton input {
+        font-weight: 500;
+        padding-left: 46px;
+    }
+    
+    .searchbuton svg {
+        margin-left: 20px;
+        position: absolute;
+        display: flex;
+    }
+    #searchbuton {
+        width: 130px;
+}
+    
+    #imagehomepage {
+        position: absolute;
+        margin-left: 870px;
+        margin-bottom: 75px;
+    }
+    /* SECTION 1 END */
+    /* SECTION 2 START */
+    .text-sections {
+    margin-inline: 0px;
+    }
+    .section2-left-title-container, .section2-left-title {
+        font-family: 'Merriweather';
+        font-size: 50px;
+    }
+    
+    .section2-left-text-container, .section2-left-text {
+        font-size: 17px;
+    }
+    
+    .showall-button {
+        margin-inline-start: 198px;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .showall-button a {
+        font-size: 14px;
+        padding: 4px;
+        padding-block: 8px;
+        margin-block-end: 4px;
+    }
+    .image-grid-section2 {
+        margin-block: 150px;
+        row-gap: 50px;
+        grid-template-columns: auto auto;    
+    }
+    
+    .image-grid-section2 img {
+        width: 100%;
+        min-width: 370px;
+    }
+    
+    .image-grid-section2 a {
+        padding-block-end: 20px;
+    }
+    
+    .image-grid-section2 span {
+        width: 260px;
+    }
+    
+    #top-offer-grid-item {
+        margin-inline: 20px;
+    }
+    /* SECTION 2  END*/
+    /* SECTION 3 START */
+    .aboutus-txt-img {
+        margin-block: 11.5em;
+    }
+    
+    .aboutus-title-text {
+        margin-inline-start: 50px;
+    }
+    
+    .aboutus-title {
+        font-size: 33.5px;
+        color: #091638;
+    }
+    #aboutus-title{
+        font-family: 'Merriweather';
+        padding-block: 10px
+    }
+    .aboutus-paragraph p {
+        color: #091638;
+        padding-block-start: 25px;
+        width: 500px;
+        font-size: 15.5px;
+    }
+    
+    #aboutus-2 {
+        padding-block-start: 20px;
     }
 }
