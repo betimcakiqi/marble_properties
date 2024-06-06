@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    color: #141B2D;
 }
 
 body {
@@ -32,9 +33,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-block-start: 50px;
 }
-
+.offer h1{
+    font-family: 'Merriweather';
+    font-size: 50px;
+}
 .offer>p {
     margin-top: 40px;
 }
@@ -42,7 +46,6 @@ body {
 .search-container {
     width: 100%;
     height: 347px;
-
     gap: 0px;
     border-radius: 4px 0px 0px 0px;
     opacity: 0px;
@@ -115,11 +118,24 @@ body {
     width: 548px;
     height: 66px;
     top: 575px;
-    left: 446px;
+    left: 500px;
     gap: 0px;
     border-radius: 50px 0px 0px 0px;
     opacity: 0px;
 
+}
+.enter-a-keyword{
+    display: flex;
+    justify-content: center;
+}
+.price-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.special-offer-price-range{
+    display: flex;
+    justify-content: center;
 }
 .image-grid-section2 {
     display: grid;
