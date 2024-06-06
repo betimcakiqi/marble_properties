@@ -434,7 +434,16 @@
     opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
     background-color: #DADAEE;
 }
-
+@media screen and (max-width: 1446px) and (min-width: 1167px){
+.swiper-pagination-bullet {
+        width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
+        height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px));
+    }
+    .swiper-pagination-bullet-active{
+        width: 13px;
+        height: 13px;
+    }
+}
 button.swiper-pagination-bullet {
     border: none;
     margin: 0;
@@ -562,7 +571,7 @@ button.swiper-pagination-bullet {
     border-radius: var(--swiper-scrollbar-border-radius, 10px);
     position: relative;
     touch-action: none;
-    background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, .1))
+    background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, .1));
 }
 
 .swiper-scrollbar-disabled>.swiper-scrollbar,
@@ -596,7 +605,7 @@ button.swiper-pagination-bullet {
     height: 100%;
     width: 100%;
     position: relative;
-    background: var(--swiper-scrollbar-drag-bg-color, rgba(0, 0, 0, .5));
+    background: var(--swiper-scrollbar-drag-bg-color, rgba(9, 22, 56, 0.7));
     border-radius: var(--swiper-scrollbar-border-radius, 10px);
     left: 0;
     top: 0

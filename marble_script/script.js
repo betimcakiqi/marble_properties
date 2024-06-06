@@ -9,3 +9,13 @@ var swiper = new Swiper(".section-grid", {
     clickable: true,
   },
 });
+
+
+var swiper = new Swiper(".references-swiper-section", {
+  slidesPerView: '2',
+  spaceBetween: 100,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: false,
+  },
+});
