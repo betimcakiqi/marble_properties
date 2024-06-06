@@ -3,13 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/special_offers_page.css">
-    <script src="../header/header.js" defer></script>
+    <link rel="stylesheet" href="../marble_css/special_offers_page.css">
+    <script src="../marble_header/header.js" defer></script>
     <title></title>
 </head>
 <body>
     <!-- NAV START -->
-    <custom-header></custom-header>
+    <!-- <custom-header></custom-header> -->
     <!-- NAV END -->
+    <div class="offer">
+        <h1>Search for an offer</h1>
+        <p>Choose from the most advantageous</p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" placeholder="Enter a keyword" id="keyword">
+        <button class="search-button">Search</button>
+        <div class="filter-settings">
+            <select id="sale">
+                <option value="sale">Sale</option>
+                <option value="rent">Rent</option>
+            </select>
+            <select id="room-flat">
+                <option value="">Select room flat</option>
+                <option value="1">1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+            </select>
+            <select id="location">
+                <option value="">Select location</option>
+                <option value="city-center">City Center</option>
+                <option value="suburbs">Suburbs</option>
+            </select>
+            <select id="sort-order">
+                <option value="most-expensive">Most expensive</option>
+                <option value="least-expensive">Least expensive</option>
+            </select>
+        </div>
+        <input type="range" id="price-range" min="0" max="980000" value="0"
+            oninput="document.getElementById('price-value').innerText = this.value + ' €'">
+        <div class="price-labels">
+            <span>0 €</span>
+            <span id="price-value">0 €</span>
+            <span>980,000 €</span>
+        </div>
+      
+    </div>
+    <section id="top-offer" class="section">
+
+        <hr class="separator">
+
+
+        <div class="image-grid-section2">
+            <div id="top-offer-grid-item">
+                <a href="#">
+                    <img src="../marble_grid_images/imgslide1.svg" alt="">
+                    <span id="img-cont-title">Large 4-room apartment with a beautiful terrace</span>
+                    <span id="img-cont-price">3 500 000€</span>
+                    <span id="img-cont-city">Marbella, Spain</span>
+                </a>
+            </div>
+            <div id="top-offer-grid-item">
+                <a href="#">
+                    <img src="../marble_grid_images/imgslide2.svg" alt="">
+                    <span id="img-cont-title">5i large design apartment with terrace</span>
+                    <span id="img-cont-price">6 200 000€</span>
+                    <span id="img-cont-city">Saint-Tropez, France</span>
+                </a>
+            </div>
+            <div id="top-offer-grid-item">
+                <a href="#">
+                    <img src="../marble_grid_images/imgslide3.svg" alt="">
+                    <span id="img-cont-title">Magnificent duplex in a private villa</span>
+                    <span id="img-cont-price">4 800 000€</span>
+                    <span id="img-cont-city">Mykonos, Greece</span>
+                </a>
+            </div>
+            <div id="top-offer-grid-item">
+                <a href="#">
+                    <img src="../marble_grid_images/imgslide4.svg" alt="">
+                    <span id="img-cont-title">Large 4-room apartment with a beautiful terrace</span>
+                    <span id="img-cont-price">2 900 000€</span>
+                    <span id="img-cont-city">Algarve, Portugal</span>
+                </a>
+            </div>
+            <div id="top-offer-grid-item">
+                <a href="#">
+                    <img src="../marble_grid_images/imgslide5.svg" alt="">
+                    <span id="img-cont-title">5i large design apartment with terrace</span>
+                    <span id="img-cont-price">7 000 000€</span>
+                    <span id="img-cont-city">Barcelona IX.</span>
+                </a>
+            </div>
+            <div id="top-offer-grid-item">
+                <a href="#">
+                    <img src="../marble_grid_images/imgslide6.svg" alt="">
+                    <span id="img-cont-title">Magnificent duplex in a private villa</span>
+                    <span id="img-cont-price">5 500 000€</span>
+                    <span id="img-cont-city">Los Angeles, California, USA</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <!-- <custom-footer></custom-footer> -->
+    <!-- FOOTER -->
 </body>
 </html>
