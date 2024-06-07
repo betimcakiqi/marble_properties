@@ -1,3 +1,4 @@
+// OUR-TEAM DIV SLIDER
 var swiper = new Swiper(".section-grid", {
   slidesPerView: 3,
   grid: {
@@ -10,6 +11,7 @@ var swiper = new Swiper(".section-grid", {
   },
 });
 
+// REFERENCES SCROLL BAR
 
 var swiper = new Swiper(".references-swiper-section", {
   slidesPerView: '2',
