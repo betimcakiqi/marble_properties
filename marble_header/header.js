@@ -108,7 +108,7 @@ class FooterComponent extends HTMLElement {
                         </span>
                     </div>
 
-                    <form action="#" class="sub-news-letter-form-container">
+                    <form action="" method="post" class="sub-news-letter-form-container">
                         <div class="sub-news-letter-email-address-container">
                             <input id="sub-news-letter-email-address-bar" type="email" name="email-addres"
                                 placeholder="Your e-mail address">
@@ -165,7 +165,7 @@ const handleBurgerMenuAction = () => {
         if (isMenuIconVisible) {
             menuIconElement.style.transform = 'translateX(100%) scale(0) rotateY(180deg)';
             menuIconElement.style.opacity = '0';
-            closeIconElement.style.transform = 'translateX(100%) scale(1) rotateY(0deg)';
+            closeIconElement.style.transform = 'translateX(100%) scale(0.8) rotateY(0deg)';
             closeIconElement.style.opacity = '1';
         }
     }
