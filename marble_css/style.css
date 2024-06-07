@@ -19,7 +19,6 @@
     margin: 0;
     padding: 0;
     color: #091638;
-    /* background-color: #091638; */
 }
 
 html,
@@ -34,10 +33,12 @@ input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
     appearance: none;
 }
+
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
     appearance: none;
 }
+
 input,
 select:focus {
     outline: none;
@@ -53,7 +54,8 @@ section {
 }
 
 .section {
-    padding-inline: 50px;
+    padding-inline-start: 50px;
+    padding-inline-end: 50px;
 }
 
 #home {
@@ -174,9 +176,9 @@ section {
     margin-left: 20px;
     position: absolute;
     display: flex;
-    }
-    
-    .searchbuton {
+}
+
+.searchbuton {
     display: flex;
     align-items: center;
 }
@@ -248,11 +250,11 @@ section {
     margin-inline: 30px;
 }
 
-.separator {
-    border: 0;
-    height: 1.5px;
-    background: #ccc;
-    margin: 20px 0;
+.seperator {
+    margin-block-start: 30px;
+    border: 0px;
+    height: 1px;
+    background-color: #ccc;
 }
 
 .section2-left-title-container,
@@ -325,10 +327,12 @@ section {
     border: 1px solid #FFFFFF;
 
 }
-#top-offer-grid-item:hover{
+
+#top-offer-grid-item:hover {
     scale: 1.02;
     transition: scale 0.2s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
+
 #img-cont-title {
     color: #141B2D;
     font-family: 'Merriweather';
@@ -547,7 +551,8 @@ section {
     flex-direction: column;
     align-items: flex-start;
     height: 400px;
-    min-height: 400px;
+    min-height: 450px;
+    padding-inline-end: 20px;
     background-color: #F3F3FA;
 }
 
@@ -578,6 +583,7 @@ section {
     content: "“";
     position: absolute;
 }
+
 .references-box-head-title {
     padding-inline-start: 30px;
     padding-block: 55px;
@@ -596,7 +602,8 @@ section {
 /* SECTION 5 END */
 @media screen and (max-width: 1446px) and (min-width: 1167px) {
     .section {
-        padding-inline: 50px;
+        padding-inline-start: 50px;
+        padding-inline-end: 50px;
     }
 
     /* section 1 media */
@@ -604,8 +611,12 @@ section {
         margin-right: 400px;
     }
 
+    .textwithimage h1 {
+        font-size: 58px;
+    }
+
     #lefttext {
-        font-size: 19px
+        font-size: 20px;
     }
 
     /* section 1 media */
@@ -721,11 +732,11 @@ section {
     .references-box-description {
         padding-block-start: 54px;
         font-size: 20px;
+        padding-inline-end: 20px;
     }
 
     .references-box-big-description {
         padding-inline-start: 65px;
-        padding-inline-end: 20px;
     }
 
     .references-box-description::before {
@@ -744,14 +755,22 @@ section {
 }
 
 @media screen and (max-width: 1166px) and (min-width: 900px) {
-
+    .section {
+        padding-inline-start: 50px;
+        padding-inline-end: 50px;
+    }
     /* SECTION 1 START */
     .textwithimage {
-        margin-right: 150px;
+        margin-right: 250px;
+    }
+
+    .textwithimage h1 {
+        font-size: 55px;
+        margin-block-end: 15px
     }
 
     #lefttext {
-        font-size: 20.5px;
+        font-size: 17.9px;
     }
 
     .property-type-select-option svg {
@@ -783,8 +802,9 @@ section {
 
     #imagehomepage {
         position: absolute;
-        margin-left: 870px;
+        margin-left: 710px;
         margin-bottom: 75px;
+        scale: 0.85;
     }
 
     /* SECTION 1 END */
@@ -805,7 +825,7 @@ section {
     }
 
     .showall-button {
-        margin-inline-start: 198px;
+        margin-inline-start: 196px;
         display: flex;
         align-items: flex-end;
     }
@@ -820,7 +840,9 @@ section {
     .image-grid-section2 {
         margin-block: 150px;
         row-gap: 50px;
-        grid-template-columns: auto auto;
+        column-gap: 40px;
+        padding-right: 60px;
+        grid-template-columns: auto auto auto;
     }
 
     .image-grid-section2 img {
@@ -832,12 +854,311 @@ section {
         padding-block-end: 20px;
     }
 
-    .image-grid-section2 span {
-        width: 260px;
+    .image-grid-section2 img {
+        width: 100%;
+        min-width: 80%;
+    }    
+    #top-offer-grid-item {
+        width: 100%;
+        min-width: 80%
+    
+    }
+    #img-cont-title {
+        width: 100%
+    }
+    
+    #img-cont-price {
+        width: 100%
+    }
+    
+    #img-cont-city {
+        width: 100%  
     }
 
+    /* SECTION 2  END*/
+    /* SECTION 3 START */
+    #aboutus {
+    overflow-x: hidden;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    }
+    .aboutus-txt-img {
+        margin-block: 11.5em;
+        width: 100%;
+        min-width: 80%;
+    }
+
+    .aboutus-title-text {
+        margin-inline-start: 50px;
+    }
+
+    .aboutus-title {
+        font-size: 33.5px;
+        color: #091638;
+    }
+
+    #aboutus-title {
+        font-family: 'Merriweather';
+        padding-block: 10px
+    }
+
+    .aboutus-paragraph p {
+        color: #091638;
+        padding-block-start: 25px;
+        width: 700px;
+        font-size: 15.5px;
+    }
+
+    #aboutus-2 {
+        padding-block-start: 20px;
+    }
+
+    #ourteam {
+        scroll-margin-top: -5em;
+        max-width: 800px;
+    }
+
+    .ourteam-grid-avatars {
+        padding-block: 50px;
+        height: 630px;
+        
+    }
+
+    .ourteam-grid-avatars img {
+        scale: 0.8
+    }
+
+    .our-team-fullname {
+        margin-block-start: 5px;
+    }
+
+    .our-team-title {
+        font-size: 45px;
+    }
+
+    .our-team-description {
+        font-size: 18px;
+    }
+
+    .our-team-position {
+        margin-block-start: 5px;
+        font-size: 19px;
+    }
+
+    .references-box-with-txt {
+        max-height: 500px;
+        min-height: 500px;
+    }
+
+    .references-title {
+        font-family: 'Merriweather';
+        font-weight: bold;
+        font-size: 47px;
+        margin-block-end: 20px;
+    }
+
+    .references-description {
+        display: flex;
+        font-size: 19px;
+    }
+
+    .references-box-description {
+        padding-block-start: 54px;
+        font-size: 20px;
+        padding-inline-end: 20px;
+    }
+
+    .references-box-big-description {
+        padding-inline-start: 65px;
+    }
+
+    .references-box-description::before {
+        padding-inline-start: 24px;
+        padding-block-start: 39px;
+        font-size: 60px;
+    }
+
+    .references-box-end-title {
+        font-size: 20px;
+    }
+
+    .references-box-description-txt {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 899px) and (min-width: 550px) {
+    .section {
+        padding-inline-start: 50px;
+        padding-inline-end: 50px;
+    }
+    /* SECTION 1 START */
+    #home{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .textwithimage {
+        margin-block-start: 11em;
+        margin-block-end: 16em;
+        display: block;
+        margin-right: 0px;
+    }
+    .textwithimage h1 {
+        margin-block-end: 20px;
+        font-size: 58px;
+    }
+    .titlewithtext{
+        width: 450px;
+    }
+    #lefttext {
+        color: #091638;
+        font-size: 18.3px;
+    }
+    .propertyandsearch {
+        height: 130px;
+        display: block;
+        width: 300px;
+        gap: 0px;
+        padding-inline: 0px;
+    }
+
+    .property-type-select-option svg {
+        top: 27%;
+        left: 82.5%;
+        width: 13px;
+        height: 10px;
+    }
+    .property-type-select-option, .search-location-bar{
+        margin-inline: 10px;
+        
+    }
+    .property-type-select-option select {
+        width: 280px;
+        margin-block: 10px;
+    }
+    .propertyandsearch form {
+        gap: 0px;
+    }
+    .search-location-bar input {
+        width: 280px;
+    }
+    .searchbuton {
+        position: absolute;
+        left: 73.7%;
+    }
+
+    .searchbuton input {
+        font-size: 0px;
+    }
+    .searchbuton svg {
+        margin-left: 25px;
+        width: 17px;
+        height: 17px;
+        margin-bottom: 2.5px;
+    }
+    #searchbuton {
+        width: 68px;
+    }
+    #imagehomepage {
+        display: none;
+    }
+
+    /* SECTION 1 END */
+    /* SECTION 2 START */
+    #top-offer {
+    overflow-x: hidden;
+    position: relative;
+    background-color: #F3F3FA;
+    width: 100%;
+    height: auto;
+    display: block; 
+    }
+    
+    .text-sections {
+        display: block;
+        justify-content: center;
+        margin-block: 9em;
+    }
+    
+    .seperator {
+        margin-block-start: 30px;
+        border: 0px;
+        height: 1px;
+        background-color: #ccc;
+    }
+    
+    .section2-left-title-container,
+    .section2-left-title {
+        font-family: 'Merriweather';
+        width: 100%;
+        min-width: 70%;
+    }
+    
+    .section2-left-text-container,
+    .section2-left-text {
+        width: 100%;
+        padding-inline-end: 10px;
+        margin-block: 25px;
+        min-width: 80%
+    }
+    
+    .showall-button {
+        margin-block: 20px;
+        margin-inline-start: 0px;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .showall-button a {
+        font-weight: 700;
+        font-size: 12.5px;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #1C3988;
+    }
+    
+    .showall-button a:hover {
+        background-color: #6E8AE9;
+        border: 2px solid #6E8AE9;
+        color: #FFFFFF;
+        transition: background-color 0.3s;
+    }
+    
+    /* SECTION 2 TXT END / START IMG */
+    .image-grid-section2 {
+        display: grid;
+        margin-block: 150px;
+        flex-direction: row;
+        row-gap: 20px;
+        justify-content: center;
+        column-gap: 20px;
+        grid-template-columns: auto auto;
+        padding-right: 60px;
+        
+    }
+    
+    .image-grid-section2 img {
+        width: 100%;
+        min-width: 80%;
+    }    
     #top-offer-grid-item {
-        margin-inline: 20px;
+        width: 100%;
+        min-width: 80%;
+    
+    }
+    #img-cont-title {
+        width: 100%
+    }
+    
+    #img-cont-price {
+        width: 100%
+    }
+    
+    #img-cont-city {
+        width: 100%  
     }
 
     /* SECTION 2  END*/
@@ -870,17 +1191,19 @@ section {
     #aboutus-2 {
         padding-block-start: 20px;
     }
+
     #ourteam {
         scroll-margin-top: -5em;
     }
 
     .ourteam-grid-avatars {
         padding-block: 50px;
-        height: 630px;
+        height: 600px;
+        max-width: 400px;
     }
 
     .ourteam-grid-avatars img {
-        scale: 0.8
+        scale: 0.7
     }
 
     .our-team-fullname {
@@ -888,7 +1211,7 @@ section {
     }
 
     .our-team-title {
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .our-team-description {
@@ -897,42 +1220,110 @@ section {
 
     .our-team-position {
         margin-block-start: 5px;
-        font-size: 19px;
+        font-size: 16px;
+        display:flex;
+        justify-content:center;
+        margin-inline: 50px;
+    }
+
+    .references-title-txt-box {
+        max-width: 600px;
+    }
+
+    #references {
+        scroll-margin-top: -3em;
+        position: relative;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .references-title-txt-box {
+        overflow-x: hidden;
+        margin-block: 10em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1700px;
+    }
+
+    .references-title-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-block: 50px;
+    }
+
+    .references-box-txt-full-div {
+        display: flex;
+        flex-direction: row;
     }
 
     .references-title {
         font-family: 'Merriweather';
         font-weight: bold;
-        font-size: 47px;
-        margin-block-end: 20px;
+        font-size: 50px;
+        margin-block-end: 30px;
     }
 
     .references-description {
         display: flex;
-        font-size: 19px;
+        font-size: 22px;
+        margin-block-end: 30px;
+        justify-content: space-around;
+        width: 600px;
+    }
+
+    .references-box-with-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 400px;
+        min-height: 400px;
+        background-color: #F3F3FA;
     }
 
     .references-box-description {
+        overflow-y: hidden;
+        position: relative;
         padding-block-start: 54px;
-        font-size: 20px;
+        max-width: 750px;
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
     }
 
     .references-box-big-description {
-        padding-inline-start: 65px;
-        padding-inline-end: 20px;
+        padding-inline-start: 80px;
     }
 
     .references-box-description::before {
-        padding-inline-start: 24px;
+        padding-inline-start: 30px;
         padding-block-start: 39px;
-        font-size: 60px;
+        font-family: 'Merriweather';
+        top: 0;
+        left: 0;
+        font-weight: bolder;
+        color: #091638;
+        opacity: 0.5;
+        font-size: 70px;
+        content: "“";
+        position: absolute;
+    }
+
+    .references-box-head-title {
+        padding-inline-start: 30px;
+        padding-block: 55px;
     }
 
     .references-box-end-title {
-        font-size: 20px;
+        font-family: 'Merriweather';
+        font-weight: bold;
+        font-size: 30px;
     }
 
     .references-box-description-txt {
-        font-size: 19px;
+        font-size: 23px;
     }
-}
+} 

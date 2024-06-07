@@ -111,7 +111,7 @@ class FooterComponent extends HTMLElement {
                     <form action="" method="post" class="sub-news-letter-form-container">
                         <div class="sub-news-letter-email-address-container">
                             <input id="sub-news-letter-email-address-bar" type="email" name="email-addres"
-                                placeholder="Your e-mail address">
+                                placeholder="Your e-mail address" required>
                         </div>
                         <div class="sub-news-letter-subscribe-container">
                             <input id="sub-news-letter-subscribe-button" type="submit" value="Subscribe">
