@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     color: #091638;
+    /* background-color: #091638; */
 }
 
 html,
@@ -33,7 +34,10 @@ input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
     appearance: none;
 }
-
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
 input,
 select:focus {
     outline: none;
@@ -49,7 +53,6 @@ section {
 }
 
 .section {
-    /* scroll-margin-top: 10em; */
     padding-inline: 50px;
 }
 
@@ -171,9 +174,9 @@ section {
     margin-left: 20px;
     position: absolute;
     display: flex;
-}
-
-.searchbuton {
+    }
+    
+    .searchbuton {
     display: flex;
     align-items: center;
 }
@@ -195,11 +198,8 @@ section {
     margin-left: 20px;
     position: absolute;
     display: flex;
-}
+    pointer-events: none;
 
-input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-    appearance: none;
 }
 
 #searchbuton {
@@ -321,8 +321,14 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 4px;
     background-color: #FFFFFF;
     margin-inline: 30px;
-}
+    box-shadow: 0 2px 4px 0 #F3FAFA;
+    border: 1px solid #FFFFFF;
 
+}
+#top-offer-grid-item:hover{
+    scale: 1.02;
+    transition: scale 0.2s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
 #img-cont-title {
     color: #141B2D;
     font-family: 'Merriweather';
@@ -541,6 +547,7 @@ input[type="search"]::-webkit-search-cancel-button {
     flex-direction: column;
     align-items: flex-start;
     height: 400px;
+    min-height: 400px;
     background-color: #F3F3FA;
 }
 
