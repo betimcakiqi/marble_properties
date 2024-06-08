@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Merriweather';
-    src: url(../marble_fonts/Merriweather-Regular.ttf);
+    src: url(../../assets/fonts/Merriweather-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(../marble_fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    src: url(../../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
     font-weight: auto;
     font-style: normal;
 }
@@ -109,7 +109,7 @@ section {
     padding-inline: 30px;
 }
 
-.property-type-select-option svg {
+.property-type-select-option img {
     position: absolute;
     top: 50%;
     left: 26.5%;
@@ -171,11 +171,9 @@ section {
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
-
-#locationsvgimg {
-    margin-left: 20px;
+.search-location-bar img{
     position: absolute;
-    display: flex;
+    margin-left: 20px;
 }
 
 .searchbuton {
@@ -196,8 +194,8 @@ section {
     border: 1px solid #F3F3FA;
 }
 
-.searchbuton svg {
-    margin-left: 20px;
+.searchbuton img {
+    margin-left: 19px;
     position: absolute;
     display: flex;
     pointer-events: none;
@@ -372,15 +370,12 @@ section {
     margin-inline-start: 100px;
 }
 
-.aboutus-title {
-    font-size: 40px;
+.aboutus-title h1 {
+    font-size: 51px;
     color: #091638;
-}
-
-#aboutus-title {
     font-family: 'Merriweather';
-}
 
+}
 .aboutus-paragraph p {
     color: #091638;
     padding-block-start: 30px;
@@ -628,7 +623,7 @@ section {
         width: 185px;
     }
 
-    .property-type-select-option svg {
+    .property-type-select-option img {
         left: 26%;
         width: 12px;
         height: 9px;
@@ -642,7 +637,7 @@ section {
         padding-left: 40px;
     }
 
-    .searchbuton svg {
+    .searchbuton img {
         margin-left: 15px;
         display: flex;
     }
@@ -773,7 +768,7 @@ section {
         font-size: 17.9px;
     }
 
-    .property-type-select-option svg {
+    .property-type-select-option img {
         left: 29.5%;
     }
 
@@ -790,7 +785,7 @@ section {
         padding-left: 46px;
     }
 
-    .searchbuton svg {
+    .searchbuton img {
         margin-left: 20px;
         position: absolute;
         display: flex;
@@ -880,54 +875,61 @@ section {
     #aboutus {
     overflow-x: hidden;
     position: relative;
+    width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;
+    display: block;
     }
+    
     .aboutus-txt-img {
-        margin-block: 11.5em;
-        width: 100%;
-        min-width: 80%;
+        margin-block-start: 11.5em;
+        margin-block-end: 12;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
     }
-
+    
     .aboutus-title-text {
-        margin-inline-start: 50px;
+        margin-inline-start: 0px;
+        padding-inline-start: 0px;
+        padding-inline-end: 290px;
+        
     }
-
-    .aboutus-title {
-        font-size: 33.5px;
+    
+    .aboutus-title h1 {
+        font-size: 45px;
         color: #091638;
-    }
-
-    #aboutus-title {
         font-family: 'Merriweather';
-        padding-block: 10px
+    
     }
-
     .aboutus-paragraph p {
         color: #091638;
-        padding-block-start: 25px;
-        width: 700px;
-        font-size: 15.5px;
+        padding-block-start: 30px;
+        width: 100%;
+        font-size: unset;
+        min-width: 325px;
+        
     }
-
+    
     #aboutus-2 {
-        padding-block-start: 20px;
+        padding-block-start: 30px;
     }
-
-    #ourteam {
-        scroll-margin-top: -5em;
-        max-width: 800px;
+    .aboutus-img {
+        scale: 0.9;
+        margin-inline-start: 160px;
+        margin-inline-end: 0px;
+    }
+    .aboutus-img img {
+        min-width: 80%;
     }
 
     .ourteam-grid-avatars {
         padding-block: 50px;
-        height: 630px;
+        /* height: 630px; */
         
     }
 
     .ourteam-grid-avatars img {
-        scale: 0.8
+        scale: 0.8;
     }
 
     .our-team-fullname {
@@ -1001,8 +1003,8 @@ section {
         justify-content: center;
     }
     .textwithimage {
-        margin-block-start: 11em;
-        margin-block-end: 16em;
+        margin-block-start: 10em;
+        margin-block-end: 23em;
         display: block;
         margin-right: 0px;
     }
@@ -1025,7 +1027,7 @@ section {
         padding-inline: 0px;
     }
 
-    .property-type-select-option svg {
+    .property-type-select-option img {
         top: 27%;
         left: 82.5%;
         width: 13px;
@@ -1053,7 +1055,7 @@ section {
     .searchbuton input {
         font-size: 0px;
     }
-    .searchbuton svg {
+    .searchbuton img {
         margin-left: 25px;
         width: 17px;
         height: 17px;
@@ -1142,11 +1144,11 @@ section {
     
     .image-grid-section2 img {
         width: 100%;
-        min-width: 80%;
+        min-width: 95%;
     }    
     #top-offer-grid-item {
         width: 100%;
-        min-width: 80%;
+        min-width: 180px;
     
     }
     #img-cont-title {
@@ -1164,32 +1166,37 @@ section {
     /* SECTION 2  END*/
     /* SECTION 3 START */
     .aboutus-txt-img {
-        margin-block: 11.5em;
+        margin-block-start: 11.5em;
+        margin-block-end: 12;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
-
+    
     .aboutus-title-text {
-        margin-inline-start: 50px;
+        margin-inline-start: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
-
-    .aboutus-title {
-        font-size: 33.5px;
+    
+    .aboutus-title h1 {
+        font-size: 45px;
         color: #091638;
-    }
-
-    #aboutus-title {
         font-family: 'Merriweather';
-        padding-block: 10px
+    
     }
-
     .aboutus-paragraph p {
         color: #091638;
-        padding-block-start: 25px;
-        width: 500px;
-        font-size: 15.5px;
+        padding-block-start: 30px;
+        width: 360px;
+        font-size: 16px;
     }
-
+    .aboutus-img {
+        scale: 0.94;
+    }
     #aboutus-2 {
-        padding-block-start: 20px;
+        padding-block-start: 30px;
     }
 
     #ourteam {
@@ -1211,11 +1218,11 @@ section {
     }
 
     .our-team-title {
-        font-size: 35px;
+        font-size: 33px;
     }
 
     .our-team-description {
-        font-size: 18px;
+        font-size: 16.4px;
     }
 
     .our-team-position {
@@ -1223,7 +1230,7 @@ section {
         font-size: 16px;
         display:flex;
         justify-content:center;
-        margin-inline: 50px;
+        margin-inline: 10px;
     }
 
     .references-title-txt-box {
@@ -1289,7 +1296,7 @@ section {
         position: relative;
         padding-block-start: 54px;
         max-width: 750px;
-        font-size: 25px;
+        font-size: 22px;
         align-items: center;
         justify-content: center;
     }
@@ -1324,6 +1331,6 @@ section {
     }
 
     .references-box-description-txt {
-        font-size: 23px;
+        font-size: 22px;
     }
-} 
+}
