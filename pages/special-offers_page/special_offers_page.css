@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Merriweather';
-    src: url(/marble_fonts/Merriweather-Regular.ttf);
+    src: url(../../assets/fonts/Merriweather-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(/marble_fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    src: url(../../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
     font-weight: auto;
     font-style: normal;
 }
@@ -143,7 +143,13 @@ body {
     display: flex;
     justify-content: center;
 }
-
+#top-offer {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .image-grid-section2 {
     display: grid;
     margin-block: 200px;
@@ -151,11 +157,6 @@ body {
     row-gap: 100px;
     justify-content: center;
     grid-template-columns: auto auto auto;
-}
-
-
-.image-grid-section2 a :hover {
-    background-color: azure;
 }
 
 .image-grid-section2 img {
@@ -180,6 +181,14 @@ body {
     border-radius: 4px;
     background-color: #FFFFFF;
     margin-inline: 30px;
+    box-shadow: 0 2px 4px 0 #F3FAFA;
+    border: 1px solid #FFFFFF;
+
+}
+
+#top-offer-grid-item:hover {
+    scale: 1.02;
+    transition: scale 0.2s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 
 #img-cont-title {
