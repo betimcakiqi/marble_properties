@@ -16,7 +16,7 @@ updateTitle(newTitle);
 // Favicon 
 
 // Define the path to the new favicon SVG file
-const newFaviconUrl = '../../assets/marble-logo/footer-logo.svg';
+const newFaviconUrl = '../../assets/marble-logo/logo.svg';
 
 // Function to update the favicon
 function updateFavicon() {
