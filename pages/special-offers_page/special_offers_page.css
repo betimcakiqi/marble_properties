@@ -54,7 +54,7 @@ select:focus {
     background-color: #F3F3FA;
     height: 30px;
     position: absolute;
-    top: 454.4px;
+    top: 443px;
 
 }
 
@@ -399,7 +399,8 @@ input[type="range"]::-webkit-slider-thumb {
 
     #top-offer-grid-item {
         width: 100%;
-        min-width: 80%
+        min-width: 80%;
+        margin-inline: 0px;
     }
 
     #img-cont-title {
@@ -435,6 +436,7 @@ input[type="range"]::-webkit-slider-thumb {
     #top-offer-grid-item {
         width: 100%;
         min-width: 180px;
+        margin-inline: 0px;
     }
 
     #img-cont-title {
@@ -471,7 +473,7 @@ input[type="range"]::-webkit-slider-thumb {
     #top-offer-grid-item {
         width: 100%;
         min-width: 210px;
-
+        margin-inline: 0px;
     }
 
     #img-cont-title {
