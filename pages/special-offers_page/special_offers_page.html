@@ -4,97 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./special_offers_page.css">
-    <script src="../../components/header/header.js" defer></script>
-    <script src="../../components/footer/footer.js" defer></script>
-    <script src="../../components/fav-icon/fav-icon.js"></script>
+    <link rel="stylesheet" href="../marble_css/special_offers_page.css">
+    <script src="../marble_header/header.js" defer></script>
     <title></title>
 </head>
+
 <body>
     <!-- NAV START -->
     <custom-header></custom-header>
     <!-- NAV END -->
-
-    <div class="search-for-an-offer-container">
-        <div class="search-for-an-offer-title">
-            <h1 class="search-for-an-offer-title-h1">Search for an offer</h1>
-        </div>
-        <div class="search-for-an-offer-txt">
-            <p class="search-for-an-offer-txt-paragraph">Choose from the most advantageous offers</p>
-        </div>
+    <div class="offer">
+        <h1>Search for an offer</h1>
+        <p>Choose from the most advantageous</p>
     </div>
-    <div class="search-key-word-select-options-range-price-container">
-        <form action="./special_offers_page.html" method="post">
-            <div class="searchbar-and-button-container">
-                <div class="enter-keyword-bar">
-                    <input type="search" name="enter-keyword" id="enter-a-keyword" placeholder="Enter a keyword"
-                        required>
-                </div>
-                <div class="search-button">
 
-                    <img src="../../assets/icons/search.svg" alt="">
-                    <input type="submit" value="Search" id="searchbuton" required>
-                </div>
-            </div>
-        </form>
-        <hr class="seperator">
-        <div class="seperator-filter">
-            <span class="filter">Filter settings</span>
+    <div class="search-container">
+        <div class="enter-a-keyword">
+            <input type="text" placeholder="Enter a keyword" id="keyword">
+            <button class="search-button">Search</button>
         </div>
-        <div class="select-options-only">
-            <div class="select-sale-option">
-                <select name="sale" id="search-offer-select">
-                    <option value="sale">Sale</option>
-                </select>
-                <img id="arrow-svg-icon-1" src="../../assets/icons/arrow.svg" alt="arrow">
-            </div>
-            <div class="select-sale-option">
-                <select name="sale" id="search-offer-select">
-                    <option value="sale">Most expensive</option>
-                </select>
-                <img id="arrow-svg-icon-2" src="../../assets/icons/arrow.svg" alt="arrow">
-            </div>
-            <div class="select-sale-option">
-                <select name="sale" id="search-offer-select">
-                    <option value="sale">Select location</option>
-                </select>
-                <img id="arrow-svg-icon-3" src="../../assets/icons/arrow.svg" alt="arrow">
-            </div>
-            <div class="select-sale-option">
-                <select name="sale" id="search-offer-select">
-                    <option value="sale">Select room flat</option>
-                </select>
-                <img id="arrow-svg-icon-4" src="../../assets/icons/arrow.svg" alt="arrow">
-            </div>
+        <div class="filter-settings">
+            <select id="sale">
+                <option value="sale">Sale</option>
+                <option value="rent">Rent</option>
+            </select>
+            <select id="room-flat">
+                <option value="">Select room flat</option>
+                <option value="1">1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+            </select>
+            <select id="location">
+                <option value="">Select location</option>
+                <option value="city-center">City Center</option>
+                <option value="suburbs">Suburbs</option>
+            </select>
+            <select id="sort-order">
+                <option value="most-expensive">Most expensive</option>
+                <option value="least-expensive">Least expensive</option>
+            </select>
         </div>
-        <div class="main">
-            <div class="custom-wrapper">
-                <div class="range-input">
-                    <input type="range" class="min-range" min="0" max="970000" value="0" step="1">
-                    <input type="range" class="max-range" min="10000" max="980000" value="0" step="1">
-                </div>
-                <div class="price-input-container">
-                    <div class="slider-container">
-                        <div class="price-slider">
-                        </div>
-                    </div>
-                    <div class="price-input">
-                        <div class="price-field">
-                        <input type="text" class="min-input" value="0">
-                        <input type="text" class="max-input" value="980000">
-                        </div>
-                        <div class="price-field">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
+           
         </div>
+
     </div>
     <section id="top-offer" class="section">
+
+        <hr class="separator">
+
+
         <div class="image-grid-section2">
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-1.svg" alt="">
+                    <img src="../marble_grid_images/imgslide1.svg" alt="">
                     <span id="img-cont-title">Large 4-room apartment with a beautiful terrace</span>
                     <span id="img-cont-price">3 500 000€</span>
                     <span id="img-cont-city">Marbella, Spain</span>
@@ -102,7 +65,7 @@
             </div>
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-2.svg" alt="">
+                    <img src="../marble_grid_images/imgslide2.svg" alt="">
                     <span id="img-cont-title">5i large design apartment with terrace</span>
                     <span id="img-cont-price">6 200 000€</span>
                     <span id="img-cont-city">Saint-Tropez, France</span>
@@ -110,7 +73,7 @@
             </div>
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-3.svg" alt="">
+                    <img src="../marble_grid_images/imgslide3.svg" alt="">
                     <span id="img-cont-title">Magnificent duplex in a private villa</span>
                     <span id="img-cont-price">4 800 000€</span>
                     <span id="img-cont-city">Mykonos, Greece</span>
@@ -118,7 +81,7 @@
             </div>
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-4.svg" alt="">
+                    <img src="../marble_grid_images/imgslide4.svg" alt="">
                     <span id="img-cont-title">Large 4-room apartment with a beautiful terrace</span>
                     <span id="img-cont-price">2 900 000€</span>
                     <span id="img-cont-city">Algarve, Portugal</span>
@@ -126,7 +89,7 @@
             </div>
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-5.svg" alt="">
+                    <img src="../marble_grid_images/imgslide5.svg" alt="">
                     <span id="img-cont-title">5i large design apartment with terrace</span>
                     <span id="img-cont-price">7 000 000€</span>
                     <span id="img-cont-city">Barcelona IX.</span>
@@ -134,7 +97,7 @@
             </div>
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-6.svg" alt="">
+                    <img src="../marble_grid_images/imgslide6.svg" alt="">
                     <span id="img-cont-title">Magnificent duplex in a private villa</span>
                     <span id="img-cont-price">5 500 000€</span>
                     <span id="img-cont-city">Los Angeles, California, USA</span>
@@ -142,7 +105,7 @@
             </div>
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-1.svg" alt="">
+                    <img src="../marble_grid_images/imgslide1.svg" alt="">
                     <span id="img-cont-title">Large 4-room apartment with a beautiful terrace</span>
                     <span id="img-cont-price">3 500 000€</span>
                     <span id="img-cont-city">Marbella, Spain</span>
@@ -150,7 +113,7 @@
             </div>
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-2.svg" alt="">
+                    <img src="../marble_grid_images/imgslide2.svg" alt="">
                     <span id="img-cont-title">5i large design apartment with terrace</span>
                     <span id="img-cont-price">6 200 000€</span>
                     <span id="img-cont-city">Saint-Tropez, France</span>
@@ -158,7 +121,7 @@
             </div>
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-3.svg" alt="">
+                    <img src="../marble_grid_images/imgslide3.svg" alt="">
                     <span id="img-cont-title">Magnificent duplex in a private villa</span>
                     <span id="img-cont-price">4 800 000€</span>
                     <span id="img-cont-city">Mykonos, Greece</span>
@@ -166,7 +129,7 @@
             </div>
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-4.svg" alt="">
+                    <img src="../marble_grid_images/imgslide4.svg" alt="">
                     <span id="img-cont-title">Large 4-room apartment with a beautiful terrace</span>
                     <span id="img-cont-price">2 900 000€</span>
                     <span id="img-cont-city">Algarve, Portugal</span>
@@ -174,7 +137,7 @@
             </div>
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-5.svg" alt="">
+                    <img src="../marble_grid_images/imgslide5.svg" alt="">
                     <span id="img-cont-title">5i large design apartment with terrace</span>
                     <span id="img-cont-price">7 000 000€</span>
                     <span id="img-cont-city">Barcelona IX.</span>
@@ -182,7 +145,7 @@
             </div>
             <div id="top-offer-grid-item">
                 <a href="#">
-                    <img src="../../assets/grid-images-offer-section/img-grid-6.svg" alt="">
+                    <img src="../marble_grid_images/imgslide6.svg" alt="">
                     <span id="img-cont-title">Magnificent duplex in a private villa</span>
                     <span id="img-cont-price">5 500 000€</span>
                     <span id="img-cont-city">Los Angeles, California, USA</span>
@@ -193,7 +156,6 @@
     <!-- FOOTER -->
     <custom-footer></custom-footer>
     <!-- FOOTER -->
-    <script src="../../components/sliders/price-range-special-offers/price-range.js"></script>
 </body>
 
 </html>
