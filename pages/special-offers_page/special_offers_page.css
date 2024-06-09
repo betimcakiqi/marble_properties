@@ -23,7 +23,6 @@
 
 body {
     position: relative;
-    flex-direction: column;
     overflow-x: hidden;
 }
 
@@ -55,7 +54,7 @@ select:focus {
     background-color: #F3F3FA;
     height: 30px;
     position: absolute;
-    top: 17.7%;
+    top: 454.4px;
 
 }
 
@@ -133,7 +132,7 @@ select:focus {
 .search-button img {
     position: absolute;
     z-index: 2;
-    top: 15.55%;
+    top: 400px;
     pointer-events: none;
     margin-left: 22px;
     display: flex;
@@ -172,20 +171,22 @@ select:focus {
 .select-options-only img {
     position: absolute;
     display: flex;
-    top: 20.61%;
+    top: 530px;
     pointer-events: none;
     margin-left: 226px;
     transform: translateY(-50%);
     width: 12px;
     height: 7px;
 }
+
 /* Price range slider */
-.main{
+.main {
     margin-block-start: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .price-input-container {
     width: 100%;
     border-radius: 15px;
@@ -198,14 +199,16 @@ select:focus {
     margin-top: 10px;
     justify-content: space-between;
 }
-.price-field input{
+
+.price-field input {
     border: none;
-    max-width:76px;
-    font-size: 17px;  
+    max-width: 76px;
+    font-size: 17px;
     background-color: #F3F3FA;
     font-weight: 450;
 }
-.price-field input:focus{
+
+.price-field input:focus {
     border: none;
     outline: none;
 }
@@ -266,28 +269,26 @@ input[type="range"]::-webkit-slider-thumb {
     padding-inline-start: 50px;
     padding-inline-end: 50px;
 }
+
 #top-offer {
     overflow-x: hidden;
     position: relative;
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
 }
+
 .image-grid-section2 {
     display: grid;
     margin-block: 200px;
     flex-direction: row;
     row-gap: 100px;
-    column-gap: 100px;
     justify-content: center;
     grid-template-columns: auto auto auto;
 }
 
 .image-grid-section2 img {
-    width: 100%;
-    min-width: 80%;
+    width: 400px;
     height: auto;
 }
 
@@ -307,10 +308,9 @@ input[type="range"]::-webkit-slider-thumb {
 #top-offer-grid-item {
     border-radius: 4px;
     background-color: #FFFFFF;
-    box-shadow: 0 2px 5px 0 #F3F3FA;
-    border: 1px solid #F3F3FA;
-    width: 100%;
-    min-width: 80%;
+    margin-inline: 30px;
+    box-shadow: 0 2px 4px 0 #F3FAFA;
+    border: 1px solid #FFFFFF;
 
 }
 
@@ -334,144 +334,155 @@ input[type="range"]::-webkit-slider-thumb {
 #img-cont-city {
     color: #141B2D;
 }
-@media screen and (max-width: 1446px) and (min-width: 1167px){
+
+@media screen and (max-width: 1446px) and (min-width: 1167px) {
     .image-grid-section2 {
-          row-gap: 50px;
-          grid-template-columns: auto auto auto;
-      }
-  
-      .image-grid-section2 img {
-          width: 100%;
-          min-width: 310px
-      }
-  
-      .image-grid-section2 a {
-          display: flex;
-          flex-direction: column;
-          padding-block-end: 20px;
-          text-decoration: none;
-      }
+        row-gap: 50px;
+        column-gap: 50px;
+        grid-template-columns: auto auto auto;
+    }
+
+    .image-grid-section2 img {
+        width: 100%;
+        min-width: 200px
+    }
+
+    .image-grid-section2 a {
+        display: flex;
+        flex-direction: column;
+        padding-block-end: 20px;
+        text-decoration: none;
+    }
+
     #top-offer-grid-item {
-          width: 100%;
-          min-width: 180px;
-      
-      }
-      #img-cont-title {
-          width: 100%
-      }
-      
-      #img-cont-price {
-          width: 100%
-      }
-      
-      #img-cont-city {
-          width: 100%  
-      }
-  }
-  @media screen and (max-width: 1166px) and (min-width: 900px){
-      .image-grid-section2 {
-          margin-block: 150px;
-          row-gap: 50px;
-          column-gap: 40px;
-          padding-right: 60px;
-          grid-template-columns: auto auto auto;
-      }
-  
-      .image-grid-section2 img {
-          width: 100%;
-          min-width: 370px;
-      }
-  
-      .image-grid-section2 a {
-          padding-block-end: 20px;
-      }
-  
-      .image-grid-section2 img {
-          width: 100%;
-          min-width: 80%;
-      }    
-      #top-offer-grid-item {
-          width: 100%;
-          min-width: 80%
-      
-      }
-      #img-cont-title {
-          width: 100%
-      }
-      
-      #img-cont-price {
-          width: 100%
-      }
-      
-      #img-cont-city {
-          width: 100%  
-      }
-  }
-  @media screen and (max-width: 899px) and (min-width: 550px){
-      .image-grid-section2 {
-          display: grid;
-          margin-block: 150px;
-          flex-direction: row;
-          row-gap: 20px;
-          justify-content: center;
-          column-gap: 20px;
-          grid-template-columns: auto auto;
-          padding-right: 60px;
-          
-      }
-      
-      .image-grid-section2 img {
-          width: 100%;
-          min-width: 95%;
-      }    
-      #top-offer-grid-item {
-          width: 100%;
-          min-width: 180px;
-      
-      }
-      #img-cont-title {
-          width: 100%
-      }
-      
-      #img-cont-price {
-          width: 100%
-      }
-      
-      #img-cont-city {
-          width: 100%  
-      }
-  }
-  @media screen and (max-width: 549px){
-      .image-grid-section2 {
-          display: grid;
-          margin-block: 150px;
-          flex-direction: row;
-          row-gap: 20px;
-          justify-content: center;
-          column-gap: 20px;
-          grid-template-columns: auto;
-          padding-right: 60px;
-          
-      }
-      
-      .image-grid-section2 img {
-          width: 100%;
-          min-width: 95%;
-      }    
-      #top-offer-grid-item {
-          width: 100%;
-          min-width: 230px;
-      
-      }
-      #img-cont-title {
-          width: 100%
-      }
-      
-      #img-cont-price {
-          width: 100%
-      }
-      
-      #img-cont-city {
-          width: 100%  
-      }
-  }
+        width: 100%;
+        min-width: 200px;
+        margin-inline: 0px;
+
+    }
+
+    #img-cont-title {
+        width: 100%
+    }
+
+    #img-cont-price {
+        width: 100%
+    }
+
+    #img-cont-city {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 1166px) and (min-width: 900px) {
+    .image-grid-section2 {
+        margin-block: 150px;
+        row-gap: 50px;
+        column-gap: 40px;
+        padding-right: 60px;
+        grid-template-columns: auto auto auto;
+    }
+
+    .image-grid-section2 img {
+        width: 100%;
+        min-width: 370px;
+    }
+
+    .image-grid-section2 a {
+        padding-block-end: 20px;
+    }
+
+    .image-grid-section2 img {
+        width: 100%;
+        min-width: 80%;
+    }
+
+    #top-offer-grid-item {
+        width: 100%;
+        min-width: 80%
+    }
+
+    #img-cont-title {
+        width: 100%
+    }
+
+    #img-cont-price {
+        width: 100%
+    }
+
+    #img-cont-city {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 899px) and (min-width: 550px) {
+    .image-grid-section2 {
+        margin-block: 150px;
+        row-gap: 25px;
+        column-gap: 25px;
+        padding-right: 60px;
+        grid-template-columns: auto auto;
+    }
+
+    .image-grid-section2 img {
+        width: 100%;
+        min-width: 180px;
+    }
+
+    .image-grid-section2 a {
+        padding-block-end: 20px;
+    }
+    #top-offer-grid-item {
+        width: 100%;
+        min-width: 180px;
+    }
+
+    #img-cont-title {
+        width: 100%
+    }
+
+    #img-cont-price {
+        width: 100%
+    }
+
+    #img-cont-city {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .image-grid-section2 {
+        display: grid;
+        margin-block: 150px;
+        flex-direction: row;
+        row-gap: 20px;
+        justify-content: center;
+        column-gap: 20px;
+        grid-template-columns: auto;
+        padding-right: 60px;
+
+    }
+
+    .image-grid-section2 img {
+        width: 100%;
+        min-width: 210px;
+    }
+
+    #top-offer-grid-item {
+        width: 100%;
+        min-width: 210px;
+
+    }
+
+    #img-cont-title {
+        width: 100%
+    }
+
+    #img-cont-price {
+        width: 100%
+    }
+
+    #img-cont-city {
+        width: 100%
+    }
+}
