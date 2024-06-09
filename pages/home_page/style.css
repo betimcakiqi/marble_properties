@@ -111,7 +111,7 @@ section {
 
 .property-type-select-option img {
     position: absolute;
-    top: 50%;
+    top: 50.5%;
     left: 26.5%;
     width: 14px;
     height: 11px;
@@ -1332,5 +1332,357 @@ section {
 
     .references-box-description-txt {
         font-size: 22px;
+    }
+}
+@media screen and (max-width: 549px) {
+    .section {
+        padding-inline-start: 0px;
+        padding-inline-end: 0px;
+    }
+    /* SECTION 1 START */
+    #home{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .textwithimage {
+        margin-block-start: 10em;
+        margin-block-end: 23em;
+        display: block;
+        margin-right: 0px;
+    }
+    .textwithimage h1 {
+        font-size: 45px;
+        display: flex;
+    }
+    .titlewithtext{
+        width: 100%;
+        min-width: 250px;
+    }
+    #lefttext {
+        color: #091638;
+        font-size: 17px;
+    }
+    .propertyandsearch {
+        height: 130px;
+        display: block;
+        width: 300px;
+        gap: 0px;
+        padding-inline: 0px;
+    }
+
+    .property-type-select-option img {
+        top: 27%;
+        left: 82.5%;
+        width: 13px;
+        height: 10px;
+    }
+    .property-type-select-option, .search-location-bar{
+        margin-inline: 10px;
+        
+    }
+    .property-type-select-option select {
+        width: 280px;
+        margin-block: 10px;
+    }
+    .propertyandsearch form {
+        gap: 0px;
+    }
+    .search-location-bar input {
+        width: 280px;
+    }
+    .searchbuton {
+        position: absolute;
+        left: 73.7%;
+    }
+
+    .searchbuton input {
+        font-size: 0px;
+    }
+    .searchbuton img {
+        margin-left: 25px;
+        width: 17px;
+        height: 17px;
+        margin-bottom: 2.5px;
+    }
+    #searchbuton {
+        width: 68px;
+    }
+    #imagehomepage {
+        display: none;
+    }
+
+    /* SECTION 1 END */
+    /* SECTION 2 START */
+    #top-offer {
+    overflow-x: hidden;
+    position: relative;
+    background-color: #F3F3FA;
+    width: 100%;
+    height: auto;
+    display: block; 
+    }
+    
+    .text-sections {
+        display: block;
+        justify-content: center;
+        margin-block: 9em;
+    }
+    
+    .seperator {
+        margin-block-start: 30px;
+        border: 0px;
+        height: 1px;
+        background-color: #ccc;
+    }
+    
+    .section2-left-title-container,
+    .section2-left-title {
+        font-family: 'Merriweather';
+        font-size: 50px;
+        width: 100%;
+        min-width: 70%;
+    }
+    
+    .section2-left-text-container,
+    .section2-left-text {
+        width: 100%;
+        margin-block: 25px;
+        font-size: 18px;
+        min-width: 80%
+    }
+    
+    .showall-button {
+        margin-block: 20px;
+        margin-inline-start: 0px;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .showall-button a {
+        font-weight: 700;
+        font-size: 12.5px;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #1C3988;
+    }
+    
+    .showall-button a:hover {
+        background-color: #6E8AE9;
+        border: 2px solid #6E8AE9;
+        color: #FFFFFF;
+        transition: background-color 0.3s;
+    }
+    
+    /* SECTION 2 TXT END / START IMG */
+    .image-grid-section2 {
+        display: grid;
+        margin-block: 150px;
+        flex-direction: row;
+        row-gap: 20px;
+        justify-content: center;
+        column-gap: 20px;
+        grid-template-columns: auto;
+        padding-right: 60px;
+        
+    }
+    
+    .image-grid-section2 img {
+        width: 100%;
+        min-width: 95%;
+    }    
+    #top-offer-grid-item {
+        width: 100%;
+        min-width: 230px;
+    
+    }
+    #img-cont-title {
+        width: 100%
+    }
+    
+    #img-cont-price {
+        width: 100%
+    }
+    
+    #img-cont-city {
+        width: 100%  
+    }
+
+    /* SECTION 2  END*/
+    /* SECTION 3 START */
+    .aboutus-txt-img {
+        margin-block-start: 11.5em;
+        margin-block-end: 12;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .aboutus-title-text {
+        margin-inline-start: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aboutus-title h1 {
+        font-size: 45px;
+        color: #091638;
+        font-family: 'Merriweather';
+    
+    }
+    .aboutus-paragraph p {
+        color: #091638;
+        padding-block-start: 30px;
+        width: 360px;
+        font-size: 16px;
+    }
+    .aboutus-img {
+        scale: 0.7;
+    }
+    #aboutus-2 {
+        padding-block-start: 30px;
+    }
+
+    #ourteam {
+        scroll-margin-top: -5em;
+    }
+
+    .ourteam-grid-avatars {
+        padding-block: 50px;
+        height: 550px;
+        max-width: 400px;
+    }
+
+    .ourteam-grid-avatars img {
+        max-width: 200px;
+        width: 100%;
+        padding-inline: 10px;
+    }
+
+    .our-team-fullname {
+        margin-block-start: 5px;
+        display: flex;
+        text-align: center;
+    }
+
+    .our-team-title {
+        font-size: 32px;
+    }
+
+    .our-team-description {
+        font-size: 14.4px;
+    }
+
+    .our-team-position {
+        margin-block-start: 5px;
+        font-size: 14px;
+        display:flex;
+        justify-content:center;
+        text-align: center;
+        margin-inline: 10px;
+    }
+
+    .references-title-txt-box {
+        max-width: 540px;
+    }
+
+    #references {
+        scroll-margin-top: -3em;
+        position: relative;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .references-title-txt-box {
+        overflow-x: hidden;
+        margin-block: 10em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1700px;
+    }
+
+    .references-title-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-block: 50px;
+    }
+
+    .references-box-txt-full-div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .references-title {
+        font-family: 'Merriweather';
+        font-weight: bold;
+        font-size: 36.8px;
+        width: 100%;
+        margin-block-end: 30px;
+    }
+
+    .references-description {
+        display: flex;
+        font-size: 18.5px;
+        margin-block-end: 30px;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .references-box-with-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 400px;
+        min-height: 400px;
+        background-color: #F3F3FA;
+    }
+
+    .references-box-description {
+        overflow-y: hidden;
+        position: relative;
+        padding-block-start: 54px;
+        max-width: 750px;
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .references-box-big-description {
+        padding-inline-start: 45px;
+    }
+
+    .references-box-description::before {
+        padding-inline-start: 15px;
+        padding-block-start: 45px;
+        font-family: 'Merriweather';
+        top: 0;
+        left: 0;
+        font-weight: bolder;
+        color: #091638;
+        opacity: 0.5;
+        font-size: 50px;
+        content: "“";
+        position: absolute;
+    }
+
+    .references-box-head-title {
+        padding-inline-start:20px;
+        padding-block: 55px;
+    }
+
+    .references-box-end-title {
+        font-family: 'Merriweather';
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+    .references-box-description-txt {
+        font-size: 17px;
     }
 }
