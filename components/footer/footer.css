@@ -160,18 +160,19 @@
     }
 
     #sub-news-letter-email-address-bar {
-        width: 350px;
+        width: 300px;
     }
 
     .sub-news-letter-subscribe-container {
         position: absolute;
-        left: 54.5%;
+        left: 64.3%;
     }
 
     #sub-news-letter-subscribe-button {
         background-color: #1C3988;
         color: #FFFFFF;
-        width: 150px;
+        width: 90px;
+        font-size: 15px;
 
     }
 
