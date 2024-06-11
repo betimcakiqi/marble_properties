@@ -110,6 +110,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
+
     }
 
     .sub-news-letter-form-container {
@@ -165,7 +167,8 @@
 
     .sub-news-letter-subscribe-container {
         position: absolute;
-        left: 64.3%;
+        left: unset;
+        margin-left: 209px;
     }
 
     #sub-news-letter-subscribe-button {
