@@ -590,18 +590,20 @@ input[type="range"]::-webkit-slider-thumb {
 
     .search-button {
         position: absolute;
-        left: 325px;
+        margin-left: 280px;
     }
 
     .search-button input {
         border: none;
-        width: 4 20px;
+        width: 120px;
         height: 45px;
-        font-size: 16px;
+        font-size: 15px;
+        padding-block-end: 1px;
     }
 
     .search-button img {
-        top: 377.5px;
+        top: unset;
+        margin-top: 23px;
         margin-left: 15px;
         width: 16px;
 
@@ -671,17 +673,19 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .seperator-filter {
-        top: 511px;
+        top: unset;
+        margin-top: 103px;
 
     }
 
     .filter {
         font-size: 15.5px;
         padding-inline: 20px;
-        
+
     }
-    search-for-an-offer-container{
-    }
+
+    search-for-an-offer-container {}
+
     .search-for-an-offer-title-h1 {
         font-size: 3.1em;
         font-family: 'Merriweather';
@@ -691,7 +695,7 @@ input[type="range"]::-webkit-slider-thumb {
     .search-for-an-offer-txt-paragraph {
         font-size: 1.3em;
         text-align: center;
-        
+
     }
 
     .search-key-word-select-options-range-price-container {
@@ -708,9 +712,11 @@ input[type="range"]::-webkit-slider-thumb {
         height: 45px;
 
     }
-    .search-button{
+
+    .search-button {
         position: absolute
     }
+
     .search-button input {
         border: none;
         width: 50px;
