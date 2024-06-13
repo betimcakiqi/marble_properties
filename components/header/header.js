@@ -8,17 +8,17 @@ class HeaderComponent extends HTMLElement {
     render() {
         this.innerHTML =
             `
-        <link rel="stylesheet" href="../../components/header/header.css">        
+    <link rel="stylesheet" href="./components/header/header.css">        
     <header>
         <nav class="navigation-bar">
             <div class="logoandnavbar">
                 <div class="logo">
-                    <a href="./index.html#home"><img src="../../assets/marble-logo/logo.svg" alt=""></a>
+                    <a href="./index.html#home"><img src="./assets/marble-logo/logo.svg" alt=""></a>
                 </div>
                 <div class="navbar">
                     <ul id="menuList">
                         <li><a class="nav-link" href="./index.html#top-offer">Top offers</a></li>
-                        <li><a class="nav-link" href="../special-offers_page/special_offers_page.html">Search in
+                        <li><a class="nav-link" href="./special_offers_page.html">Search in
                                 offers</a></li>
                         <li><a class="nav-link" href="./index.html#references">References</a></li>
                         <li><a class="nav-link" href="./index.html#aboutus">About us</a></li>
@@ -29,10 +29,10 @@ class HeaderComponent extends HTMLElement {
             </div>
             <div id="burgerMenu" onclick="handleBurgerMenuAction()">
                 <div id="menuIcon">
-                    <img src="../../assets/header-menu-icons/burger-menu-icon.svg" alt="">
+                    <img src="./assets/header-menu-icons/burger-menu-icon.svg" alt="">
                 </div>
                 <div id="closeIcon">
-                    <img src="../../assets/header-menu-icons/burger-menu-close-icon.svg" alt="">
+                    <img src="./assets/header-menu-icons/burger-menu-close-icon.svg" alt="">
                 </div>
             </div>
             </div>

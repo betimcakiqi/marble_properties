@@ -6,12 +6,12 @@ class FooterComponent extends HTMLElement {
     render() {
         this.innerHTML =
         `
-        <link rel="stylesheet" href="../../components/footer/footer.css">
+        <link rel="stylesheet" href="./components/footer/footer.css">
     <footer>
         <div class="sub-newsletter-footer">
             <div class="sub-newsletter-title-description">
 
-                <img class="sub-newsletter-icon-svg" src="../../assets/footer-icons/news-letter-icon.svg" alt="">
+                <img class="sub-newsletter-icon-svg" src="./assets/footer-icons/news-letter-icon.svg" alt="">
 
                 <div class="sub-news-letter-without-img">
                     <div class="sub-news-letter-title-text">
@@ -39,7 +39,7 @@ class FooterComponent extends HTMLElement {
         <div class="copyright-marble-footer">
             <div class="copyright-marble-footer-full-container">
                 <div class="copyright-marble-footer-container">
-                        <img class="copyrigt-marble-footer-logo" src="../../assets/marble-logo/footer-logo.svg" alt="">
+                        <img class="copyrigt-marble-footer-logo" src="./assets/marble-logo/footer-logo.svg" alt="">
 
                         <p class="copyrigt-marble-footer-name">
                             ©2024 Marble Properties
