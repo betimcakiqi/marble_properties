@@ -9,34 +9,35 @@ class HeaderComponent extends HTMLElement {
         this.innerHTML =
             `
         <link rel="stylesheet" href="../../components/header/header.css">        
-        <header>
-    <nav class="navigation-bar">
-        <div class="logoandnavbar">
-            <div class="logo">
-                    <a href="../home_page/index.html#home"><img src="../../assets/marble-logo/logo.svg" alt=""></a>
+    <header>
+        <nav class="navigation-bar">
+            <div class="logoandnavbar">
+                <div class="logo">
+                    <a href="./index.html#home"><img src="../../assets/marble-logo/logo.svg" alt=""></a>
+                </div>
+                <div class="navbar">
+                    <ul id="menuList">
+                        <li><a class="nav-link" href="./index.html#top-offer">Top offers</a></li>
+                        <li><a class="nav-link" href="../special-offers_page/special_offers_page.html">Search in
+                                offers</a></li>
+                        <li><a class="nav-link" href="./index.html#references">References</a></li>
+                        <li><a class="nav-link" href="./index.html#aboutus">About us</a></li>
+                        <li><a class="nav-link" href="./index.html#ourteam">Our team</a></li>
+                        <li id="contactus"><button><a href="tel:+38345384290">Contact us</a></button></li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar">
-                <ul id="menuList">
-                    <li><a class="nav-link" href="../home_page/index.html#top-offer">Top offers</a></li>
-                    <li><a class="nav-link" href="../special-offers_page/special_offers_page.html">Search in offers</a></li>
-                    <li><a class="nav-link" href="../home_page/index.html#references">References</a></li>
-                    <li><a class="nav-link" href="../home_page/index.html#aboutus">About us</a></li>
-                    <li><a class="nav-link" href="../home_page/index.html#ourteam">Our team</a></li>
-                    <li id="contactus"><button><a href="tel:+38345384290">Contact us</a></button></li>
-                </ul>
+            <div id="burgerMenu" onclick="handleBurgerMenuAction()">
+                <div id="menuIcon">
+                    <img src="../../assets/header-menu-icons/burger-menu-icon.svg" alt="">
+                </div>
+                <div id="closeIcon">
+                    <img src="../../assets/header-menu-icons/burger-menu-close-icon.svg" alt="">
+                </div>
             </div>
-        </div>
-        <div id="burgerMenu" onclick="handleBurgerMenuAction()">
-            <div id="menuIcon">
-                <img src="../../assets/header-menu-icons/burger-menu-icon.svg" alt="">
             </div>
-            <div id="closeIcon">
-                <img src="../../assets/header-menu-icons/burger-menu-close-icon.svg" alt="">
-            </div>
-        </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
         `
     }
 }
