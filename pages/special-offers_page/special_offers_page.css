@@ -293,7 +293,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .image-grid-section2 {
     display: grid;
-    margin-block: 200px;
+    margin-block-start: 100px;
     flex-direction: row;
     row-gap: 100px;
     justify-content: center;
@@ -347,7 +347,28 @@ input[type="range"]::-webkit-slider-thumb {
 #img-cont-city {
     color: #141B2D;
 }
-
+.offers-show-next-button{
+    display: flex;
+    justify-content: center;
+    margin-block-start: 50px;
+    margin-block-end: 150px;
+}
+.offers-show-next-button input{
+    border: 2px solid #1C3988;
+    font-weight: 700;
+    font-size: 14.5px;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #1C3988;
+    cursor: pointer
+}
+.offers-show-next-button input:hover{
+    background-color: #6E8AE9;
+    border: 2px solid #6E8AE9;
+    color: #FFFFFF;
+    transition: background-color 0.3s;
+}
 @media screen and (max-width: 1446px) and (min-width: 1167px) {
     .seperator {
         width: 1030px;
