@@ -511,7 +511,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1700px;
+    max-width: 1300px;
 }
 
 .references-title-txt {
@@ -545,8 +545,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 400px;
-    min-height: 450px;
+    min-height: 400px;
     padding-inline-end: 20px;
     background-color: #F3F3FA;
 }
@@ -556,7 +555,7 @@ section {
     position: relative;
     padding-block-start: 54px;
     max-width: 750px;
-    font-size: 25px;
+    font-size: 21px;
     align-items: center;
     justify-content: center;
 }
@@ -567,11 +566,11 @@ section {
 
 .references-box-description::before {
     padding-inline-start: 30px;
-    padding-block-start: 39px;
+    padding-block-start: 30px;
     font-family: 'Merriweather';
     top: 0;
     left: 0;
-    font-weight: bolder;
+    font-weight: 600;
     color: #091638;
     opacity: 0.5;
     font-size: 70px;
@@ -587,11 +586,11 @@ section {
 .references-box-end-title {
     font-family: 'Merriweather';
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .references-box-description-txt {
-    font-size: 23px;
+    font-size: 21px;
 }
 
 /* SECTION 5 END */
@@ -1279,15 +1278,15 @@ section {
         font-size: 22px;
         margin-block-end: 30px;
         justify-content: space-around;
-        width: 600px;
+        width: 100%;
+        max-width: 600px;
     }
 
     .references-box-with-txt {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        height: 400px;
-        min-height: 400px;
+        min-height: 450px;
         background-color: #F3F3FA;
     }
 
@@ -1640,8 +1639,7 @@ section {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        height: 100%;
-        min-height: 650px;
+        min-height: 550px;
         background-color: #F3F3FA;
     }
 
