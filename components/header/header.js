@@ -8,7 +8,7 @@ class HeaderComponent extends HTMLElement {
     render() {
         this.innerHTML =
             `
-    <link rel="stylesheet" href="./components/header/header.css">        
+    <link rel="stylesheet" href="/components/header/header.css">        
     <header>
         <nav class="navigation-bar">
             <div class="logoandnavbar">
@@ -18,8 +18,7 @@ class HeaderComponent extends HTMLElement {
                 <div class="navbar">
                     <ul id="menuList">
                         <li><a class="nav-link" href="./index.html#top-offer">Top offers</a></li>
-                        <li><a class="nav-link" href="./special_offers_page.html">Search in
-                                offers</a></li>
+                        <li><a class="nav-link" href="./special_offers_page.html">Search in offers</a></li>
                         <li><a class="nav-link" href="./index.html#references">References</a></li>
                         <li><a class="nav-link" href="./index.html#aboutus">About us</a></li>
                         <li><a class="nav-link" href="./index.html#ourteam">Our team</a></li>
