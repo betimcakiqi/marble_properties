@@ -117,6 +117,7 @@ select {
     border-radius: 4px;
     outline: none;
     border: 1px solid #DDDDDD;
+    background-color: #FFFFFF;
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.1);
     color: #141B2D;
 
@@ -173,6 +174,7 @@ select {
     position: relative;
     width: 262px;
     border-radius: 4px;
+    background-color: #FFFFFF;
     border: 1px solid #141B2D;
     height: 48px;
     font-size: 17px;

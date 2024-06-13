@@ -43,10 +43,6 @@ input,
 select:focus {
     outline: none;
 }
-input,
-select {
-    background-color: #FFFFFF;
-}
 /* SECTION 1 START */
 
 
