@@ -70,7 +70,7 @@ function initSwiper() {
     // If screen width is less than 900px, initialize Swiper with 1 slide per view
     swiper = new Swiper(".references-swiper-section", {
       slidesPerView: 1,
-      spaceBetween: 100,
+      spaceBetween: 50,
       scrollbar: {
         el: ".swiper-scrollbar",
         hide: false,
@@ -80,7 +80,7 @@ function initSwiper() {
     // If screen width is 900px or more, initialize Swiper with 2 slides per view
     swiper = new Swiper(".references-swiper-section", {
       slidesPerView: 2,
-      spaceBetween: 100,
+      spaceBetween: 50,
       scrollbar: {
         el: ".swiper-scrollbar",
         hide: false,
