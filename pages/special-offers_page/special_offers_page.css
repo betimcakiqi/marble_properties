@@ -111,6 +111,7 @@ select:focus {
     font-size: 17px;
     border-radius: 4px;
     outline: none;
+    background-color: #FFFFFF;
     border: 1px solid #DDDDDD;
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.1);
     color: #141B2D;
@@ -172,6 +173,7 @@ select:focus {
     height: 48px;
     font-size: 17px;
     padding-inline-start: 20px;
+    background-color: #FFFFFF;
 }
 
 .select-options-only img {
