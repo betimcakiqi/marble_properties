@@ -164,6 +164,7 @@
 
     #sub-news-letter-email-address-bar {
         width: 300px;
+        padding-inline-end: 100px;
     }
 
     .sub-news-letter-subscribe-container {
