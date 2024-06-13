@@ -24,7 +24,7 @@ class FooterComponent extends HTMLElement {
                         </span>
                     </div>
 
-                    <form action="" method="post" class="sub-news-letter-form-container">
+                    <form action="#" method="post" class="sub-news-letter-form-container">
                         <div class="sub-news-letter-email-address-container">
                             <input id="sub-news-letter-email-address-bar" type="email" name="email-addres"
                                 placeholder="Your e-mail address" required>
