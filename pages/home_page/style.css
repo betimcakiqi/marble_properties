@@ -1336,8 +1336,8 @@ section {
 }
 @media screen and (max-width: 549px) {
     .section {
-        padding-inline-start: 0px;
-        padding-inline-end: 0px;
+        padding-inline-start: 30px;
+        padding-inline-end: 30px;
     }
     /* SECTION 1 START */
     #home{
@@ -1417,6 +1417,8 @@ section {
     #top-offer {
     overflow-x: hidden;
     position: relative;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
     background-color: #F3F3FA;
     width: 100%;
     height: auto;
