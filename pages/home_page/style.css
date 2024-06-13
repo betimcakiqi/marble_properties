@@ -43,7 +43,10 @@ input,
 select:focus {
     outline: none;
 }
-
+input,
+select {
+    background-color: #FFFFFF;
+}
 /* SECTION 1 START */
 
 
@@ -128,6 +131,7 @@ section {
     width: 205px;
     border-radius: 4px;
     padding-inline-start: 20px;
+    background-color: #FFFFFF;
     font-size: 15.3px;
     color: #1C3988;
     border: 1px solid #4764C3;
