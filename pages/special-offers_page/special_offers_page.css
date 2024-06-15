@@ -697,8 +697,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 @media screen and (max-width: 549px) {
     .section{
-        padding-inline-start: 0px;
-        padding-inline-end: 0px;
+        padding-inline-start: 5px;
+        padding-inline-end: 5px;
     }
     .seperator {
         width: 90%;
