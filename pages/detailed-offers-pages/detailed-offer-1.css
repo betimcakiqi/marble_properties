@@ -185,10 +185,6 @@ input:focus {
     display: flex;
     position: relative;
 }
-.inline-interested-in-imgs img:hover{
-    scale: 1.03;
-    transition: scale 0.3s ease-in-out;
-}
 .inline-interested-in-imgs p{
     font-family: 'Merriweather';
     color: #FFFFFF;
@@ -210,8 +206,10 @@ input:focus {
 .inline-interested-in-imgs-with-paragraph-4 p{
     margin-inline-start: 70px;
 }
-
-
+.inline-interested-scale:hover{
+    scale: 1.03;
+    transition: scale 0.3s ease-in-out;
+}
 
 
 .contact-us-title-h2 {
