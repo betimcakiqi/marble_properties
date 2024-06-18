@@ -70,7 +70,8 @@ input:focus {
     flex-direction: column;
 }
 .detailed-offer-small-img-item{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: center;
 }
 .swiper{
@@ -206,10 +207,11 @@ input:focus {
 .inline-interested-in-imgs-with-paragraph-4 p{
     margin-inline-start: 70px;
 }
-.inline-interested-scale:hover{
+.hover-img-p:hover{
     scale: 1.03;
     transition: scale 0.3s ease-in-out;
 }
+
 
 
 .contact-us-title-h2 {
