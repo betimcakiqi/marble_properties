@@ -71,7 +71,7 @@ section {
     margin-block-end: 20em;
     display: flex;
     align-items: center;
-    margin-right: 440px;
+    margin-right: 410px;
     justify-content: center;
 }
 
@@ -223,7 +223,7 @@ section {
 
 #imagehomepage {
     position: absolute;
-    margin-left: 1070px;
+    margin-left: 1050px;
     margin-bottom: 40px;
 
 }
@@ -267,7 +267,7 @@ section {
 }
 
 .showall-button {
-    margin-inline-start: 584px;
+    margin-inline-start: 480px;
     display: flex;
     align-items: flex-end;
 }
@@ -300,7 +300,8 @@ section {
 }
 
 .image-grid-section2 img {
-    width: 400px;
+    max-width: 350px;
+    min-width: 350px;
     height: auto;
 }
 
@@ -367,7 +368,7 @@ section {
 }
 
 .aboutus-title-text {
-    margin-inline-start: 100px;
+    margin-inline-start: 91px;
 }
 
 .aboutus-title h1 {
@@ -379,14 +380,13 @@ section {
 .aboutus-paragraph p {
     color: #091638;
     padding-block-start: 30px;
-    width: 360px;
+    width: 400px;
     font-size: 17px;
 }
 
 #aboutus-2 {
     padding-block-start: 30px;
 }
-
 /* SECTION 3 END */
 /* SECTION 4 START */
 
@@ -410,7 +410,8 @@ section {
     width: 100%;
     height: auto;
     display: block;
-    max-width: 1200px;
+    scale: 0.95;
+    max-width: 1240px;
     padding: 1vh;
 }
 
@@ -511,7 +512,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1300px;
+    max-width: 1170px;
 }
 
 .references-title-txt {
@@ -602,7 +603,7 @@ section {
 
     /* section 1 media */
     .textwithimage {
-        margin-right: 400px;
+        margin-right: 370px;
     }
 
     .textwithimage h1 {
@@ -615,7 +616,7 @@ section {
 
     /* section 1 media */
     #imagehomepage {
-        margin-left: 900px;
+        margin-left: 850px;
     }
 
     .property-type-select-option select {
@@ -623,7 +624,8 @@ section {
     }
 
     .property-type-select-option img {
-        left: 26%;
+        left: 28%;
+        top: 51px;
         width: 12px;
         height: 9px;
     }
@@ -633,7 +635,7 @@ section {
     }
 
     .searchbuton input {
-        padding-left: 40px;
+        padding-left: 20px;
     }
 
     .searchbuton img {
@@ -646,7 +648,7 @@ section {
     }
 
     .showall-button {
-        margin-inline-start: 320px;
+        margin-inline-start: 430px;
     }
 
     .text-sections {
@@ -671,7 +673,8 @@ section {
 
     .image-grid-section2 img {
         width: 100%;
-        min-width: 310px
+        max-width: 305px;
+        min-width: 305px;
     }
 
     .image-grid-section2 a {
@@ -680,9 +683,17 @@ section {
         padding-block-end: 20px;
         text-decoration: none;
     }
+    .aboutus-txt-img {
+    scale: 0.95;
+    }
+
+    .aboutus-title-text {
+        margin-inline-start: 60px;
+    }
 
     #ourteam {
         scroll-margin-top: -5em;
+        scale: 0.9;
     }
 
     .ourteam-grid-avatars {
@@ -710,7 +721,9 @@ section {
         margin-block-start: 5px;
         font-size: 19px;
     }
-
+    .references-title-txt-box {
+    max-width: 1040px;
+}
     .references-title {
         font-family: 'Merriweather';
         font-weight: bold;
