@@ -39,7 +39,7 @@ input:focus {
 .detailed-offer-container {
     display: flex;
     flex-direction: column;
-    position: relative;
+    align-items: center;
 }
 
 .detailed-offer-title {
@@ -138,7 +138,7 @@ input:focus {
     transition-duration: 0.3s;
 }
 .detailed-offer-paragraphs-only{
-    margin-block-end: 400px;
+    margin-block-end: 100px;
 }
 .detailed-offer-section1-paragraph{
     max-width: 610px;
@@ -165,54 +165,6 @@ input:focus {
 .detailed-offer-info-txt-div p{
     margin-block: 5px;
 }
-.detailed-offer-precise-location-map{
-    margin-inline-start: 135px;
-    filter: drop-shadow(0px 4px 20px rgba(71, 100, 195, 0.1));
-
-}
-.location-interest-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-block-end: 100px;
-}
-.interested-in-title{
-    font-family: 'Merriweather';
-    margin-block: 50px;
-    font-size: 33.2px;
-}
-.inline-interested-in-imgs {
-    display: flex;
-    position: relative;
-}
-.inline-interested-in-imgs p{
-    font-family: 'Merriweather';
-    color: #FFFFFF;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    font-size: 21px;
-    bottom: 39px;
-}
-.inline-interested-in-imgs-with-paragraph-1 p{
-    margin-inline-start: 35px;
-}
-.inline-interested-in-imgs-with-paragraph-2 p{
-    margin-inline-start: 65px;
-}
-.inline-interested-in-imgs-with-paragraph-3 p{
-    margin-inline-start: 100px;
-}
-.inline-interested-in-imgs-with-paragraph-4 p{
-    margin-inline-start: 70px;
-}
-.hover-img-p:hover{
-    scale: 1.03;
-    transition: scale 0.3s ease-in-out;
-}
-
-
 
 .contact-us-title-h2 {
     font-family: 'Merriweather';
@@ -394,4 +346,421 @@ input:focus {
     margin-block: 20px;
     font-size: 17px;
     font-weight: 450;
+}
+
+
+.detailed-offer-precise-location-map{
+    margin-inline-start: 120px;
+    filter: drop-shadow(0px 4px 20px rgba(71, 100, 195, 0.1));
+
+}
+.location-interest-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-block-end: 100px;
+}
+.interested-in-title{
+    font-family: 'Merriweather';
+    margin-block: 50px;
+    font-size: 33.2px;
+}
+.inline-interested-in-imgs {
+    display: flex;
+    position: relative;
+}
+.inline-interested-in-imgs p{
+    font-family: 'Merriweather';
+    color: #FFFFFF;
+    display: flex;
+    position: absolute;
+    pointer-events: none;
+    font-size: 21px;
+    bottom: 39px;
+}
+.inline-interested-in-imgs-with-paragraph-1 p{
+    margin-inline-start: 35px;
+}
+.inline-interested-in-imgs-with-paragraph-2 p{
+    margin-inline-start: 65px;
+}
+.inline-interested-in-imgs-with-paragraph-3 p{
+    margin-inline-start: 100px;
+}
+.inline-interested-in-imgs-with-paragraph-4 p{
+    margin-inline-start: 70px;
+}
+.hover-img-p:hover{
+    scale: 1.03;
+    transition: scale 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 1446px) and (min-width: 1167px){
+    .detailed-offer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .detailed-offer-title {
+        justify-content: center;
+        display: flex;
+        margin-right: 15px;
+    }
+    
+    .detailed-offer-title-h1 {
+        line-height: 69px;
+        font-family: 'Merriweather';
+        margin-top: 184px;
+        font-size: 50px;
+        max-width: 1130px;
+        text-align: center;
+    }
+    
+    .detiailed-offer-pictures-info-and-contact-info {
+        display: flex;
+        margin: 50px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .big-apt-picture{
+        scale: 1.1;
+        margin-inline-start: 58px;
+    }
+    .detailed-offer-pictures-and-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .detailed-offer-small-img-item{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+    .swiper{
+        max-width: 790px;
+    }
+    .swiper-slide{
+        scale: 0.95;
+    }
+    .info-icons-descriptions{
+        display: flex;
+        margin-block: 30px;
+        margin-inline: 115px;
+        width: 100%;
+    }
+    .detailed-offer-type-space-location{
+        display: flex;
+        align-items: center;
+        padding-inline: 20px;
+    }
+    .detailed-offer-type-space-location p{
+        font-size: 21px;
+        font-weight: bold;
+        font-family: 'Merriweather';
+        margin-inline: 20px;
+    }
+    .detailed-offer-mortgage{
+        display: flex;
+        align-items: center;
+        background-color: #F3F3FA;
+        margin-inline: 135px;
+        margin-block: 20px;
+        border-radius: 4px;
+        justify-content: space-between;
+        width: 609px;
+        height: 98px;
+        padding-inline: 25px;
+    }
+    #mortgage-text{
+        font-size: 17px;
+    }
+    #mortgage-amount{
+        font-size: 21.25px;
+        font-family: 'Merriweather';
+        font-weight: bold;
+    }
+    .detailed-offer-get-a-mortgage-btn button{
+        width: 160px;
+        height: 48px;
+        background-color: #1C3988;
+        outline: none;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 2px solid #1C3988;
+    }
+    .detailed-offer-get-a-mortgage-btn a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .detailed-offer-get-a-mortgage-btn button:hover {
+        background-color: #6E8AE9;
+        border: 2px solid #6E8AE9;
+        transition-duration: 0.3s;
+    }
+    .detailed-offer-paragraphs-only{
+        margin-block-end: 100px;
+    }
+    .detailed-offer-section1-paragraph{
+        max-width: 610px;
+        margin-inline: 140px;
+    }
+    .detailed-offer-section1-paragraph p{
+        font-size: 17px;
+        margin-block: 30px;
+        font-weight: 410;
+    }
+    #detailed-offer-paragraph-part-1{
+        max-width: 550px;
+    }
+    #detailed-offer-paragraph-part-2{
+        max-width: 600px;
+    }
+    #detailed-offer-paragraph-part-3{
+        max-width: 600px;
+    }
+    .detailed-offer-info-title{
+        font-family: 'Merriweather';
+        font-size: 21px;
+    }
+    .detailed-offer-info-txt-div p{
+        margin-block: 5px;
+    }
+    
+
+
+    .contact-us-title-h2 {
+        font-family: 'Merriweather';
+    }
+    
+    .detailed-offer-contact-agent-apt-info {
+        border-radius: 4px;
+        background-color: #F3F3FA;
+        max-height: 910px;
+        margin-block: 100px;
+        width: 100%;
+    }
+    .detailed-offer-contact-info{
+        padding: 30px 20px 25px 25px;
+    
+    }
+    .name-tel-email-div {
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: 450;
+    }
+    
+    .name-tel-email-div input {
+        font-weight: 410;
+        background-color: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        font-size: 17px;
+        height: 56px;
+        padding-inline: 10px;
+    }
+    
+    .name-tel-email-div p {
+        margin-bottom: 5px;
+    }
+    
+    #full-name-input {
+                width: 100%;
+    }
+    
+    #phone-number-input {
+               width: 100%;
+    }
+    
+    #email-input {
+        width: 100%;
+    }
+    
+    #your-message-textarea {
+        font-weight: 410;
+        outline: none;
+        background-color: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        font-size: 17px;
+        resize: none;
+        padding-inline: 10px;
+        padding-block: 15px;
+                width: 100%;
+        height: 308px;
+    }
+    
+    .check-box-agree-personal-data {
+        display: flex;
+        justify-content: center;
+        margin-block: 20px;
+    }
+    
+    .agree-personal-data-custom-checkbox {
+        display: none;
+    }
+    
+    .agree-personal-data-custom-checkbox-label {
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: white;
+        border: 2px solid #1C3988;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .agree-personal-data-custom-checkbox:checked+.agree-personal-data-custom-checkbox-label {
+        background-color: #1C3988;
+    }
+    
+    .agree-personal-data-custom-checkbox-label::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 16px;
+        height: 12px;
+        background-image: url('../../assets/icons/checkbox-arrow.svg');
+        /* Path to your SVG file */
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.2s cubic-bezier(0, 0, 0.2, 1);
+    }
+    
+    /* Show the checkmark/indicator when checked */
+    .agree-personal-data-custom-checkbox:checked+.agree-personal-data-custom-checkbox-label::after {
+        opacity: 1;
+    }
+    
+    /* Style the text label */
+    .agree-personal-data-text {
+        vertical-align: middle;
+        margin-left: 10px;
+        text-align: center;
+        font-size: 17px;
+        max-width: 250px;
+    }
+    
+    .agree-personal-data-text a {
+        text-decoration: underline;
+        font-weight: 410;
+        color: #1C3988;
+    }
+    .send-message-form{
+        justify-content: center;
+        display: flex;
+    }
+    .send-message-form input {
+        border: 2px solid #1C3988;
+        background-color: transparent;
+        border-radius: 4px;
+        height: 48px;
+        width: 304px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #1C3988;
+        cursor: pointer;
+    }
+    
+    .send-message-form input:hover {
+        background-color: #6E8AE9;
+        border: 2px solid #6E8AE9;
+        color: #FFFFFF;
+        transition-duration: 0.3s;
+    }
+    .detailed-offer-agent-information{
+        margin-block: 50px;
+        background-color: #F3F3FA;
+        border-radius: 4px;
+        height: 323px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .broker-fullname{
+        font-family: 'Merriweather';
+    }
+    .detailed-offer-agent-information img{
+        margin-block: 25px;
+    }
+    .detailed-offer-agent-information span{
+        margin-block: 2.5px;
+        font-size: 17px;
+        font-weight: 450;
+    }
+    .detailed-offer-agent-information a{
+        margin-block-start: 10px;
+        margin-block-end: 40px;
+        color: #1C3988;
+        font-weight: 450;
+        font-size: 17px;
+    }
+    .detailed-offer-brief-characteristics-information{
+        background-color: #F3F3FA;
+        width: 100%;
+    }
+    .detailed-offer-brief-char-info-second-div{
+        padding: 20px 20px;
+        text-align: center;
+    }
+    .brief-char-title{
+        font-family: 'Merriweather';
+    }
+    .detailed-offer-brief-characteristics-information p{
+        margin-block: 20px;
+        font-size: 17px;
+        font-weight: 450;
+    }
+    .location-interest-div{
+        display: flex;
+        flex-direction: column;
+        margin-block-start: 900px;
+        align-items: center;
+        text-align: center;
+        margin-block-end: 100px;
+    }
+    .interested-in-title{
+        font-family: 'Merriweather';
+        margin-block: 50px;
+        font-size: 33.2px;
+    }
+    .inline-interested-in-imgs {
+        display: flex;
+        position: relative;
+    }
+    .inline-interested-in-imgs p{
+        font-family: 'Merriweather';
+        color: #FFFFFF;
+        display: flex;
+        position: absolute;
+        pointer-events: none;
+        font-size: 21px;
+        bottom: 39px;
+    }
+    .inline-interested-in-imgs-with-paragraph-1 p{
+        margin-inline-start: 35px;
+    }
+    .inline-interested-in-imgs-with-paragraph-2 p{
+        margin-inline-start: 65px;
+    }
+    .inline-interested-in-imgs-with-paragraph-3 p{
+        margin-inline-start: 100px;
+    }
+    .inline-interested-in-imgs-with-paragraph-4 p{
+        margin-inline-start: 70px;
+    }
+    .hover-img-p:hover{
+        scale: 1.03;
+        transition: scale 0.3s ease-in-out;
+    }
 }
