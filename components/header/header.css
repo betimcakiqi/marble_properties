@@ -138,8 +138,74 @@ li {
         margin-inline-start: 258px;
     }
 }
+@media screen and (max-width: 1167px) and (min-width: 900px) {
+    header {
+        margin-bottom: 35px;
+    }
+    .navigation-bar {
+        padding-inline: 50px;
+        align-items: center;
+        flex-direction: column-reverse
+    }
+    .logo{
+        margin-right: 740px;
+    }
+    .logoandnavbar {
+        display: block;
+    }
 
-@media screen and (max-width: 1166px) {
+    .logoandnavbar ul {
+        padding-inline-start: 0;
+    }
+
+    .navbar li,
+    li {
+        padding-block-end: 5px;
+    }
+
+    #contactus button {
+        margin-inline-start: 0px;
+    }
+
+    #burgerMenu img {
+        width: 50px;
+        height: 50px
+    }
+
+    #menuList {
+        text-align: center;
+        display: block;
+        max-height: 0px;
+        transition: max-height 0.5s ease-out;
+        overflow: hidden;
+    }
+
+    #menuIcon {
+        display: block;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #closeIcon {
+        opacity: 0;
+        display: block;
+        z-index: 2;
+    }
+
+    #menuIcon,
+    #closeIcon {
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+    right: 100px;
+    transform: translateX(100%) scale(1) rotateY(0deg); /* Change to rotateY(0deg) */
+    top: 16px;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+}
+@media screen and (max-width: 899px) {
     header {
         margin-bottom: 35px;
     }
