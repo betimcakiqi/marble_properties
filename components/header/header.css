@@ -139,9 +139,6 @@ li {
     }
 }
 @media screen and (max-width: 1166px) and (min-width: 900px) {
-    header {
-        margin-bottom: 35px;
-    }
     .navigation-bar {
         padding-inline: 50px;
         align-items: center;
@@ -206,10 +203,6 @@ li {
     }
 }
 @media screen and (max-width: 899px) {
-    header {
-        margin-bottom: 35px;
-    }
-
     .navigation-bar {
         justify-content: left;
     }
@@ -272,5 +265,15 @@ li {
     width: 50px;
     height: 50px;
     transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+}
+@media screen and (max-width: 549px) {
+    .navigation-bar {
+        padding-inline: 10px;
+        flex-direction: column-reverse
+    }
+    #menuIcon,
+    #closeIcon {
+    right: 55px;
     }
 }
