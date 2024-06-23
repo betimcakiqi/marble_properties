@@ -1096,29 +1096,27 @@ section {
     
     .text-sections {
         display: block;
-        justify-content: center;
         margin-block: 9em;
+        width: 500px;
+        margin-right: -70px;
     }
     
     .seperator {
         margin-block-start: 30px;
         border: 0px;
-        height: 51px;
+        height: 1px;
         background-color: #ccc;
     }
     .section2-left-title-container,
     .section2-left-title {
         font-family: 'Merriweather';
-        width: 100%;
-        min-width: 80%;
+        min-width: 100%;
     }
     
     .section2-left-text-container,
     .section2-left-text {
-        width: 100%;
-        padding-inline-end: 10px;
         margin-block: 25px;
-        min-width: 80%
+        min-width: 100%
     }
     
     .showall-button {
@@ -1157,8 +1155,7 @@ section {
     }
     
     .image-grid-section2 img {
-        width: 100%;
-        min-width: 95%;
+        min-width: 100%;
     }    
     #top-offer-grid-item {
         width: 100%;
@@ -1207,6 +1204,7 @@ section {
         font-size: 16px;
     }
     .aboutus-img {
+        margin-inline-end: 50px;
         scale: 0.94;
     }
     #aboutus-2 {
@@ -1351,12 +1349,14 @@ section {
 }
 @media screen and (max-width: 549px) {
     .section {
-        padding-inline-start: 30px;
-        padding-inline-end: 30px;
+        padding-inline-start: 0px;
+        padding-inline-end: 0px;
     }
     /* SECTION 1 START */
     #home{
         display:flex;
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
         align-items: center;
         justify-content: center;
     }
@@ -1457,16 +1457,14 @@ section {
     .section2-left-title {
         font-family: 'Merriweather';
         font-size: 50px;
-        width: 100%;
-        min-width: 70%;
+        min-width: 100%;
     }
     
     .section2-left-text-container,
     .section2-left-text {
-        width: 100%;
         margin-block: 25px;
         font-size: 18px;
-        min-width: 80%
+        min-width: 100%
     }
     
     .showall-button {
@@ -1527,6 +1525,10 @@ section {
 
     /* SECTION 2  END*/
     /* SECTION 3 START */
+    #aboutus{
+        padding-inline-start: 10px;
+        padding-inline-end: 12px;
+    }
     .aboutus-txt-img {
         margin-block-start: 11.5em;
         margin-block-end: 12;
@@ -1605,6 +1607,8 @@ section {
     }
 
     #references {
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
         scroll-margin-top: -3em;
         position: relative;
         height: auto;
