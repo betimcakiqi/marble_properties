@@ -1,4 +1,4 @@
-/* HEADER START */
+HEADER START
 header {
     overflow-x: hidden;
     display: block;
@@ -60,7 +60,7 @@ li {
 .nav-link {
     text-decoration: none;
     color: white;
-    font-size: 17.5px;
+    font-size: 16.5px;
     padding: 2px 0;
     position: relative;
     transition: color 0.3s ease;
@@ -71,7 +71,7 @@ li {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 1.5px;
+    height: 1px;
     width: 100%;
     background-color: #091638;
     opacity: 0;
@@ -138,12 +138,71 @@ li {
         margin-inline-start: 258px;
     }
 }
-
-@media screen and (max-width: 1166px) {
-    header {
-        margin-bottom: 35px;
+@media screen and (max-width: 1166px) and (min-width: 900px) {
+    .navigation-bar {
+        padding-inline: 50px;
+        align-items: center;
+        flex-direction: column-reverse
+    }
+    .logo{
+        margin-right: 740px;
+    }
+    .logoandnavbar {
+        display: block;
     }
 
+    .logoandnavbar ul {
+        padding-inline-start: 0;
+    }
+
+    .navbar li,
+    li {
+        padding-block-end: 5px;
+    }
+
+    #contactus button {
+        margin-inline-start: 0px;
+    }
+
+    #burgerMenu img {
+        width: 50px;
+        height: 50px
+    }
+
+    #menuList {
+        text-align: center;
+        display: block;
+        max-height: 0px;
+        transition: max-height 0.5s ease-out;
+        overflow: hidden;
+    }
+
+    #menuIcon {
+        display: block;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #closeIcon {
+        opacity: 0;
+        display: block;
+        z-index: 2;
+    }
+
+    #menuIcon,
+    #closeIcon {
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+    right: 100px;
+    transform: translateX(100%) scale(1) rotateY(0deg); /* Change to rotateY(0deg) */
+    top: 16px;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+}
+@media screen and (max-width: 899px) {
     .navigation-bar {
         justify-content: left;
     }
@@ -206,5 +265,15 @@ li {
     width: 50px;
     height: 50px;
     transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+}
+@media screen and (max-width: 549px) {
+    .navigation-bar {
+        padding-inline: 10px;
+        flex-direction: column-reverse
+    }
+    #menuIcon,
+    #closeIcon {
+    right: 55px;
     }
 }
