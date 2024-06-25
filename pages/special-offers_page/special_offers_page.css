@@ -469,7 +469,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 @media screen and (max-width: 1166px) and (min-width: 900px) {
     .seperator {
-        width: 1030px;
+        width: 840px;
     }
 
     .seperator-filter {
@@ -580,7 +580,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 @media screen and (max-width: 899px) and (min-width: 550px) {
     .seperator {
-        width: 450px;
+        width: 400px;
     }
 
     .seperator-filter {
