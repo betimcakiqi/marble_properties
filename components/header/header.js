@@ -13,7 +13,7 @@ class HeaderComponent extends HTMLElement {
         <nav class="navigation-bar">
             <div class="logoandnavbar">
                 <div class="logo">
-                    <a href="./index.html#home"><img src="./assets/marble-logo/logo.svg" alt=""></a>
+                    <a href="https://betimcakiqi.github.io/marble_properties/#home"><img src="./assets/marble-logo/logo.svg" alt=""></a>
                 </div>
                 <div class="navbar">
                     <ul id="menuList">
