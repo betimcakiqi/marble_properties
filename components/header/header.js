@@ -17,11 +17,11 @@ class HeaderComponent extends HTMLElement {
                 </div>
                 <div class="navbar">
                     <ul id="menuList">
-                        <li><a class="nav-link" href="./index.html#top-offer">Top offers</a></li>
-                        <li><a class="nav-link" href="./special_offers_page.html">Search in offers</a></li>
-                        <li><a class="nav-link" href="./index.html#references">References</a></li>
-                        <li><a class="nav-link" href="./index.html#aboutus">About us</a></li>
-                        <li><a class="nav-link" href="./index.html#ourteam">Our team</a></li>
+                        <li><a class="nav-link" href="https://betimcakiqi.github.io/marble_properties/#top-offer">Top offers</a></li>
+                        <li><a class="nav-link" href="https://betimcakiqi.github.io/marble_properties/special_offers_page.html">Search in offers</a></li>
+                        <li><a class="nav-link" href="https://betimcakiqi.github.io/marble_properties/#references">References</a></li>
+                        <li><a class="nav-link" href="https://betimcakiqi.github.io/marble_properties/#aboutus">About us</a></li>
+                        <li><a class="nav-link" href="https://betimcakiqi.github.io/marble_properties/#ourteam">Our team</a></li>
                         <li id="contactus"><button><a href="tel:+38345384290">Contact us</a></button></li>
                     </ul>
                 </div>
