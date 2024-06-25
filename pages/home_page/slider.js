@@ -9,7 +9,7 @@ function initOurTeamSwiper() {
   }
 
   // Check the screen width
-  if (window.innerWidth < 850) {
+  if (window.innerWidth < 900) {
     // If screen width is less than 900px, initialize Swiper with 2 slides per view
     ourTeamSwiper = new Swiper(".section-grid", {
       slidesPerView: 2,
