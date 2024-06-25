@@ -189,13 +189,13 @@ section {
     border-radius: 4px;
     width: 302px;
     height: 50px;
-    padding-left: 50px;
+    padding-left: 20px;
     color: #141B2D;
     border: 1px solid #F3F3FA;
 }
 
 .searchbuton img {
-    margin-left: 19px;
+    margin-left: 24px;
     position: absolute;
     display: flex;
     pointer-events: none;
@@ -800,11 +800,11 @@ section {
 
     .searchbuton input {
         font-weight: 500;
-        padding-left: 46px;
+        padding-left: 24px;
     }
 
     .searchbuton img {
-        margin-left: 20px;
+        margin-left: 24px;
         position: absolute;
         display: flex;
     }
