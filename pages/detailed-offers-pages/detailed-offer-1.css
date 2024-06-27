@@ -40,10 +40,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
-=======
     position: relative;
->>>>>>> b2d6f20f45ca2920e3472bd145dd5c8751c7267c
 }
 
 .detailed-offer-title {
@@ -712,7 +709,6 @@ input:focus {
     font-size: 17px;
     font-weight: 450;
 }
-<<<<<<< HEAD
 
 
 .detailed-offer-precise-location-map{
@@ -1129,6 +1125,4 @@ input:focus {
         scale: 1.03;
         transition: scale 0.3s ease-in-out;
     }
-=======
->>>>>>> b2d6f20f45ca2920e3472bd145dd5c8751c7267c
 }
