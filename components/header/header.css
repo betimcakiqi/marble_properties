@@ -124,7 +124,6 @@ li {
     .navigation-bar {
         padding-inline: 50px;
     }
-
     .logoandnavbar ul {
         padding-inline-start: 25px;
         padding-inline-end: 25px;
@@ -141,11 +140,7 @@ li {
 @media screen and (max-width: 1166px) and (min-width: 900px) {
     .navigation-bar {
         padding-inline: 50px;
-        align-items: center;
         flex-direction: column-reverse
-    }
-    .logo{
-        margin-right: 740px;
     }
     .logoandnavbar {
         display: block;

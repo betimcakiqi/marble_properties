@@ -71,7 +71,7 @@ section {
     margin-block-end: 20em;
     display: flex;
     align-items: center;
-    margin-right: 410px;
+    margin-right: 385px;
     justify-content: center;
 }
 
@@ -267,7 +267,7 @@ section {
 }
 
 .showall-button {
-    margin-inline-start: 480px;
+    margin-inline-start: 450px;
     display: flex;
     align-items: flex-end;
 }
@@ -295,6 +295,7 @@ section {
     margin-block: 200px;
     flex-direction: row;
     row-gap: 100px;
+    scale: 0.97;
     justify-content: center;
     grid-template-columns: auto auto auto;
 }
@@ -368,7 +369,7 @@ section {
 }
 
 .aboutus-title-text {
-    margin-inline-start: 91px;
+    margin-inline-start: 0px;
 }
 
 .aboutus-title h1 {
@@ -386,6 +387,9 @@ section {
 
 #aboutus-2 {
     padding-block-start: 30px;
+}
+.aboutus-img{
+    margin-inline-end: 75px;
 }
 /* SECTION 3 END */
 /* SECTION 4 START */
@@ -411,7 +415,7 @@ section {
     height: auto;
     display: block;
     scale: 0.95;
-    max-width: 1240px;
+    max-width: 1215px;
     padding: 1vh;
 }
 
@@ -512,7 +516,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1170px;
+    max-width: 1145px;
 }
 
 .references-title-txt {
@@ -603,7 +607,7 @@ section {
 
     /* section 1 media */
     .textwithimage {
-        margin-right: 370px;
+        margin-right: 345px;
     }
 
     .textwithimage h1 {
@@ -648,7 +652,7 @@ section {
     }
 
     .showall-button {
-        margin-inline-start: 430px;
+        margin-inline-start: 400px;
     }
 
     .text-sections {
@@ -689,14 +693,12 @@ section {
     .aboutus-txt-img {
     scale: 0.95;
     }
-
-    .aboutus-title-text {
-        margin-inline-start: 60px;
+    .aboutus-img{
+        margin-inline-end: 35px;
     }
-
     #ourteam {
         scroll-margin-top: -5em;
-        scale: 0.9;
+        scale: 0.885;
     }
 
     .ourteam-grid-avatars {
@@ -725,7 +727,7 @@ section {
         font-size: 19px;
     }
     .references-title-txt-box {
-    max-width: 1040px;
+    max-width: 1010px;
 }
     .references-title {
         font-family: 'Merriweather';
@@ -868,10 +870,12 @@ section {
     }
 
     .image-grid-section2 img {
-        min-width: 100%;
+        width: 100%;
+        min-width: 210px;
     }    
     #top-offer-grid-item {
-        min-width: 100%
+        width: 100%;
+        min-width: 210px;
     
     }
     #img-cont-title {
@@ -910,7 +914,9 @@ section {
         padding-inline-start: 0px;
         
     }
-    
+    .aboutus-img{
+        margin-inline-end: 0px;
+    }
     .aboutus-title h1 {
         font-size: 45px;
         color: #091638;
@@ -1200,7 +1206,9 @@ section {
         display: flex;
         flex-direction: column;
     }
-    
+    .aboutus-img{
+        margin-inline-end: 0px;
+    }
     .aboutus-title h1 {
         font-size: 45px;
         color: #091638;

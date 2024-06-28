@@ -51,6 +51,7 @@ const closeIconElement = document.getElementById('closeIcon');
 
 const handleBurgerMenuAction = () => {
     const prevState = menuListElement.style.maxHeight;
+    menuListElement.style.opacity;
     const isBurgerMenuOpened = prevState === '290px';
 
     // Check if the menu icon is visible based on media screen size
@@ -58,6 +59,7 @@ const handleBurgerMenuAction = () => {
 
     if (isBurgerMenuOpened) {
         menuListElement.style.maxHeight = '0px';
+        menuListElement.style.opacity = '0';
         if (isMenuIconVisible) {
             menuIconElement.style.transform = 'translateX(100%) scale(1) rotateY(0deg)';
             menuIconElement.style.opacity = '1';
@@ -66,6 +68,7 @@ const handleBurgerMenuAction = () => {
         }
     } else {
         menuListElement.style.maxHeight = '290px';
+        menuListElement.style.opacity = '1';
         if (isMenuIconVisible) {
             menuIconElement.style.transform = 'translateX(100%) scale(0) rotateY(180deg)';
             menuIconElement.style.opacity = '0';
