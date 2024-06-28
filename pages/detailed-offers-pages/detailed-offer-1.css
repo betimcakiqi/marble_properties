@@ -917,11 +917,6 @@ input:focus {
         text-align: center;
     }
 
-    .send-message-form {
-        justify-content: center;
-        display: flex;
-    }
-
     .detailed-offer-agent-information {
         width: 100%;
     }
