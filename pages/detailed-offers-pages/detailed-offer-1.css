@@ -58,7 +58,7 @@ input:focus {
     max-width: 1150px;
 }
 
-.detiailed-offer-pictures-info-and-contact-info {
+.detailed-offer-pictures-info-and-contact-info {
     display: flex;
     margin-block: 50px;
     justify-content: center;
@@ -451,7 +451,7 @@ input:focus {
         text-align: center;
     }
 
-    .detiailed-offer-pictures-info-and-contact-info {
+    .detailed-offer-pictures-info-and-contact-info {
         flex-direction: column;
     }
 
@@ -515,7 +515,7 @@ input:focus {
         text-align: center;
     }
 
-    .detiailed-offer-pictures-info-and-contact-info {
+    .detailed-offer-pictures-info-and-contact-info {
         flex-direction: column;
     }
 
@@ -687,7 +687,7 @@ input:focus {
         scale: 0.8;
     }
 
-    .detiailed-offer-pictures-info-and-contact-info {
+    .detailed-offer-pictures-info-and-contact-info {
         flex-direction: column;
         align-items: center;
     }
@@ -870,7 +870,7 @@ input:focus {
         scale: 0.8;
     }
 
-    .detiailed-offer-pictures-info-and-contact-info {
+    .detailed-offer-pictures-info-and-contact-info {
         flex-direction: column;
         align-items: center;
     }
