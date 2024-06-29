@@ -541,7 +541,7 @@ input[type="range"]::-webkit-slider-thumb {
 
     /* GRID IMAGES SECTION START */
     .image-grid-section2 {
-        margin-block: 150px;
+        margin-block: 0px;
         row-gap: 50px;
         column-gap: 40px;
         padding-right: 60px;
@@ -657,7 +657,7 @@ input[type="range"]::-webkit-slider-thumb {
 
     /* GRID IMAGES SECTION START */
     .image-grid-section2 {
-        margin-block: 150px;
+        margin-block: 0px;
         row-gap: 25px;
         column-gap: 25px;
         padding-right: 60px;
@@ -785,7 +785,7 @@ input[type="range"]::-webkit-slider-thumb {
     /* GRID IMAGES SECTION START */
     .image-grid-section2 {
         display: grid;
-        margin-block: 150px;
+        margin-block: 0px;
         flex-direction: row;
         row-gap: 20px;
         justify-content: center;
