@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pages/special-offers_page/special_offers_page.css">
+
+    <script src="./pages/special-offers_page/product/special_offers_container.js"></script>
+    <script src="./pages/special-offers_page/product/special_offers_product.js"></script>
+
     <script src="./components/header/header.js" defer></script>
+
     <script src="./components/footer/footer.js" defer></script>
+
     <script src="./components/fav-icon/fav-icon.js"></script>
     <title></title>
 </head>
@@ -120,113 +126,45 @@
             </div>
         </div>
     </div>
-    <section id="top-offer" class="section">
+
+
+    <special-offers-sec>
         <div class="image-grid-section2">
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-1.png" alt="">
-                    <span id="img-cont-title">Large 4-room apartment with a beautiful terrace</span>
-                    <span id="img-cont-price">3 500 000€</span>
-                    <span id="img-cont-city">Marbella, Spain</span>
-                </a>
-            </div>
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-2.png" alt="">
-                    <span id="img-cont-title">5i large design apartment with terrace</span>
-                    <span id="img-cont-price">6 200 000€</span>
-                    <span id="img-cont-city">Saint-Tropez, France</span>
-                </a>
-            </div>
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-3.png" alt="">
-                    <span id="img-cont-title">Magnificent duplex in a private villa</span>
-                    <span id="img-cont-price">4 800 000€</span>
-                    <span id="img-cont-city">Mykonos, Greece</span>
-                </a>
-            </div>
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-4.png" alt="">
-                    <span id="img-cont-title">Large 4-room apartment with a beautiful terrace</span>
-                    <span id="img-cont-price">2 900 000€</span>
-                    <span id="img-cont-city">Algarve, Portugal</span>
-                </a>
-            </div>
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-5.png" alt="">
-                    <span id="img-cont-title">5i large design apartment with terrace</span>
-                    <span id="img-cont-price">7 000 000€</span>
-                    <span id="img-cont-city">Barcelona IX.</span>
-                </a>
-            </div>
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-6.png" alt="">
-                    <span id="img-cont-title">Magnificent duplex in a private villa</span>
-                    <span id="img-cont-price">5 500 000€</span>
-                    <span id="img-cont-city">Los Angeles, California, USA</span>
-                </a>
-            </div>
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-1.png" alt="">
-                    <span id="img-cont-title">Large 4-room apartment with a beautiful terrace</span>
-                    <span id="img-cont-price">3 500 000€</span>
-                    <span id="img-cont-city">Marbella, Spain</span>
-                </a>
-            </div>
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-2.png" alt="">
-                    <span id="img-cont-title">5i large design apartment with terrace</span>
-                    <span id="img-cont-price">6 200 000€</span>
-                    <span id="img-cont-city">Saint-Tropez, France</span>
-                </a>
-            </div>
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-3.png" alt="">
-                    <span id="img-cont-title">Magnificent duplex in a private villa</span>
-                    <span id="img-cont-price">4 800 000€</span>
-                    <span id="img-cont-city">Mykonos, Greece</span>
-                </a>
-            </div>
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-4.png" alt="">
-                    <span id="img-cont-title">Large 4-room apartment with a beautiful terrace</span>
-                    <span id="img-cont-price">2 900 000€</span>
-                    <span id="img-cont-city">Algarve, Portugal</span>
-                </a>
-            </div>
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-5.png" alt="">
-                    <span id="img-cont-title">5i large design apartment with terrace</span>
-                    <span id="img-cont-price">7 000 000€</span>
-                    <span id="img-cont-city">Barcelona IX.</span>
-                </a>
-            </div>
-            <div id="top-offer-grid-item">
-                <a href="./x_offer_1_page.html">
-                    <img src="./assets/grid-images-offer-section/img-grid-6.png" alt="">
-                    <span id="img-cont-title">Magnificent duplex in a private villa</span>
-                    <span id="img-cont-price">5 500 000€</span>
-                    <span id="img-cont-city">Los Angeles, California, USA</span>
-                </a>
-            </div>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-1.png" data-title="Large 4-room apartment with a beautiful terrace" data-price="3 500 000€" data-city="Marbella, Spain"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-2.png" data-title="5i large design apartment with terrace" data-price="6 200 000€" data-city="Saint-Tropez, France"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-3.png" data-title="Magnificent duplex in a private villa" data-price="4 800 000€" data-city="Mykonos, Greece"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-4.png" data-title="Large 4-room apartment with a beautiful terrace" data-price="2 900 000€" data-city="Algarve, Portugal"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-5.png" data-title="5i large design apartment with terrace" data-price="7 000 000€" data-city="Barcelona IX."></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-6.png" data-title="Magnificent duplex in a private villa" data-price="5 500 000€" data-city="Los Angeles, California, USA"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-1.png" data-title="Large 4-room apartment with a beautiful terrace" data-price="3 500 000€" data-city="Marbella, Spain"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-2.png" data-title="5i large design apartment with terrace" data-price="6 200 000€" data-city="Saint-Tropez, France"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-3.png" data-title="Magnificent duplex in a private villa" data-price="4 800 000€" data-city="Mykonos, Greece"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-4.png" data-title="Large 4-room apartment with a beautiful terrace" data-price="2 900 000€" data-city="Algarve, Portugal"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-5.png" data-title="5i large design apartment with terrace" data-price="7 000 000€" data-city="Barcelona IX."></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-6.png" data-title="Magnificent duplex in a private villa" data-price="5 500 000€" data-city="Los Angeles, California, USA"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-1.png" data-title="Large 4-room apartment with a beautiful terrace" data-price="3 500 000€" data-city="Marbella, Spain"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-2.png" data-title="5i large design apartment with terrace" data-price="6 200 000€" data-city="Saint-Tropez, France"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-3.png" data-title="Magnificent duplex in a private villa" data-price="4 800 000€" data-city="Mykonos, Greece"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-4.png" data-title="Large 4-room apartment with a beautiful terrace" data-price="2 900 000€" data-city="Algarve, Portugal"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-5.png" data-title="5i large design apartment with terrace" data-price="7 000 000€" data-city="Barcelona IX."></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-6.png" data-title="Magnificent duplex in a private villa" data-price="5 500 000€" data-city="Los Angeles, California, USA"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-1.png" data-title="Large 4-room apartment with a beautiful terrace" data-price="3 500 000€" data-city="Marbella, Spain"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-2.png" data-title="5i large design apartment with terrace" data-price="6 200 000€" data-city="Saint-Tropez, France"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-3.png" data-title="Magnificent duplex in a private villa" data-price="4 800 000€" data-city="Mykonos, Greece"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-4.png" data-title="Large 4-room apartment with a beautiful terrace" data-price="2 900 000€" data-city="Algarve, Portugal"></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-5.png" data-title="5i large design apartment with terrace" data-price="7 000 000€" data-city="Barcelona IX."></special-offer-product>
+            <special-offer-product data-href="./x_offer_1_page.html" data-img-src="./assets/grid-images-offer-section/img-grid-6.png" data-title="Magnificent duplex in a private villa" data-price="5 500 000€" data-city="Los Angeles, California, USA"></special-offer-product>
         </div>
         <div class="offers-show-next-button">
             <input id="show-next-btn" type="button" value="Show Next">
         </div>
-    </section>
+    </special-offers-sec>
+
+
     <!-- FOOTER -->
     <custom-footer></custom-footer>
     <!-- FOOTER -->
-    <script src="./components/sliders/price-range-special-offers/price-range.js"></script>
+    <script src="./components/sliders/price-range-special-offers/price-range.js" defer></script>
 </body>
 
 </html>
