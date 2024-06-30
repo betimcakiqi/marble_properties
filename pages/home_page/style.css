@@ -43,6 +43,7 @@ input,
 select:focus {
     outline: none;
 }
+
 /* SECTION 1 START */
 
 
@@ -171,7 +172,8 @@ section {
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
-.search-location-bar img{
+
+.search-location-bar img {
     position: absolute;
     margin-left: 20px;
 }
@@ -378,6 +380,7 @@ section {
     font-family: 'Merriweather';
 
 }
+
 .aboutus-paragraph p {
     color: #091638;
     padding-block-start: 30px;
@@ -388,9 +391,11 @@ section {
 #aboutus-2 {
     padding-block-start: 30px;
 }
-.aboutus-img{
+
+.aboutus-img {
     margin-inline-end: 75px;
 }
+
 /* SECTION 3 END */
 /* SECTION 4 START */
 
@@ -687,15 +692,19 @@ section {
         padding-block-end: 20px;
         text-decoration: none;
     }
-    #aboutus{
+
+    #aboutus {
         margin-inline-start: 20px;
     }
+
     .aboutus-txt-img {
-    scale: 0.95;
+        scale: 0.95;
     }
-    .aboutus-img{
+
+    .aboutus-img {
         margin-inline-end: 35px;
     }
+
     #ourteam {
         scroll-margin-top: -5em;
         scale: 0.885;
@@ -726,9 +735,11 @@ section {
         margin-block-start: 5px;
         font-size: 19px;
     }
+
     .references-title-txt-box {
-    max-width: 1010px;
-}
+        max-width: 1010px;
+    }
+
     .references-title {
         font-family: 'Merriweather';
         font-weight: bold;
@@ -771,10 +782,12 @@ section {
         padding-inline-start: 50px;
         padding-inline-end: 50px;
     }
+
     /* SECTION 1 START */
-    #home{
+    #home {
         scale: 0.9;
     }
+
     .textwithimage {
         margin-right: 250px;
     }
@@ -872,35 +885,36 @@ section {
     .image-grid-section2 img {
         width: 100%;
         min-width: 210px;
-    }    
+    }
+
     #top-offer-grid-item {
         width: 100%;
         min-width: 210px;
-    
+
     }
+
     #img-cont-title {
         width: 100%
     }
-    
+
     #img-cont-price {
         width: 100%
     }
-    
+
     #img-cont-city {
-        width: 100%  
+        width: 100%
     }
 
     /* SECTION 2  END*/
     /* SECTION 3 START */
     #aboutus {
-    overflow-x: hidden;
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: block;
-    scale: 0.9
+        overflow-x: hidden;
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: block;
     }
-    
+
     .aboutus-txt-img {
         margin-block-start: 11.5em;
         margin-block-end: 12;
@@ -908,48 +922,59 @@ section {
         flex-direction: row-reverse;
         justify-content: center;
     }
-    
+
     .aboutus-title-text {
-        margin-inline-start: 0px;
+        margin-inline-start: 30px;
         padding-inline-start: 0px;
-        
+
     }
-    .aboutus-img{
+
+    .aboutus-img {
         margin-inline-end: 0px;
     }
+
     .aboutus-title h1 {
         font-size: 45px;
         color: #091638;
         font-family: 'Merriweather';
-    
+
     }
+
     .aboutus-paragraph p {
         color: #091638;
         padding-block-start: 30px;
         width: 100%;
         font-size: unset;
         min-width: 490px;
-        
+
     }
-    
+
     #aboutus-2 {
         padding-block-start: 30px;
     }
+
     .aboutus-img {
-        scale: 0.9;
-        margin-inline-end: 0px;
+        max-width: 650px;
+        width: 100%;
+        min-width: 650px;
+        margin-left: 155px;
     }
+
     .aboutus-img img {
-        min-width: 80%;
+        max-width: 650px;
+        width: 100%;
+        min-width: 650px;
     }
+
     #ourteam {
         scroll-margin-top: -5em;
         scale: 0.9;
     }
+
     .ourteam-grid-avatars {
         padding-block: 50px;
         height: 630px;
-        
+
     }
 
     .ourteam-grid-avatars img {
@@ -1015,34 +1040,69 @@ section {
     }
 }
 
+@media screen and (max-width: 1050px) and (min-width: 900px) {
+
+    .aboutus-img {
+        max-width: 700px;
+        width: 100%;
+        min-width: 540px;
+        margin-left: 155px;
+    }
+
+    .aboutus-img img {
+        max-width: 600px;
+        width: 100%;
+        min-width: 540px;
+    }
+
+    .aboutus-title h1 {
+        font-size: 39px;
+    }
+
+    .aboutus-paragraph p {
+        padding-block-start: 10px;
+        font-size: 15.3px;
+    }
+
+    #aboutus-2 {
+        padding-block-start: 10px;
+    }
+}
+
 @media screen and (max-width: 899px) and (min-width: 550px) {
     .section {
         padding-inline-start: 50px;
         padding-inline-end: 50px;
     }
+
     /* SECTION 1 START */
-    #home{
-        display:flex;
+    #home {
+        display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .textwithimage {
         margin-block-start: 10em;
         margin-block-end: 23em;
         display: block;
         margin-right: 0px;
     }
+
     .textwithimage h1 {
         margin-block-end: 20px;
         font-size: 58px;
     }
-    .titlewithtext{
+
+    .titlewithtext {
         width: 450px;
     }
+
     #lefttext {
         color: #091638;
         font-size: 18.3px;
     }
+
     .propertyandsearch {
         height: 130px;
         display: block;
@@ -1057,20 +1117,26 @@ section {
         width: 13px;
         height: 10px;
     }
-    .property-type-select-option, .search-location-bar{
+
+    .property-type-select-option,
+    .search-location-bar {
         margin-inline: 10px;
-        
+
     }
+
     .property-type-select-option select {
         width: 280px;
         margin-block: 10px;
     }
+
     .propertyandsearch form {
         gap: 0px;
     }
+
     .search-location-bar input {
         width: 280px;
     }
+
     .searchbuton {
         position: absolute;
         left: 73.7%;
@@ -1079,15 +1145,18 @@ section {
     .searchbuton input {
         font-size: 0px;
     }
+
     .searchbuton img {
         margin-left: 25px;
         width: 17px;
         height: 17px;
         margin-bottom: 2.5px;
     }
+
     #searchbuton {
         width: 68px;
     }
+
     #imagehomepage {
         display: none;
     }
@@ -1095,14 +1164,14 @@ section {
     /* SECTION 1 END */
     /* SECTION 2 START */
     #top-offer {
-    overflow-x: hidden;
-    position: relative;
-    background-color: #F3F3FA;
-    width: 100%;
-    height: auto;
-    display: block; 
+        overflow-x: hidden;
+        position: relative;
+        background-color: #F3F3FA;
+        width: 100%;
+        height: auto;
+        display: block;
     }
-    
+
     .text-sections {
         display: flex;
         flex-direction: column;
@@ -1110,21 +1179,21 @@ section {
         margin-block: 9em;
         margin-right: -20px;
     }
-    
+
     .seperator {
         margin-block-start: 30px;
         border: 0px;
         height: 1px;
         background-color: #ccc;
     }
-    
+
     .section2-left-title-container,
     .section2-left-title {
         font-family: 'Merriweather';
         width: 100%;
         min-width: 70%;
     }
-    
+
     .section2-left-text-container,
     .section2-left-text {
         width: 500px;
@@ -1133,14 +1202,14 @@ section {
         max-width: 800px;
         min-width: 500px;
     }
-    
+
     .showall-button {
         margin-block: 10px;
         margin-inline-start: -380px;
         display: flex;
         align-items: flex-start;
     }
-    
+
     .showall-button a {
         font-weight: 700;
         font-size: 12.5px;
@@ -1148,14 +1217,14 @@ section {
         text-decoration: none;
         color: #1C3988;
     }
-    
+
     .showall-button a:hover {
         background-color: #6E8AE9;
         border: 2px solid #6E8AE9;
         color: #FFFFFF;
         transition: background-color 0.3s;
     }
-    
+
     /* SECTION 2 TXT END / START IMG */
     .image-grid-section2 {
         display: grid;
@@ -1166,28 +1235,30 @@ section {
         column-gap: 20px;
         grid-template-columns: auto auto;
         padding-right: 60px;
-        
+
     }
-    
+
     .image-grid-section2 img {
         width: 100%;
-        min-width: 95%;
-    }    
+        min-width: 100%;
+    }
+
     #top-offer-grid-item {
         width: 100%;
         min-width: 180px;
-    
+
     }
+
     #img-cont-title {
         width: 100%
     }
-    
+
     #img-cont-price {
         width: 100%
     }
-    
+
     #img-cont-city {
-        width: 100%  
+        width: 100%
     }
 
     /* SECTION 2  END*/
@@ -1199,31 +1270,36 @@ section {
         flex-direction: column-reverse;
         align-items: center;
     }
-    
+
     .aboutus-title-text {
         margin-inline-start: 0px;
         text-align: center;
         display: flex;
         flex-direction: column;
     }
-    .aboutus-img{
-        margin-inline-end: 0px;
+
+    .aboutus-img {
+        margin-inline-end: 10px;
     }
+
     .aboutus-title h1 {
         font-size: 45px;
         color: #091638;
         font-family: 'Merriweather';
-    
+
     }
+
     .aboutus-paragraph p {
         color: #091638;
         padding-block-start: 30px;
         width: 360px;
         font-size: 16px;
     }
+
     .aboutus-img {
         scale: 0.94;
     }
+
     #aboutus-2 {
         padding-block-start: 30px;
     }
@@ -1258,8 +1334,8 @@ section {
     .our-team-position {
         margin-block-start: 5px;
         font-size: 16px;
-        display:flex;
-        justify-content:center;
+        display: flex;
+        justify-content: center;
         margin-inline: 10px;
     }
 
@@ -1364,28 +1440,47 @@ section {
         font-size: 22px;
     }
 }
+
+@media screen and (max-width: 650px) and (min-width: 550px) {
+    .aboutus-img {
+        scale: 1;
+        max-width: 550px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutus-img img {
+        max-width: 550px;
+    }
+}
+
 @media screen and (max-width: 549px) {
     .section {
         padding-inline-start: 30px;
         padding-inline-end: 30px;
     }
+
     /* SECTION 1 START */
-    #home{
-        display:flex;
+    #home {
+        display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .textwithimage {
         margin-block-start: 10em;
         margin-block-end: 23em;
         margin-right: 0px;
     }
+
     .textwithimage h1 {
         font-size: 45px;
     }
+
     #lefttext {
         font-size: 17px;
     }
+
     .propertyandsearch {
         height: 130px;
         display: block;
@@ -1400,20 +1495,26 @@ section {
         width: 13px;
         height: 10px;
     }
-    .property-type-select-option, .search-location-bar{
+
+    .property-type-select-option,
+    .search-location-bar {
         margin-inline: 10px;
-        
+
     }
+
     .property-type-select-option select {
         width: 280px;
         margin-block: 10px;
     }
+
     .propertyandsearch form {
         gap: 0px;
     }
+
     .search-location-bar input {
         width: 280px;
     }
+
     .searchbuton {
         position: absolute;
         left: 73.7%;
@@ -1422,15 +1523,18 @@ section {
     .searchbuton input {
         font-size: 0;
     }
+
     .searchbuton img {
         margin-left: 25px;
         width: 17px;
         height: 17px;
         margin-bottom: 2.5px;
     }
+
     #searchbuton {
         width: 68px;
     }
+
     #imagehomepage {
         display: none;
     }
@@ -1438,34 +1542,36 @@ section {
     /* SECTION 1 END */
     /* SECTION 2 START */
     #top-offer {
-    padding-inline-start: 0px;
-    padding-inline-end: 0px;
+        padding-inline-start: 0px;
+        padding-inline-end: 0px;
     }
-    
+
     .text-sections {
         display: block;
-    }    
+    }
+
     .section2-left-title-container,
     .section2-left-title {
         font-size: 50px;
         min-width: 100%;
     }
-    
+
     .section2-left-text-container,
     .section2-left-text {
         margin-block: 15px;
         font-size: 18px;
         min-width: 100%
     }
-    
+
     .showall-button {
         margin-block: 15px;
         margin-inline-start: 0px;
     }
-    
+
     .showall-button a {
         font-size: 12.5px;
     }
+
     /* SECTION 2 TXT END / START IMG */
     .image-grid-section2 {
         margin-block: 100px;
@@ -1473,57 +1579,75 @@ section {
         grid-template-columns: auto;
         padding-right: 60px;
     }
-    
+
     .image-grid-section2 img {
         min-width: 100%;
-    }    
+    }
+
     #top-offer-grid-item {
         width: 100%;
         min-width: 230px;
-    
+
     }
+
     #img-cont-title {
         width: 100%
     }
-    
+
     #img-cont-price {
         width: 100%
     }
-    
+
     #img-cont-city {
-        width: 100%  
+        width: 100%
     }
 
     /* SECTION 2  END*/
     /* SECTION 3 START */
-    #aboutus{
+    #aboutus {
         scroll-margin-top: -10em;
     }
+
     .aboutus-txt-img {
         margin-block-start: 11.5em;
         margin-block-end: 12;
         flex-direction: column-reverse;
         align-items: center;
     }
-    
+
     .aboutus-title-text {
         margin-inline-start: 0px;
         text-align: center;
         display: flex;
         flex-direction: column;
     }
-    
+
     .aboutus-title h1 {
         font-size: 45px;
-    
+
     }
+
     .aboutus-paragraph p {
-        width: 320px;
+        width: 330px;
         font-size: 16px;
     }
+
     .aboutus-img {
-        scale: 0.7;
+        scale: 1;
+        max-width: 600px;
+        width: 100%;
+        min-width: 400px;
+        display: flex;
+        margin-left: 60px;
+        justify-content: center;
     }
+
+    .aboutus-img img {
+        max-width: 600px;
+        width: 100%;
+        min-width: 400px;
+    }
+
     #ourteam {
         scroll-margin-top: -5em;
     }
@@ -1558,12 +1682,15 @@ section {
         text-align: center;
         margin-inline: 10px;
     }
-    #references{
+
+    #references {
         scroll-margin-top: -8.4em;
     }
+
     .references-title-txt-box {
         max-width: 540px;
     }
+
     .references-title {
         font-size: 36.8px;
     }
@@ -1592,7 +1719,7 @@ section {
     }
 
     .references-box-head-title {
-        padding-inline-start:20px;
+        padding-inline-start: 20px;
         padding-block: 55px;
     }
 
@@ -1604,5 +1731,50 @@ section {
 
     .references-box-description-txt {
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .aboutus-img {
+        scale: 1;
+        max-width: 550px;
+        width: 110%;
+        min-width: 315px;
+        display: flex;
+        margin-left: 65px;
+        justify-content: center;
+    }
+
+    .aboutus-img img {
+        max-width: 550px;
+        width: 100%;
+        min-width: 315px;
+    }
+
+    .aboutus-title h1 {
+        font-size: 38px;
+
+    }
+
+    .aboutus-paragraph p {
+        font-size: 15px;
+    }
+
+    .references-box-description {
+        font-size: 16.5px;
+    }
+
+    .references-box-description::before {
+        padding-inline-start: 20px;
+        padding-block-start: 45px;
+        font-size: 42px;
+    }
+
+    .references-box-end-title {
+        font-size: 18.5px;
+    }
+
+    .references-box-description-txt {
+        font-size: 16.5px;
     }
 }
