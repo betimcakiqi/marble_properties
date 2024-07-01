@@ -335,14 +335,14 @@
 .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, auto);
     right: auto;
-    margin-left: 91px;
+    margin-left: 88px;
 }
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
     right: var(--swiper-navigation-sides-offset, auto);
     left: auto;
-    margin-left: 750px;
+    margin-left: 755px;
 }
 
 .swiper-button-lock {
