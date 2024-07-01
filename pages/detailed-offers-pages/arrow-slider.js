@@ -1,10 +1,11 @@
 var swiper = new Swiper(".detailed-offer-small-img-slider", {
+  slidesPerView: 3,
+  spaceBetween: 0,
   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
-
 
 // CONTACT FORM TELEPHONE
 

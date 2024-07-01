@@ -138,22 +138,17 @@ input:focus {
     display: flex;
     flex-direction: column;
 }
-
-.detailed-offer-small-img-item {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-}
-
 .swiper {
-    max-width: 790px;
+    max-width: 600px;
     margin-left: 0;
     margin-right: 0;
 }
-
 .swiper-slide {
-    scale: 0.95;
+    display: flex;
+    justify-content: center;
+}
+.swiper-slide img{
+    max-width: 205px;
 }
 
 .info-icons-descriptions {
