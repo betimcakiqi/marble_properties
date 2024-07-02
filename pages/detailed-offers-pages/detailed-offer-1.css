@@ -129,8 +129,17 @@ input:focus {
 
 .detailed-offer-pictures-info-and-contact-info {
     display: flex;
-    margin-block: 50px;
+    margin-block: 40px;
     justify-content: center;
+    margin-right: 12px;
+}
+.big-apt-div{
+    max-width: 750px;
+    min-width: 750px;
+    max-height: 400px;
+    min-height: 400px;
+    margin-inline: 32px;
+    margin-block-end: 16px;
 }
 .big-apt-picture{
     border-radius: 4px;
@@ -138,16 +147,15 @@ input:focus {
     min-width: 750px;
     max-height: 400px;
     min-height: 400px;
-    margin-inline: 68px;
-    margin-block-end: 16px;
 }
 
 .detailed-offer-pictures-and-info {
     display: flex;
     flex-direction: column;
+    max-width: 814px;
 }
 .swiper {
-    max-width: 610px;
+    max-width: 620px;
     margin-left: 0;
     margin-right: 0;
 }
@@ -164,8 +172,8 @@ input:focus {
 
 .info-icons-descriptions {
     display: flex;
-    margin-block: 30px;
-    margin-inline: 118px;
+    margin-block-start: 45px;
+    margin-inline: 85px;
     width: 100%;
 }
 
@@ -186,8 +194,8 @@ input:focus {
     display: flex;
     align-items: center;
     background-color: #F3F3FA;
-    margin-inline: 140px;
-    margin-block: 20px;
+    margin-block-start: 44px;
+    margin-inline: 105px;
     border-radius: 4px;
     justify-content: space-between;
     width: 609px;
@@ -229,12 +237,13 @@ input:focus {
 }
 
 .detailed-offer-paragraphs-only {
-    margin-block-end: 50px;
+    margin-block-start: 11px;
+    margin-block-end: 40px;
 }
 
 .detailed-offer-section1-paragraph {
     max-width: 610px;
-    margin-inline: 142px;
+    margin-inline: 105px;
 }
 
 .detailed-offer-section1-paragraph p {
@@ -265,7 +274,8 @@ input:focus {
 }
 
 .detailed-offer-precise-location-map {
-    margin-inline-start: 135px;
+    margin-inline-start: 85px;
+    margin-block-start: -10px;
     filter: drop-shadow(0px 4px 20px rgba(71, 100, 195, 0.1));
 }
 
@@ -506,6 +516,7 @@ input:focus {
 .detailed-offer-brief-characteristics-information {
     background-color: #F3F3FA;
     width: 352px;
+    border-radius: 4px;
 }
 
 .detailed-offer-brief-char-info-second-div {
@@ -520,576 +531,4 @@ input:focus {
     margin-block: 20px;
     font-size: 17px;
     font-weight: 450;
-}
-
-@media screen and (max-width: 1446px) and (min-width: 1167px) {
-    #modalImg{
-        max-width: 1250px;
-        min-width: 1000px;
-        width: 100%;
-    }
-
-    .detailed-offer-title-h1 {
-        font-size: 50px;
-        max-width: 1130px;
-        text-align: center;
-    }
-
-    .detailed-offer-pictures-info-and-contact-info {
-        flex-direction: column;
-    }
-
-    .detailed-offer-contact-agent-apt-info {
-        margin-block: 100px;
-        width: 100%;
-    }
-
-    #full-name-input {
-        width: 100%;
-    }
-
-    #phone-number-input {
-        width: 100%;
-    }
-
-    #email-input {
-        width: 100%;
-    }
-
-    #your-message-textarea {
-        width: 100%;
-    }
-
-    .check-box-agree-personal-data {
-        justify-content: center;
-    }
-
-    .agree-personal-data-text {
-        text-align: center;
-    }
-
-    .send-message-form {
-        justify-content: center;
-        display: flex;
-    }
-
-    .detailed-offer-agent-information {
-        width: 100%;
-    }
-
-    .detailed-offer-brief-characteristics-information {
-        width: 100%;
-    }
-
-    .detailed-offer-brief-char-info-second-div {
-        text-align: center;
-    }
-
-    .location-interest-div {
-        scale: 0.9;
-        margin-block-start: 900px;
-    }
-}
-
-@media screen and (max-width: 1166px) and (min-width: 900px) {
-    #modalImg{
-        max-width: 1050px;
-        min-width: 850px;
-        width: 100%;
-    }
-    .detailed-offer-title-h1 {
-        font-size: 50px;
-        max-width: 1130px;
-        text-align: center;
-    }
-
-    .detailed-offer-pictures-info-and-contact-info {
-        flex-direction: column;
-    }
-
-    .detailed-offer-contact-agent-apt-info {
-        margin-block: 100px;
-        width: 100%;
-    }
-
-    #full-name-input {
-        width: 100%;
-    }
-
-    #phone-number-input {
-        width: 100%;
-    }
-
-    #email-input {
-        width: 100%;
-    }
-
-    #your-message-textarea {
-        width: 100%;
-    }
-
-    .check-box-agree-personal-data {
-        justify-content: center;
-    }
-
-    .agree-personal-data-text {
-        text-align: center;
-    }
-
-    .send-message-form {
-        justify-content: center;
-        display: flex;
-    }
-
-    .detailed-offer-agent-information {
-        width: 100%;
-    }
-
-    .detailed-offer-brief-characteristics-information {
-        width: 100%;
-    }
-
-    .detailed-offer-brief-char-info-second-div {
-        text-align: center;
-    }
-
-    .location-interest-div {
-        margin-block-start: 900px;
-    }
-
-    .inline-interested-in-imgs {
-        grid-template-columns: auto auto;
-    }
-    .detailed-offer-interested-in-txt-with-img p{
-        position: relative;
-    }
-    
-    .inline-interested-in-imgs p {
-        justify-content: center;
-        bottom: 65px;
-    }
-    .inline-interested-in-imgs-with-paragraph-1 p {
-        margin-inline-start: unset;
-    }
-    
-    .inline-interested-in-imgs-with-paragraph-2 p {
-        margin-inline-start: unset;
-    }
-    
-    .inline-interested-in-imgs-with-paragraph-3 p {
-        margin-inline-start: unset;
-    }
-    
-    .inline-interested-in-imgs-with-paragraph-4 p {
-        margin-inline-start: unset;
-    }
-}
-
-@media screen and (max-width: 899px) and (min-width: 550px) {
-    #modalImg{
-        max-width: 825px;
-        width: 100%;
-        min-width: 525px;
-    }
-    .detailed-offer-title-h1 {
-        font-size: 40px;
-        max-width: 1130px;
-        text-align: center;
-    }
-
-    .big-apt-picture {
-        scale: 0.75;
-        margin-block-start: -70px;
-        margin-left: 60px;
-    }
-
-    .swiper {
-        margin-block-start: -40px;
-        max-width: 400px;
-    }
-
-    .swiper-slide {
-        scale: 1.05;
-    }
-
-    .detailed-offer-small-img-item {
-        grid-template-columns: auto;
-    }
-
-    .info-icons-descriptions {
-        margin-inline: 120px;
-        scale: 0.9;
-    }
-
-    .detailed-offer-type-space-location {
-        display: flex;
-        align-items: center;
-        padding-inline: 20px;
-    }
-
-    .detailed-offer-type-space-location p {
-        font-size: 21px;
-        font-weight: bold;
-        font-family: 'Merriweather';
-        margin-inline: 20px;
-    }
-
-    .detailed-offer-mortgage {
-        margin-inline: 183px;
-        margin-block: 10px;
-        width: 530px;
-    }
-
-    #mortgage-text {
-        font-size: 16px;
-    }
-
-    #mortgage-amount {
-        font-size: 20.25px;
-    }
-
-    .detailed-offer-get-a-mortgage-btn a {
-        font-size: 16px;
-    }
-
-    .detailed-offer-paragraphs-only {
-        margin-block-end: 50px;
-    }
-
-    .detailed-offer-section1-paragraph {
-        max-width: 500px;
-        margin-inline: 200px;
-    }
-
-    #detailed-offer-paragraph-part-1 {
-        max-width: 500px;
-    }
-
-    #detailed-offer-paragraph-part-2 {
-        max-width: 500px;
-    }
-
-    #detailed-offer-paragraph-part-3 {
-        max-width: 500px;
-    }
-
-    .detailed-offer-info-title {
-        font-size: 20px;
-    }
-
-    .detailed-offer-precise-location-map {
-        margin-inline-start: 110px;
-        scale: 0.8;
-    }
-
-    .detailed-offer-pictures-info-and-contact-info {
-        flex-direction: column;
-        align-items: center;
-    }
-    /* FIXING FOR MOBILE */
-    .detailed-offer-contact-agent-apt-info {
-        margin-block: 100px;
-        width: 100%;
-        max-width: 500px;
-    }
-
-    #full-name-input {
-        width: 100%;
-        max-width: 500px;
-    }
-
-    #phone-number-input {
-        width: 100%;
-        max-width: 500px;
-    }
-
-    #email-input {
-        width: 100%;
-        max-width: 500px;
-    }
-
-    #your-message-textarea {
-        width: 100%;
-        max-width: 500px;
-    }
-    /* FIXING FOR MOBILE */
-    .check-box-agree-personal-data {
-        justify-content: center;
-    }
-
-    .agree-personal-data-text {
-        text-align: center;
-    }
-
-    .send-message-form {
-        justify-content: center;
-        display: flex;
-    }
-
-    .detailed-offer-agent-information {
-        width: 100%;
-    }
-
-    .detailed-offer-brief-characteristics-information {
-        width: 100%;
-    }
-
-    .detailed-offer-brief-char-info-second-div {
-        text-align: center;
-    }
-
-    .location-interest-div {
-        margin-block-start: 900px;
-    }
-
-    .inline-interested-in-imgs {
-        grid-template-columns: auto auto;
-        scale: 0.9;
-    }
-    .detailed-offer-interested-in-txt-with-img p{
-        position: relative;
-    }
-    
-    .inline-interested-in-imgs p {
-        justify-content: center;
-        bottom: 65px;
-    }
-    .inline-interested-in-imgs-with-paragraph-1 p {
-        margin-inline-start: unset;
-    }
-    
-    .inline-interested-in-imgs-with-paragraph-2 p {
-        margin-inline-start: unset;
-    }
-    
-    .inline-interested-in-imgs-with-paragraph-3 p {
-        margin-inline-start: unset;
-    }
-    
-    .inline-interested-in-imgs-with-paragraph-4 p {
-        margin-inline-start: unset;
-    }
-}
-@media screen and (max-width: 549px){
-    #modalImg{
-        max-width: 500px;
-        min-width: 300px;
-        width: 100%;
-    }
-    .detailed-offer-title-h1 {
-        font-size: 30px;
-        max-width: 1130px;
-        text-align: center;
-    }
-    .big-apt-div{
-        scale: 0.9;
-    }
-    .big-apt-picture {
-        max-width: 450px;
-        margin-block-start: -70px;
-        margin-left: 220px;
-    }
-
-    .swiper {
-        max-width: 330px;
-    }
-
-    .swiper-slide {
-        scale: 0.97;
-    }
-
-    .detailed-offer-small-img-item {
-        grid-template-columns: auto;
-    }
-
-    .info-icons-descriptions {
-        margin-inline: 0px;
-        scale: 0.9;
-        flex-direction: column;
-        align-items: center;
-    }
-    .detailed-offer-type-space-location {
-        display: flex;
-        margin-block: 10px;
-        align-items: end;
-        padding-inline: 20px;
-    }
-
-    .detailed-offer-type-space-location p {
-        font-size: 21px;
-        font-weight: bold;
-        font-family: 'Merriweather';
-        margin-inline: 20px;
-    }
-
-    .detailed-offer-mortgage {
-        margin-inline: 183px;
-        margin-block: 10px;
-        width: 530px;
-        height: 130px;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    #mortgage-text {
-        font-size: 16px;
-    }
-
-    #mortgage-amount {
-        font-size: 20.25px;
-    }
-
-    .detailed-offer-get-a-mortgage-btn {
-        font-size: 16px;
-        margin-block-start: 20px;
-    }
-
-    .detailed-offer-paragraphs-only {
-        margin-block-end: 50px;
-    }
-
-    .detailed-offer-section1-paragraph {
-        max-width: 320px;
-        margin-inline: 300px;
-    }
-
-    #detailed-offer-paragraph-part-1 {
-        max-width: 320px;
-    }
-
-    #detailed-offer-paragraph-part-2 {
-        max-width: 320px;
-    }
-
-    #detailed-offer-paragraph-part-3 {
-        max-width: 320px;
-    }
-
-    .detailed-offer-info-title {
-        font-size: 20px;
-    }
-    .detailed-offer-pictures-info-and-contact-info {
-        flex-direction: column;
-        align-items: center;
-    }
-    .detailed-offer-precise-location-map {
-        margin-inline-start: 242.5px;
-        max-width: 410px;
-        width: 110%;
-        min-width: 400px;
-        display: flex;
-        justify-content: center;
-    }
-    .detailed-offer-precise-location-map img{
-        max-width: 410px;
-        width: 100%;
-        min-width: 400px;
-    }
-    /* FIXING FOR MOBILE */
-    .detailed-offer-contact-agent-apt-info {
-        margin-block: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 500px;
-        min-width: 100%;
-        width: 310px;
-    }
-
-    #full-name-input {
-        max-width: 500px;
-        min-width: 100%;
-        width: 310px;
-    }
-
-    #phone-number-input {
-        max-width: 500px;
-        min-width: 100%;
-        width: 310px;
-    }
-
-    #email-input {
-        max-width: 500px;
-        min-width: 100%;
-        width: 310px;
-    }
-
-    #your-message-textarea {
-       max-width: 500px;
-        min-width: 100%;
-        width: 310px;
-    }
-    /* FIXING FOR MOBILE */
-    .check-box-agree-personal-data {
-        justify-content: center;
-    }
-
-    .agree-personal-data-text {
-        text-align: center;
-    }
-
-    .detailed-offer-agent-information {
-        width: 100%;
-    }
-
-    .detailed-offer-brief-characteristics-information {
-        width: 100%;
-    }
-
-    .detailed-offer-brief-char-info-second-div {
-        text-align: center;
-    }
-
-    .location-interest-div {
-        margin-block-start: 900px;
-    }
-    .detailed-offer-interested-in-txt-with-img p{
-        position: relative;
-    }
-    .inline-interested-in-imgs {
-        grid-template-columns: auto;
-    }
-    
-    .inline-interested-in-imgs p {
-        justify-content: center;
-        bottom: 65px;
-    }
-    .inline-interested-in-imgs-with-paragraph-1 p {
-        margin-inline-start: unset;
-    }
-    
-    .inline-interested-in-imgs-with-paragraph-2 p {
-        margin-inline-start: unset;
-    }
-    
-    .inline-interested-in-imgs-with-paragraph-3 p {
-        margin-inline-start: unset;
-    }
-    
-    .inline-interested-in-imgs-with-paragraph-4 p {
-        margin-inline-start: unset;
-    }
-    
-}
-@media screen and (max-width: 400px){
-    .big-apt-picture{
-        scale: 1;
-        width: 100%;
-        margin-left: 237px;
-        max-width: 420px;
-        min-width: 420px;
-    }
-    .detailed-offer-precise-location-map {
-        margin-inline-start: 247.5px;
-        max-width: 400px;
-        width: 110%;
-        min-width: 300px;
-        display: flex;
-        justify-content: center;
-    }
-    .detailed-offer-precise-location-map img{
-        max-width: 400px;
-        width: 85%;
-        min-width: 300px;
-    }
 }
