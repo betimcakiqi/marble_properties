@@ -277,11 +277,11 @@
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
-    top: var(--swiper-navigation-top-offset, 820px);
+    top: var(--swiper-navigation-top-offset, 839px);
     width: calc(var(--swiper-navigation-size)/ 44 * 27);
     height: var(--swiper-navigation-size);
     margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-    z-index: 10;
+    z-index: 1;
     cursor: pointer;
     display: flex;
     align-items: center;

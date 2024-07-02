@@ -23,8 +23,20 @@ function hideModal() {
     document.body.style.overflow = "auto"; // Enable scrolling
 }
 
-// Get all small images and add click event listener to each
-var imgs = document.querySelectorAll(".small-img");
+// Function to change modal image source with transition
+function changeModalImage(src) {
+    // Fade out modal content
+    modalContent.style.opacity = "0";
+
+    // Delay before changing image source
+    setTimeout(function() {
+        modalImg.src = src; // Change image source
+        modalContent.style.opacity = "1"; // Fade in new image
+    }, 150); // Adjust delay time as needed (300 milliseconds in this case)
+}
+
+// Get all small and big images and add click event listener to each
+var imgs = document.querySelectorAll(".small-img, .big-img");
 
 imgs.forEach(function(img, index) {
     img.addEventListener("click", function() {
@@ -59,9 +71,9 @@ document.addEventListener("keydown", function(event) {
     // Change image on arrow key press
     if (event.key === "ArrowLeft") {
         currentImageIndex = (currentImageIndex - 1 + imageSources.length) % imageSources.length;
-        modalImg.src = imageSources[currentImageIndex];
+        changeModalImage(imageSources[currentImageIndex]);
     } else if (event.key === "ArrowRight") {
         currentImageIndex = (currentImageIndex + 1) % imageSources.length;
-        modalImg.src = imageSources[currentImageIndex];
+        changeModalImage(imageSources[currentImageIndex]);
     }
 });

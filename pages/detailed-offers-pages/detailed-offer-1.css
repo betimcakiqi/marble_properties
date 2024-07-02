@@ -52,8 +52,8 @@ input:focus {
     height: 100%;
     background-color: #000c2cfa;
     opacity: 0; /* Initially hidden */
-    transition: opacity 0.2s;
-    pointer-events: none; /* Initially not clickable */
+    transition: opacity 0.15s;
+    pointer-events: none;
 }
 
 /* Modal Content (image) */
@@ -65,12 +65,15 @@ input:focus {
     max-height: 100%;
     position: absolute;
     opacity: 0; /* Initially hidden */
-    transition: opacity 0.2s;
+    transition: opacity 0.15s;
 }
 #modalImg{
+    width: 100%;
     max-width: 1200px;
     min-width: 1200px;
-    width: 100%;
+    max-height: 600px;
+    min-height: 600px;
+    border-radius: 25px;
 }
 .small-img{
     cursor: pointer;
@@ -84,15 +87,16 @@ input:focus {
 /* Close button */
 .close {
     position: absolute;
-    color: #ffffff;
-    bottom: -50px;
+    top: 15px;
+    right: 15px;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%);
 }
-
 .close:hover,
 .close:focus {
-    color: #A90000;
-    transition: color 0.2s linear;
+    filter: brightness(0) saturate(100%) invert(12%) sepia(78%) saturate(5077%) hue-rotate(4deg) brightness(81%) contrast(120%);
 
 }
 
@@ -106,19 +110,19 @@ input:focus {
     flex-direction: column;
     align-items: center;
     position: relative;
-    scale: 0.98;
+    margin-right: 20px;
 }
 
 .detailed-offer-title {
     justify-content: center;
     display: flex;
-    margin-right: 15px;
+    margin-right: -30px;
 }
 
 .detailed-offer-title-h1 {
     line-height: 69px;
     font-family: 'Merriweather';
-    margin-top: 184px;
+    margin-top: 192px;
     font-size: 53px;
     max-width: 1150px;
 }
@@ -128,10 +132,14 @@ input:focus {
     margin-block: 50px;
     justify-content: center;
 }
-
-.big-apt-picture {
-    scale: 1.1;
-    margin-inline: 58px;
+.big-apt-picture{
+    border-radius: 4px;
+    max-width: 750px;
+    min-width: 750px;
+    max-height: 400px;
+    min-height: 400px;
+    margin-inline: 68px;
+    margin-block-end: 16px;
 }
 
 .detailed-offer-pictures-and-info {
@@ -149,12 +157,15 @@ input:focus {
 }
 .swiper-slide img{
     max-width: 205px;
+    max-height: 85px;
+    min-width: 191px;
+    border-radius: 4px;
 }
 
 .info-icons-descriptions {
     display: flex;
     margin-block: 30px;
-    margin-inline: 115px;
+    margin-inline: 118px;
     width: 100%;
 }
 
@@ -175,7 +186,7 @@ input:focus {
     display: flex;
     align-items: center;
     background-color: #F3F3FA;
-    margin-inline: 135px;
+    margin-inline: 140px;
     margin-block: 20px;
     border-radius: 4px;
     justify-content: space-between;
@@ -223,7 +234,7 @@ input:focus {
 
 .detailed-offer-section1-paragraph {
     max-width: 610px;
-    margin-inline: 140px;
+    margin-inline: 142px;
 }
 
 .detailed-offer-section1-paragraph p {
