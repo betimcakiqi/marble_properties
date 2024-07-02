@@ -1,6 +1,12 @@
 #top-offer-grid-item img {
-    width: 340px;
-    height: auto;
+    width: 350px;
+    max-width: 350px;
+    min-width: 350px;
+    height: 250px;
+    max-height: 250px;
+    min-height: 250px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
 }
 
 #top-offer-grid-item a {
@@ -19,7 +25,7 @@
 #top-offer-grid-item {
     border-radius: 4px;
     background-color: #FFFFFF;
-    margin-inline: 30px;
+    margin-inline: 20px;
     box-shadow: 0 2px 4px 0 #F3FAFA;
     border: 1px solid #FFFFFF;
 

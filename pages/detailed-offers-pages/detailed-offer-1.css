@@ -75,7 +75,7 @@ input:focus {
     min-height: 600px;
     border-radius: 25px;
 }
-.small-img{
+.small-img, .big-img{
     cursor: pointer;
 }
 /* Show the modal and its content */

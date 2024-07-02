@@ -1,6 +1,6 @@
 const rangevalue = document.querySelector(".slider-container .price-slider");
 const rangeInputvalue = document.querySelectorAll(".range-input input");
-let priceGap = 69000;
+let priceGap = 3000000;
 
 const priceInputvalue = document.querySelectorAll(".price-input input");
 
@@ -33,10 +33,10 @@ for (let i = 0; i < priceInputvalue.length; i++) {
             minp = 0;
         }
 
-        if (maxp > 980000) {
-            alert("maximum price cannot be greater than 980000");
-            priceInputvalue[1].value = formatValueWithEuro(980000);
-            maxp = 980000;
+        if (maxp > 50000000) {
+            alert("maximum price cannot be greater than 50000000");
+            priceInputvalue[1].value = formatValueWithEuro(50000000);
+            maxp = 50000000;
         }
 
         if (minp > maxp - priceGap) {
