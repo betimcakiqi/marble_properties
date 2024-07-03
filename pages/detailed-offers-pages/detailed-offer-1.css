@@ -489,14 +489,14 @@ input:focus {
 }
 
 .detailed-offer-agent-information img {
-    margin-block: 25px;
-    max-width: 100px;
-    max-height: 100px;
-    min-width: 100px;
-    min-height: 100px;
+    margin-block: 24px;
+    max-width: 126px;
+    min-width: 126px;
+    max-height: 126px;
+    min-height: 126px;
     width: 100%;
     height: 100%;
-    border-radius: 75px;
+    border-radius: 63px;
 }
 
 .detailed-offer-agent-information span {
