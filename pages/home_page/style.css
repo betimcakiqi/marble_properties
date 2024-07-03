@@ -300,10 +300,9 @@ special-offers-sec {
 }
 
 .showall-button a:hover {
-    background-color: #6E8AE9;
     border: 2px solid #6E8AE9;
-    color: #FFFFFF;
-    transition: background-color 0.3s;
+    color: #6E8AE9;
+    transition:0.3s;
 }
 
 /* SECTION 2 TXT END / START IMG */
