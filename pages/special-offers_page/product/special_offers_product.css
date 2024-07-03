@@ -1,3 +1,6 @@
+:not(:hover){
+    transition: 0.3s ease-in-out;
+}
 #top-offer-grid-item img {
     width: 350px;
     max-width: 350px;

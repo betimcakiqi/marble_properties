@@ -27,7 +27,7 @@ body {
     overflow-x: hidden;
 }
 :not(:hover){
-    transition: 0.3s ease-in-out;
+    transition: background-color 0.3s, border 0.3s;
 }
 section {
     display: block;
@@ -257,6 +257,9 @@ input::-webkit-inner-spin-button {
     right: 10px;
     border-radius: 5px;
     background: #A3B1E1;
+}
+.slider-container .price-slider:not(:hover) {
+    transition: 0s;
 }
 
 .range-input {
@@ -583,8 +586,6 @@ input[type="range"]::-webkit-slider-thumb {
         padding-inline: 20px;
 
     }
-
-    search-for-an-offer-container {}
 
     .search-for-an-offer-title-h1 {
         font-size: 3.1em;
