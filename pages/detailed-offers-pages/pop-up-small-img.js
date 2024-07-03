@@ -32,7 +32,7 @@ function changeModalImage(src) {
     setTimeout(function () {
         modalImg.src = src; // Change image source
         modalContent.style.opacity = "1"; // Fade in new image
-    }, 150); // Adjust delay time as needed (300 milliseconds in this case)
+    }, 300); // Adjust delay time as needed (300 milliseconds in this case)
 }
 
 // Get all small and big images and add click event listener to each
