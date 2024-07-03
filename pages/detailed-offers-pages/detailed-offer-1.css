@@ -30,6 +30,7 @@ body {
 input:focus {
     outline: none;
 }
+
 ::placeholder {
     color: rgba(20, 27, 45, 0.5);
     font-weight: 500;
@@ -121,8 +122,8 @@ input:focus {
 }
 
 .detailed-offer-title {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     margin-right: -30px;
 }
 
@@ -141,19 +142,21 @@ input:focus {
     margin-right: 12px;
 }
 
-.big-apt-div {
+.big-apt-div,
+.big-apt-picture {
     max-width: 750px;
     min-width: 750px;
-    max-height: 400px;
-    min-height: 400px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.big-apt-div {
     margin-inline: 32px;
     margin-block-end: 16px;
 }
 
 .big-apt-picture {
-    border-radius: 4px;
-    max-width: 750px;
-    min-width: 750px;
     max-height: 400px;
     min-height: 400px;
 }
@@ -300,6 +303,7 @@ input:focus {
     text-align: center;
     margin-block-end: 100px;
 }
+
 .interested-in-title {
     font-family: 'Merriweather';
     margin-block: 50px;
@@ -310,6 +314,7 @@ input:focus {
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
+
 .inline-interested-in-imgs p {
     font-family: 'Merriweather';
     color: #FFFFFF;
@@ -319,18 +324,22 @@ input:focus {
     justify-content: center;
     font-size: 1.344rem;
 }
+
 .interested-txt-in-img-1 p,
 .interested-txt-in-img-2 p,
-.interested-txt-in-img-3 p ,
-.interested-txt-in-img-4 p{
+.interested-txt-in-img-3 p,
+.interested-txt-in-img-4 p {
     margin-top: -66px;
 }
-.hover-img-p{
+
+.hover-img-p {
     transition: 0.3s;
 }
+
 .hover-img-p:hover {
     transform: perspective(1000px) rotateY(-10deg) scale(1.05);
 }
+
 /* GRID INTERESTED IN */
 
 /* CONTACT-AGENT-BRIEF */
@@ -368,11 +377,14 @@ input:focus {
     padding-inline: 10px;
 }
 
-.name-tel-email-div input:focus, #your-message-textarea:focus {
+.name-tel-email-div input:focus,
+#your-message-textarea:focus {
     transition: border 0.05s cubic-bezier(0.39, 0.58, 0.57, 1);
     border: 2px solid #1C3988;
 }
-.name-tel-email-div input, #your-message-textarea {
+
+.name-tel-email-div input,
+#your-message-textarea {
     transition: border 0.1s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
@@ -464,7 +476,9 @@ input:focus {
     color: #1C3988;
     transition: color 0.3s;
 }
-.agree-personal-data-text a:hover, .detailed-offer-agent-information a:hover {
+
+.agree-personal-data-text a:hover,
+.detailed-offer-agent-information a:hover {
     color: #003CFF;
 }
 
@@ -549,3 +563,410 @@ input:focus {
 }
 
 /* CONTACT-AGENT-BRIEF */
+@media screen and (max-width: 1166px) {
+    .big-apt-picture {
+        min-width: 850px;
+        max-height: 500px;
+    }
+
+    .detailed-offer-container {
+        margin-right: 0px;
+    }
+
+    .detailed-offer-pictures-info-and-contact-info {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .detailed-offer-title {
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .interested-div {
+        margin-block-start: 900px;
+    }
+
+    .inline-interested-in-imgs {
+        row-gap: 30px;
+        grid-template-columns: auto auto;
+    }
+
+    /* CONTACT-AGENT-BRIEF */
+    .detailed-offer-contact-agent-apt-info {
+        margin-block-start: 50px;
+        min-width: 850px;
+    }
+
+    #full-name-input,
+    #phone-number-input,
+    #email-input,
+    #your-message-textarea {
+        width: 100%;
+    }
+
+    .check-box-agree-personal-data {
+        justify-content: center;
+    }
+
+    .agree-personal-data-text {
+        max-width: 100%;
+    }
+
+    .send-message-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .detailed-offer-agent-information {
+        margin-block-start: 50px;
+        margin-block-end: 13px;
+        width: 100%;
+    }
+
+    .detailed-offer-brief-characteristics-information {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* CONTACT-AGENT-BRIEF */
+}
+
+@media screen and (max-width: 899px) {
+    .detailed-offer-title-h1 {
+        font-size: 45px;
+    }
+
+    .big-apt-picture {
+        max-width: 770px;
+        min-width: 770px;
+    }
+
+    .swiper {
+        max-width: 410px;
+    }
+
+    .detailed-offer-contact-agent-apt-info {
+        min-width: 770px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .detailed-offer-title-h1 {
+        font-size: 45px;
+    }
+
+    .big-apt-picture {
+        max-width: 650px;
+        min-width: 650px;
+    }
+
+    .detailed-offer-contact-agent-apt-info {
+        min-width: 650px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .detailed-offer-title-h1 {
+        font-size: 45px;
+    }
+
+    .big-apt-picture {
+        max-width: 530px;
+        min-width: 530px;
+    }
+
+    .info-icons-descriptions {
+        display: flex;
+        justify-content: center;
+        margin-inline: 0px;
+    }
+
+    .detailed-offer-type-space-location {
+        padding-inline: 10px;
+    }
+
+    .detailed-offer-type-space-location img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .detailed-offer-type-space-location p {
+        font-size: 1.3rem;
+        margin-inline: 10px;
+    }
+
+    .detailed-offer-mortgage {
+        margin-inline: 141.5px;
+        width: 530px;
+    }
+
+    .detailed-offer-section1-paragraph {
+        margin-inline: 158px;
+    }
+
+    #detailed-offer-paragraph-part-1,
+    #detailed-offer-paragraph-part-2,
+    #detailed-offer-paragraph-part-3 {
+        max-width: 520px;
+    }
+
+    .detailed-offer-precise-location-map {
+        margin-inline-start: 142.5px;
+        max-width: 530px;
+    }
+
+    .detailed-offer-precise-location-map img {
+        max-width: 530px;
+    }
+
+    .hover-img-p img {
+        max-width: 280px;
+    }
+
+    .detailed-offer-contact-agent-apt-info {
+        min-width: 530px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .detailed-offer-title-h1 {
+        line-height: 45px;
+        font-size: 2.2rem;
+        margin-top: 100px;
+    }
+
+    .big-apt-picture {
+        max-width: 440px;
+        min-width: 440px;
+    }
+
+    .swiper {
+        max-width: 290px;
+    }
+
+    .swiper-slide img {
+        max-width: 140px;
+        min-width: 140px;
+        min-height: 85px;
+    }
+
+    .info-icons-descriptions {
+        display: flex;
+        justify-content: center;
+        margin-inline: 0px;
+    }
+
+    .detailed-offer-type-space-location {
+        padding-inline: 5px;
+    }
+
+    .detailed-offer-type-space-location img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .detailed-offer-type-space-location p {
+        font-size: 1.3rem;
+        margin-inline: 5px;
+    }
+
+    .detailed-offer-mortgage {
+        display: flex;
+        margin-inline: 187px;
+        width: 440px;
+    }
+
+    .detailed-offer-section1-paragraph {
+        margin-inline: 200px;
+    }
+
+    #detailed-offer-paragraph-part-1,
+    #detailed-offer-paragraph-part-2,
+    #detailed-offer-paragraph-part-3 {
+        max-width: 440px;
+    }
+
+    .detailed-offer-precise-location-map {
+        margin-inline-start: 186.5px;
+        max-width: 440px;
+    }
+
+    .detailed-offer-precise-location-map img {
+        max-width: 440px;
+    }
+
+    .hover-img-p img {
+        max-width: 230px;
+    }
+
+    .interested-txt-in-img-1 p,
+    .interested-txt-in-img-2 p,
+    .interested-txt-in-img-3 p,
+    .interested-txt-in-img-4 p {
+        margin-top: -50px;
+        font-size: 1.1rem;
+    }
+
+    .detailed-offer-contact-agent-apt-info {
+        min-width: 440px;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .detailed-offer-title-h1 {
+        font-size: 2rem;
+    }
+
+    .big-apt-picture {
+        max-width: 365px;
+        min-width: 365px;
+        max-height: 290px;
+        min-height: 290px;
+    }
+
+    .swiper {
+        max-width: 280px;
+    }
+
+    .swiper-slide img {
+        max-width: 135px;
+        min-width: 135px;
+    }
+
+    .info-icons-descriptions {
+        display: grid;
+        margin-block: 20px;
+        row-gap: 5px;
+        justify-content: center;
+    }
+
+    .detailed-offer-type-space-location {
+        flex-direction: column;
+    }
+
+    .detailed-offer-type-space-location img {
+        width: 30px;
+        height: 30px;
+        margin-block: 5px;
+    }
+
+    .detailed-offer-type-space-location p {
+        font-size: 1.3rem;
+        margin-inline: 25px;
+    }
+
+    .detailed-offer-mortgage {
+        margin-block: 5px;
+        margin-inline: 224px;
+        width: 365px;
+        padding-inline: 5px;
+    }
+
+    #mortgage-amount {
+        font-size: 1.1rem;
+    }
+
+    .detailed-offer-section1-paragraph {
+        margin-inline: 250px;
+    }
+
+    #detailed-offer-paragraph-part-1,
+    #detailed-offer-paragraph-part-2,
+    #detailed-offer-paragraph-part-3 {
+        max-width: 365px;
+    }
+
+    .detailed-offer-precise-location-map {
+        margin-inline-start: 225px;
+        max-width: 365px;
+    }
+
+    .detailed-offer-precise-location-map img {
+        max-width: 365px;
+    }
+
+    .interested-div {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .interested-in-title {
+        font-size: 1.9rem;
+        margin-inline: 90px;
+        text-align: center
+    }
+
+    .inline-interested-in-imgs {
+        justify-content: center;
+        grid-template-columns: auto;
+    }
+
+    .hover-img-p {
+        max-width: 220px;
+    }
+
+    .hover-img-p img {
+        max-width: 220px;
+    }
+    .agree-personal-data-custom-checkbox-label {
+        width: 30px;
+        height: 25px;
+        margin-left: 10px;
+    }
+    .detailed-offer-contact-agent-apt-info {
+        min-width: 365px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .big-apt-picture {
+        max-width: 310px;
+        min-width: 310px;
+    }
+
+    .swiper {
+        max-width: 260px;
+    }
+
+    .swiper-slide img {
+        max-width: 125px;
+        min-width: 125px;
+    }
+    .detailed-offer-mortgage {
+        flex-direction: column;
+        height: 150px;
+        padding-block: 20px;
+    }
+    .inline-interested-in-imgs {
+        grid-template-columns: auto;
+    }
+
+    .hover-img-p {
+        max-width: 250px;
+    }
+
+    .hover-img-p img {
+        max-width: 250px;
+    }
+
+    .interested-txt-in-img-1 p,
+    .interested-txt-in-img-2 p,
+    .interested-txt-in-img-3 p,
+    .interested-txt-in-img-4 p {
+        margin-top: -56px;
+        font-size: 1.2rem;
+    }
+
+    .detailed-offer-contact-agent-apt-info {
+        max-width: 310px;
+        min-width: 310px;
+    }
+
+    .agree-personal-data-custom-checkbox-label {
+        width: 30px;
+        height: 25px;
+    }
+}
