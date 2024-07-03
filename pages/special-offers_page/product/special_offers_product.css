@@ -1,6 +1,3 @@
-:not(:hover){
-    transition: 0.3s ease-in-out;
-}
 #top-offer-grid-item img {
     width: 350px;
     max-width: 350px;
@@ -31,12 +28,12 @@
     margin-inline: 20px;
     box-shadow: 0 2px 4px 0 #F3FAFA;
     border: 1px solid #FFFFFF;
+    transition: 0.3s cubic-bezier(0.47, 0, 0.75, 0.72);
 
 }
 
 #top-offer-grid-item:hover {
     scale: 1.02;
-    transition: scale 0.2s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 
 #img-cont-title {

@@ -43,8 +43,12 @@
     border: 1px solid #DDDDDD;
     box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
     width: 260px;
-    padding-left: 20px;
-    opacity: 0.4;
+    padding-left: 16px;
+    opacity: 0.5;
+}
+#sub-news-letter-email-address-bar:focus {
+    border: 2px solid #1C3988;
+    opacity: 1;
 }
 
 #sub-news-letter-subscribe-button {
@@ -54,13 +58,13 @@
     color: #1C3988;
     font-weight: 600;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 #sub-news-letter-subscribe-button:hover {
     background-color: #6E8AE9;
     border: 2px solid #6E8AE9;
     color: #FFFFFF;
-    transition: background-color 0.3s;
 }
 
 .sub-newsletter-icon-svg {

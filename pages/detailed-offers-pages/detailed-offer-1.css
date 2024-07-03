@@ -30,9 +30,6 @@ body {
 input:focus {
     outline: none;
 }
-:not(:hover){
-    transition: 0.3s ease-in-out;
-}
 ::placeholder {
     color: rgba(20, 27, 45, 0.5);
     font-weight: 500;
@@ -236,6 +233,7 @@ input:focus {
     border-radius: 4px;
     cursor: pointer;
     border: 2px solid #1C3988;
+    transition: 0.3s;
 }
 
 .detailed-offer-get-a-mortgage-btn a {
@@ -248,7 +246,6 @@ input:focus {
 .detailed-offer-get-a-mortgage-btn button:hover {
     background-color: #6E8AE9;
     border: 2px solid #6E8AE9;
-    transition-duration: 0.3s;
 }
 
 .detailed-offer-paragraphs-only {
@@ -328,12 +325,11 @@ input:focus {
 .interested-txt-in-img-4 p{
     margin-top: -66px;
 }
-
+.hover-img-p{
+    transition: 0.3s;
+}
 .hover-img-p:hover {
     transform: perspective(1000px) rotateY(-10deg) scale(1.05);
-}
-.hover-img-p:hover, .hover-img-p:not(:hover) {
-    transition: transform 0.3s ease-in-out; /* Slow transition when not hovered */
 }
 /* GRID INTERESTED IN */
 
@@ -375,6 +371,9 @@ input:focus {
 .name-tel-email-div input:focus, #your-message-textarea:focus {
     transition: border 0.05s cubic-bezier(0.39, 0.58, 0.57, 1);
     border: 2px solid #1C3988;
+}
+.name-tel-email-div input, #your-message-textarea {
+    transition: border 0.1s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
 .name-tel-email-div p {
@@ -426,6 +425,7 @@ input:focus {
     border: 2px solid #1C3988;
     border-radius: 4px;
     cursor: pointer;
+    transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .agree-personal-data-custom-checkbox:checked+.agree-personal-data-custom-checkbox-label {
@@ -443,7 +443,6 @@ input:focus {
     /* Path to your SVG file */
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: opacity 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
 /* Show the checkmark/indicator when checked */
@@ -463,10 +462,10 @@ input:focus {
     text-decoration: underline;
     font-weight: 410;
     color: #1C3988;
+    transition: color 0.3s;
 }
 .agree-personal-data-text a:hover, .detailed-offer-agent-information a:hover {
     color: #003CFF;
-    transition: color 0.3s;
 }
 
 .send-message-form input {
@@ -479,12 +478,12 @@ input:focus {
     font-weight: 700;
     color: #1C3988;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .send-message-form input:hover {
     border: 2px solid #6E8AE9;
     color: #6E8AE9;
-    transition-duration: 0.3s;
 }
 
 .detailed-offer-agent-information {
@@ -526,6 +525,7 @@ input:focus {
     color: #1C3988;
     font-weight: 450;
     font-size: 17px;
+    transition: color 0.3s;
 }
 
 .detailed-offer-brief-characteristics-information {

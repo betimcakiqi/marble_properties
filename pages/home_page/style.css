@@ -43,9 +43,6 @@ input,
 select:focus {
     outline: none;
 }
-:not(:hover){
-    transition: 0.3s ease-in-out;
-}
 /* SECTION 1 START */
 
 
@@ -230,12 +227,11 @@ section {
     height: 50px;
     display: flex;
     align-items: center;
+    transition: background-color 0.3s;
 }
 
 #searchbuton:hover {
     background-color: #6E8AE9;
-    transition: background-color;
-    transition-duration: 0.3s;
 }
 
 #imagehomepage {
@@ -297,12 +293,12 @@ special-offers-sec {
     border-radius: 4px;
     text-decoration: none;
     color: #1C3988;
+    transition: 0.3s;
 }
 
 .showall-button a:hover {
     border: 2px solid #6E8AE9;
     color: #6E8AE9;
-    transition:0.3s;
 }
 
 /* SECTION 2 TXT END / START IMG */

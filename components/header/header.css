@@ -1,6 +1,3 @@
-*:not(:hover){
-    transition: all 0ms;
-}
 /* HEADER START  */
 header {
     overflow-x: hidden;
@@ -94,6 +91,8 @@ li {
     cursor: pointer;
     border-radius: 4px;
     margin-inline-start: 300px;
+    transition: 0.3s;
+
 }
 
 #contactus,
@@ -103,10 +102,6 @@ li {
     text-decoration: none;
     color: #FFFFFF;
     list-style: none;
-}
-
-#contactus button:hover, #contactus button:not(:hover) {
-    transition: background-color 0.3s;
 }
 #contactus button:hover{
     background-color: #6E8AE9;

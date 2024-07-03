@@ -26,9 +26,6 @@ body {
     position: relative;
     overflow-x: hidden;
 }
-:not(:hover){
-    transition: background-color 0.3s, border 0.3s;
-}
 section {
     display: block;
     width: 100%;
@@ -122,9 +119,12 @@ select {
     background-color: #FFFFFF;
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.1);
     color: #141B2D;
-
+    transition: 0.3s;
 }
-
+.enter-keyword-bar input:focus{
+    border: 2px solid #1C3988;
+    transition: 0.05s;
+}
 .search-button {
     flex-direction: row-reverse;
 }
@@ -141,6 +141,7 @@ select {
     border-radius: 4px;
     font-weight: 500;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .search-button img {
@@ -156,8 +157,6 @@ select {
 
 #searchbuton:hover {
     background-color: #6E8AE9;
-    transition: background-color;
-    transition-duration: 0.3s;
 }
 
 #search-offer-select {
@@ -258,9 +257,6 @@ input::-webkit-inner-spin-button {
     border-radius: 5px;
     background: #A3B1E1;
 }
-.slider-container .price-slider:not(:hover) {
-    transition: 0s;
-}
 
 .range-input {
     position: relative;
@@ -303,14 +299,13 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 4px;
     text-decoration: none;
     color: #1C3988;
-    cursor: pointer
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .offers-show-next-button input:hover {
-    background-color: #6E8AE9;
     border: 2px solid #6E8AE9;
-    color: #FFFFFF;
-    transition: background-color 0.3s;
+    color: #6E8AE9;
 }
 
 .image-grid-section2 {
