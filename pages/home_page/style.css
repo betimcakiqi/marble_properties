@@ -43,7 +43,9 @@ input,
 select:focus {
     outline: none;
 }
-
+:not(:hover){
+    transition: 0.3s ease-in-out;
+}
 /* SECTION 1 START */
 
 

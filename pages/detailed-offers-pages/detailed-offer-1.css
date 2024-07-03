@@ -30,7 +30,9 @@ body {
 input:focus {
     outline: none;
 }
-
+:not(:hover){
+    transition: 0.3s ease-in-out;
+}
 ::placeholder {
     color: rgba(20, 27, 45, 0.5);
     font-weight: 500;
@@ -292,15 +294,15 @@ input:focus {
     filter: drop-shadow(0px 4px 20px rgba(71, 100, 195, 0.1));
 }
 
-.location-interest-div {
+/* GRID INTERESTED IN */
+
+.interested-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-block-end: 100px;
-    position: relative;
 }
-
 .interested-in-title {
     font-family: 'Merriweather';
     margin-block: 50px;
@@ -311,39 +313,31 @@ input:focus {
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
-
 .inline-interested-in-imgs p {
     font-family: 'Merriweather';
     color: #FFFFFF;
     display: flex;
-    position: absolute;
-    z-index: 10;
+    z-index: 1;
     pointer-events: none;
-    font-size: 21px;
-    bottom: 39px;
+    justify-content: center;
+    font-size: 1.344rem;
 }
-
-.inline-interested-in-imgs-with-paragraph-1 p {
-    margin-inline-start: 35px;
-}
-
-.inline-interested-in-imgs-with-paragraph-2 p {
-    margin-inline-start: 65px;
-}
-
-.inline-interested-in-imgs-with-paragraph-3 p {
-    margin-inline-start: 100px;
-}
-
-.inline-interested-in-imgs-with-paragraph-4 p {
-    margin-inline-start: 70px;
+.interested-txt-in-img-1 p,
+.interested-txt-in-img-2 p,
+.interested-txt-in-img-3 p ,
+.interested-txt-in-img-4 p{
+    margin-top: -66px;
 }
 
 .hover-img-p:hover {
-    scale: 1.03;
-    transition: scale 0.3s ease-in-out;
+    transform: perspective(1000px) rotateY(-10deg) scale(1.05);
 }
+.hover-img-p:hover, .hover-img-p:not(:hover) {
+    transition: transform 0.3s ease-in-out; /* Slow transition when not hovered */
+}
+/* GRID INTERESTED IN */
 
+/* CONTACT-AGENT-BRIEF */
 
 .contact-us-title-h2 {
     font-family: 'Merriweather';
@@ -378,7 +372,8 @@ input:focus {
     padding-inline: 10px;
 }
 
-.name-tel-email-div input:focus {
+.name-tel-email-div input:focus, #your-message-textarea:focus {
+    transition: border 0.05s cubic-bezier(0.39, 0.58, 0.57, 1);
     border: 2px solid #1C3988;
 }
 
@@ -469,6 +464,10 @@ input:focus {
     font-weight: 410;
     color: #1C3988;
 }
+.agree-personal-data-text a:hover, .detailed-offer-agent-information a:hover {
+    color: #003CFF;
+    transition: color 0.3s;
+}
 
 .send-message-form input {
     border: 2px solid #1C3988;
@@ -548,3 +547,5 @@ input:focus {
     font-size: 17px;
     font-weight: 450;
 }
+
+/* CONTACT-AGENT-BRIEF */

@@ -204,7 +204,7 @@ customElements.define('special-offer-product', ProductComponent);
 document.addEventListener("DOMContentLoaded", () => {
     const productsContainer = document.querySelector('.image-grid-section2');
     const showNextBtn = document.getElementById('show-next-btn');
-    const productsPerClick = 6; // Number of products to add/remove per click
+    const productsPerClick = 12; // Number of products to add/remove per click
     let initialProductsToShow = 6; // Default number of products to show
     const animationDelay = 100; // Delay between each product animation in milliseconds
     let currentIndex;

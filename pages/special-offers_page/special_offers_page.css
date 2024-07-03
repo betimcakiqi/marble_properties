@@ -26,7 +26,9 @@ body {
     position: relative;
     overflow-x: hidden;
 }
-
+:not(:hover){
+    transition: 0.3s ease-in-out;
+}
 section {
     display: block;
     width: 100%;
