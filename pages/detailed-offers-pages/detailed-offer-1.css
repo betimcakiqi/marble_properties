@@ -903,13 +903,19 @@ input:focus {
         justify-content: center;
         grid-template-columns: auto;
     }
-
+    .interested-txt-in-img-1 p,
+    .interested-txt-in-img-2 p,
+    .interested-txt-in-img-3 p,
+    .interested-txt-in-img-4 p {
+        margin-top: -65px;
+        font-size: 1.2rem;
+    }
     .hover-img-p {
-        max-width: 220px;
+        max-width: 290px;
     }
 
     .hover-img-p img {
-        max-width: 220px;
+        max-width: 290px;
     }
     .agree-personal-data-custom-checkbox-label {
         width: 30px;
