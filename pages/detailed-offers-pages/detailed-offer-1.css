@@ -51,7 +51,8 @@ input:focus {
     width: 100%;
     height: 100%;
     background-color: #000c2cfa;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
+    /* Initially hidden */
     transition: opacity 0.15s;
     pointer-events: none;
 }
@@ -64,10 +65,12 @@ input:focus {
     max-width: 100%;
     max-height: 100%;
     position: absolute;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
+    /* Initially hidden */
     transition: opacity 0.15s;
 }
-#modalImg{
+
+#modalImg {
     width: 100%;
     max-width: 1200px;
     min-width: 1200px;
@@ -75,13 +78,17 @@ input:focus {
     min-height: 600px;
     border-radius: 25px;
 }
-.small-img, .big-img{
+
+.small-img,
+.big-img {
     cursor: pointer;
 }
+
 /* Show the modal and its content */
 .modal.show {
     opacity: 1;
-    pointer-events: auto; /* Enable clicking */
+    pointer-events: auto;
+    /* Enable clicking */
 }
 
 /* Close button */
@@ -94,6 +101,7 @@ input:focus {
     height: 30px;
     filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%);
 }
+
 .close:hover,
 .close:focus {
     filter: brightness(0) saturate(100%) invert(12%) sepia(78%) saturate(5077%) hue-rotate(4deg) brightness(81%) contrast(120%);
@@ -133,7 +141,8 @@ input:focus {
     justify-content: center;
     margin-right: 12px;
 }
-.big-apt-div{
+
+.big-apt-div {
     max-width: 750px;
     min-width: 750px;
     max-height: 400px;
@@ -141,7 +150,8 @@ input:focus {
     margin-inline: 32px;
     margin-block-end: 16px;
 }
-.big-apt-picture{
+
+.big-apt-picture {
     border-radius: 4px;
     max-width: 750px;
     min-width: 750px;
@@ -154,16 +164,19 @@ input:focus {
     flex-direction: column;
     max-width: 814px;
 }
+
 .swiper {
     max-width: 620px;
     margin-left: 0;
     margin-right: 0;
 }
+
 .swiper-slide {
     display: flex;
     justify-content: center;
 }
-.swiper-slide img{
+
+.swiper-slide img {
     max-width: 205px;
     max-height: 85px;
     min-width: 191px;
@@ -365,6 +378,10 @@ input:focus {
     padding-inline: 10px;
 }
 
+.name-tel-email-div input:focus {
+    border: 2px solid #1C3988;
+}
+
 .name-tel-email-div p {
     margin-bottom: 5px;
 }
@@ -466,9 +483,8 @@ input:focus {
 }
 
 .send-message-form input:hover {
-    background-color: #6E8AE9;
     border: 2px solid #6E8AE9;
-    color: #FFFFFF;
+    color: #6E8AE9;
     transition-duration: 0.3s;
 }
 
