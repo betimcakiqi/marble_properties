@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('.section');
+    const sections = document.querySelectorAll('.sec-and-component');
 
     function revealSections() {
         const triggerBottom = window.innerHeight / 5 * 4;
