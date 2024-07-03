@@ -51,6 +51,7 @@
 #img-cont-city {
     color: #141B2D;
 }
+
 @media screen and (max-width: 1166px) and (min-width: 900px) {
     #top-offer-grid-item img {
         width: 100%;
@@ -78,7 +79,8 @@
         max-width: 340px;
         width: 100%;
     }
-    #top-offer-grid-item{
+
+    #top-offer-grid-item {
         margin-inline: 5px;
     }
 }
@@ -92,14 +94,15 @@
     #top-offer-grid-item span {
         width: 100%;
     }
-    #top-offer-grid-item{
+
+    #top-offer-grid-item {
         margin-inline: 5px;
     }
 }
 
 @media screen and (max-width: 450px) {
     #top-offer-grid-item span {
-        max-width: 340px; 
+        max-width: 340px;
         width: 100%;
     }
 }

@@ -1,4 +1,4 @@
-HEADER START
+/* HEADER START  */
 header {
     overflow-x: hidden;
     display: block;
@@ -124,6 +124,7 @@ li {
     .navigation-bar {
         padding-inline: 50px;
     }
+
     .logoandnavbar ul {
         padding-inline-start: 25px;
         padding-inline-end: 25px;
@@ -137,11 +138,13 @@ li {
         margin-inline-start: 258px;
     }
 }
+
 @media screen and (max-width: 1166px) and (min-width: 900px) {
     .navigation-bar {
         padding-inline: 50px;
         flex-direction: column-reverse
     }
+
     .logoandnavbar {
         display: block;
     }
@@ -187,17 +190,19 @@ li {
 
     #menuIcon,
     #closeIcon {
-    overflow: hidden;
-    position: absolute;
-    cursor: pointer;
-    right: 100px;
-    transform: translateX(100%) scale(1) rotateY(0deg); /* Change to rotateY(0deg) */
-    top: 16px;
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        overflow: hidden;
+        position: absolute;
+        cursor: pointer;
+        right: 100px;
+        transform: translateX(100%) scale(1) rotateY(0deg);
+        /* Change to rotateY(0deg) */
+        top: 16px;
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 }
+
 @media screen and (max-width: 899px) {
     .navigation-bar {
         justify-content: left;
@@ -253,24 +258,27 @@ li {
 
     #menuIcon,
     #closeIcon {
-    overflow: hidden;
-    position: absolute;
-    cursor: pointer;
-    right: 100px;
-    transform: translateX(100%) scale(1) rotateY(0deg); /* Change to rotateY(0deg) */
-    top: 16px;
-    width: 50px;
-    height: 50px;
-    transition: transform 0.30s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        overflow: hidden;
+        position: absolute;
+        cursor: pointer;
+        right: 100px;
+        transform: translateX(100%) scale(1) rotateY(0deg);
+        /* Change to rotateY(0deg) */
+        top: 16px;
+        width: 50px;
+        height: 50px;
+        transition: transform 0.30s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 }
+
 @media screen and (max-width: 549px) {
     .navigation-bar {
         padding-inline: 10px;
         flex-direction: column-reverse
     }
+
     #menuIcon,
     #closeIcon {
-    right: 55px;
+        right: 55px;
     }
 }

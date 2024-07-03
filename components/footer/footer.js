@@ -5,7 +5,7 @@ class FooterComponent extends HTMLElement {
 
     render() {
         this.innerHTML =
-        `
+            `
         <link rel="stylesheet" href="./components/footer/footer.css">
     <footer>
         <div class="sub-newsletter-footer">

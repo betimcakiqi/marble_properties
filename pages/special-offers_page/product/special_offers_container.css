@@ -8,10 +8,12 @@ section {
     display: block;
     width: 100%;
 }
+
 .section {
     padding-inline-start: 50px;
     padding-inline-end: 50px;
 }
+
 #top-offer {
     scale: 0.88;
     overflow-x: hidden;

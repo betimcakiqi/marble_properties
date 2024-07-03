@@ -24,7 +24,7 @@ function initSwiper() {
 initSwiper();
 
 // Update Swiper on window resize
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   if (swiper) {
     swiper.destroy(); // Destroy Swiper instance
   }

@@ -43,13 +43,13 @@ function initOurTeamSwiperOnLoadAndResize() {
   initOurTeamSwiper();
 
   // Re-initialize Swiper when the window is resized
-  window.addEventListener('resize', function() {
+  window.addEventListener('resize', function () {
     initOurTeamSwiper();
   });
 }
 
 // Initialize or reinitialize Swiper when the page loads
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   initOurTeamSwiperOnLoadAndResize();
 });
 
@@ -94,12 +94,12 @@ function initSwiperOnLoadAndResize() {
   initSwiper();
 
   // Re-initialize Swiper when the window is resized
-  window.addEventListener('resize', function() {
+  window.addEventListener('resize', function () {
     initSwiper();
   });
 }
 
 // Initialize or reinitialize Swiper when the page loads
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   initSwiperOnLoadAndResize();
 });

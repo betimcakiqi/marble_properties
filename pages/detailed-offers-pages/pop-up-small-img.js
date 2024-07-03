@@ -29,7 +29,7 @@ function changeModalImage(src) {
     modalContent.style.opacity = "0";
 
     // Delay before changing image source
-    setTimeout(function() {
+    setTimeout(function () {
         modalImg.src = src; // Change image source
         modalContent.style.opacity = "1"; // Fade in new image
     }, 150); // Adjust delay time as needed (300 milliseconds in this case)
@@ -38,8 +38,8 @@ function changeModalImage(src) {
 // Get all small and big images and add click event listener to each
 var imgs = document.querySelectorAll(".small-img, .big-img");
 
-imgs.forEach(function(img, index) {
-    img.addEventListener("click", function() {
+imgs.forEach(function (img, index) {
+    img.addEventListener("click", function () {
         showModal();
         modalImg.src = this.src;
         currentImageIndex = index;
@@ -51,23 +51,23 @@ imgs.forEach(function(img, index) {
 var span = document.querySelector(".close");
 
 // When the user clicks on <span> (x), close the modal
-span.addEventListener("click", function() {
+span.addEventListener("click", function () {
     hideModal();
 });
 
 // Close the modal when user clicks outside the modal content
-window.addEventListener("click", function(event) {
+window.addEventListener("click", function (event) {
     if (event.target === modal) {
         hideModal();
     }
 });
 
 // Close modal when Esc key is pressed
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
         hideModal();
     }
-    
+
     // Change image on arrow key press
     if (event.key === "ArrowLeft") {
         currentImageIndex = (currentImageIndex - 1 + imageSources.length) % imageSources.length;
