@@ -1,3 +1,176 @@
+// Define Products Data
+const productsData = [
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+    {
+        href: "./x_offer_1_page.html",
+        imgSrc: "./assets/properties/malibu_beachhouse/cover.jpg",
+        title: "Luxury Beach House in Malibu with Stunning Ocean Views",
+        price: "10 500 000€",
+        city: "Malibu, California"
+    },
+];
+
+// Product Component Definition
 class ProductComponent extends HTMLElement {
     connectedCallback() {
         this.render();
@@ -24,33 +197,73 @@ class ProductComponent extends HTMLElement {
     }
 }
 
+// Custom Element Registration
 customElements.define('special-offer-product', ProductComponent);
 
+// DOMContentLoaded Event Listener
 document.addEventListener("DOMContentLoaded", () => {
-    const showNextBtn = document.getElementById('show-next-btn');
     const productsContainer = document.querySelector('.image-grid-section2');
-    const products = productsContainer.querySelectorAll('special-offer-product');
+    const showNextBtn = document.getElementById('show-next-btn');
     const productsPerClick = 6; // Number of products to add/remove per click
-    const initialProductsToShow = 12; // Initial number of products to show
-    let currentIndex = initialProductsToShow;
+    let initialProductsToShow = 6; // Default number of products to show
+    const animationDelay = 100; // Delay between each product animation in milliseconds
+    let currentIndex;
+
+    // Determine the number of products to show based on the page
+    if (window.location.pathname.includes('special_offers_page.html')) {
+        initialProductsToShow = 12;
+    }
+    currentIndex = initialProductsToShow;
+
+    // Function to smoothly change opacity over time
+    function animateOpacity(element, targetOpacity, duration, delay) {
+        const startOpacity = parseFloat(element.style.opacity) || 0;
+        const startTime = performance.now();
+
+        function updateOpacity() {
+            const elapsed = performance.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const opacity = startOpacity + progress * (targetOpacity - startOpacity);
+            element.style.opacity = opacity.toFixed(2);
+
+            if (progress < 1) {
+                requestAnimationFrame(updateOpacity);
+            }
+        }
+
+        // Apply delay before starting animation
+        setTimeout(() => {
+            updateOpacity();
+        }, delay);
+    }
 
     // Function to show next batch of products
     function showNextProducts() {
         // Calculate the remaining products to show
-        const remainingProducts = Array.from(products).slice(currentIndex, currentIndex + productsPerClick);
+        const remainingProducts = productsData.slice(currentIndex, currentIndex + productsPerClick);
 
-        // Show each remaining product with transition
-        remainingProducts.forEach((product, index) => {
-            product.style.display = 'block';
-            setTimeout(() => {
-                product.style.opacity = '1';
-            }, index * 100); // Stagger the opacity transition for a smoother effect
+        // Render each remaining product with opacity animation and delay
+        remainingProducts.forEach((productData, index) => {
+            const productElement = document.createElement('special-offer-product');
+            productElement.setAttribute('data-href', productData.href);
+            productElement.setAttribute('data-img-src', productData.imgSrc);
+            productElement.setAttribute('data-title', productData.title);
+            productElement.setAttribute('data-price', productData.price);
+            productElement.setAttribute('data-city', productData.city);
+            productElement.style.opacity = '0'; // Start opacity for animation
+            productsContainer.appendChild(productElement);
+
+            // Calculate delay for each product animation
+            const delay = index * animationDelay;
+
+            // Animate opacity change with delay
+            animateOpacity(productElement, 1, 500, delay); // 500ms duration, adjust as needed
         });
 
         currentIndex += productsPerClick;
 
         // Update button text and behavior when reaching the end of products
-        if (currentIndex >= products.length) {
+        if (currentIndex >= productsData.length) {
             showNextBtn.value = 'Show Less';
             showNextBtn.removeEventListener('click', showNextProducts);
             showNextBtn.addEventListener('click', showLessProducts);
@@ -59,36 +272,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to show less products
     function showLessProducts() {
-        // Calculate the index of products to hide
-        const endHideIndex = Math.max(currentIndex - productsPerClick, initialProductsToShow);
+        // Calculate the index of products to remove
+        const endRemoveIndex = Math.max(currentIndex - productsPerClick, initialProductsToShow);
 
-        // Hide products with transition
-        for (let i = currentIndex - 1; i >= endHideIndex; i--) {
-            products[i].style.opacity = '0';
+        // Remove products from DOM with opacity animation
+        for (let i = currentIndex - 1; i >= endRemoveIndex; i--) {
+            const productToRemove = productsContainer.children[i];
+            animateOpacity(productToRemove, 0, 500, 0); // 500ms duration, no delay for removal
+
+            // Remove the product element after animation completes
             setTimeout(() => {
-                products[i].style.display = 'none';
-            }, 500); // Adjust the timeout as needed to match your transition duration
+                productsContainer.removeChild(productToRemove);
+            }, 500); // Should match the duration of the animation
         }
 
-        currentIndex = endHideIndex;
-        
+        currentIndex = endRemoveIndex;
+
         // Update button text and behavior when returning to initial state
         if (currentIndex <= initialProductsToShow) {
-            showNextBtn.value = 'Show Next';
+            showNextBtn.value = 'Show More';
             showNextBtn.removeEventListener('click', showLessProducts);
             showNextBtn.addEventListener('click', showNextProducts);
         }
     }
 
-    // Hide products initially beyond the initial batch
-    products.forEach((product, index) => {
-        if (index >= initialProductsToShow) {
-            product.style.display = 'none';
-            product.style.opacity = '0';
-            product.style.transition = 'opacity 0.5s ease-in-out'; // Transition effect
-        }
-    });
+    // Initial setup for Show More button
+    if (showNextBtn) {
+        showNextBtn.addEventListener('click', showNextProducts);
+    }
 
-    // Initial setup for Show Next button
-    showNextBtn.addEventListener('click', showNextProducts);
+    // Initially render the first set of products
+    productsData.slice(0, initialProductsToShow).forEach((productData, index) => {
+        const productElement = document.createElement('special-offer-product');
+        productElement.setAttribute('data-href', productData.href);
+        productElement.setAttribute('data-img-src', productData.imgSrc);
+        productElement.setAttribute('data-title', productData.title);
+        productElement.setAttribute('data-price', productData.price);
+        productElement.setAttribute('data-city', productData.city);
+        productElement.style.opacity = '0'; // Start opacity for animation
+
+        // Calculate delay for each initial product animation
+        const delay = index * animationDelay;
+        animateOpacity(productElement, 1, 500, delay); // 500ms duration, adjust as needed
+
+        productsContainer.appendChild(productElement);
+    });
 });

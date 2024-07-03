@@ -1,6 +1,6 @@
 const rangevalue = document.querySelector(".slider-container .price-slider");
 const rangeInputvalue = document.querySelectorAll(".range-input input");
-let priceGap = 3000000;
+let priceGap = 2000000;
 
 const priceInputvalue = document.querySelectorAll(".price-input input");
 
