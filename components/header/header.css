@@ -1,3 +1,6 @@
+*:not(:hover){
+    transition: all 0ms;
+}
 /* HEADER START  */
 header {
     overflow-x: hidden;
@@ -102,11 +105,11 @@ li {
     list-style: none;
 }
 
-#contactus button:hover {
+#contactus button:hover, #contactus button:not(:hover) {
+    transition: background-color 0.3s;
+}
+#contactus button:hover{
     background-color: #6E8AE9;
-    transition: background-color;
-    transition-duration: 0.3s;
-
 }
 
 #burgerMenu {
