@@ -1,3 +1,32 @@
+html,
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+section {
+    display: block;
+    width: 100%;
+}
+
+/* Container code */
+
+.section {
+    padding-inline-start: 50px;
+    padding-inline-end: 50px;
+}
+
+#top-offer {
+    scale: 0.88;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Product code */
+
 #top-offer-grid-item img {
     width: 350px;
     max-width: 350px;

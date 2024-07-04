@@ -1,3 +1,38 @@
+// PRODUCT CONTAINER
+// PRODUCT CONTAINER
+// PRODUCT CONTAINER
+// PRODUCT CONTAINER
+// PRODUCT CONTAINER
+
+class OffersSecComponent extends HTMLElement {
+    connectedCallback() {
+        this.render()
+    }
+
+    render() {
+        this.innerHTML =
+            `
+    <link rel="stylesheet" href="./pages/special-offers_page/product/special_offers_container-product.css">        
+    <section id="top-offer" class="section">
+    </section>
+        `
+    }
+}
+customElements.define('special-offers-sec', OffersSecComponent)
+
+
+
+
+
+// PRODUCT START DOWN
+// PRODUCT START DOWN
+// PRODUCT START DOWN
+// PRODUCT START DOWN
+// PRODUCT START DOWN
+// PRODUCT START DOWN
+
+
+
 // Define Products Data
 const productsData = [
     {
@@ -184,7 +219,7 @@ class ProductComponent extends HTMLElement {
         const city = this.getAttribute('data-city');
 
         this.innerHTML = `
-            <link rel="stylesheet" href="./pages/special-offers_page/product/special_offers_product.css">
+            <link rel="stylesheet" href="./pages/special-offers_page/product/special_offers_container-product.css">
             <div id="top-offer-grid-item">
                 <a href="${href}">
                     <img src="${imgSrc}" alt="">
@@ -313,7 +348,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Calculate delay for each initial product animation
         const delay = index * animationDelay;
-        animateOpacity(productElement, 1, 500, delay); // 500ms duration, adjust as needed
+        animateOpacity(productElement, 1, 0, delay); // 500ms duration, adjust as needed
 
         productsContainer.appendChild(productElement);
     });
