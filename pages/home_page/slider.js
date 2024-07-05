@@ -1,3 +1,24 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const sections = document.querySelectorAll('.sec-and-component');
+
+  function revealSections() {
+      const triggerBottom = window.innerHeight / 5 * 4;
+
+      sections.forEach(section => {
+          const sectionTop = section.getBoundingClientRect().top;
+
+          if (sectionTop < triggerBottom) {
+              section.classList.add('visible');
+          }
+      });
+  }
+
+  window.addEventListener('scroll', revealSections);
+  revealSections(); // Initial call to show the home section
+});
+
+
+
 // OUR-TEAM DIV SLIDER
 var ourTeamSwiper = null; // Rename variable to avoid conflicts
 
@@ -102,28 +123,4 @@ function initSwiperOnLoadAndResize() {
 // Initialize or reinitialize Swiper when the page loads
 window.addEventListener('load', function () {
   initSwiperOnLoadAndResize();
-});
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const sections = document.querySelectorAll('.sec-and-component');
-
-  function revealSections() {
-      const triggerBottom = window.innerHeight / 5 * 4;
-
-      sections.forEach(section => {
-          const sectionTop = section.getBoundingClientRect().top;
-
-          if (sectionTop < triggerBottom) {
-              section.classList.add('visible');
-          }
-      });
-  }
-
-  window.addEventListener('scroll', revealSections);
-  revealSections(); // Initial call to show the home section
 });
