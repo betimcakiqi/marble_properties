@@ -312,7 +312,9 @@ special-offers-sec {
     grid-template-columns: auto auto auto;
     width: 100%;
 }
-
+.offers-show-next-button{
+    display: none;
+}
 /* SECTION 2 END */
 /* SECTION 3 START */
 
