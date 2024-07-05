@@ -53,20 +53,8 @@ section {
 }
 
 .section {
-    height: 100vh;
     padding-inline-start: 50px;
     padding-inline-end: 50px;
-}
-
-.sec-and-component.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.sec-and-component {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 #home {

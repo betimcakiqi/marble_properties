@@ -58,7 +58,7 @@ section {
     min-height: 420px;
     box-shadow: 0 2px 4px 0 #F3FAFA;
     border: 1px solid #FFFFFF;
-    transition: 0.3s cubic-bezier(0.47, 0, 0.75, 0.72);
+    transition: scale 0.3s cubic-bezier(0.47, 0, 0.75, 0.72);
 
 }
 

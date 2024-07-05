@@ -91,7 +91,7 @@ li {
     cursor: pointer;
     border-radius: 4px;
     margin-inline-start: 300px;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 
 }
 

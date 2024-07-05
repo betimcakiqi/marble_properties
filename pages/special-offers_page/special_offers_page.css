@@ -119,11 +119,11 @@ select {
     background-color: #FFFFFF;
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.1);
     color: #141B2D;
-    transition: 0.3s;
+    transition: border 0.3s;
 }
 .enter-keyword-bar input:focus{
     border: 2px solid #1C3988;
-    transition: 0.05s;
+    transition: border 0.05s;
 }
 .search-button {
     flex-direction: row-reverse;
@@ -141,7 +141,7 @@ select {
     border-radius: 4px;
     font-weight: 500;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
 .search-button img {
@@ -300,14 +300,18 @@ input[type="range"]::-webkit-slider-thumb {
     text-decoration: none;
     color: #1C3988;
     cursor: pointer;
-    transition: 0.3s;
+    transition: border 0.3s, color 0.3s;
 }
 
 .offers-show-next-button input:hover {
     border: 2px solid #6E8AE9;
     color: #6E8AE9;
 }
-
+#end-of-results{
+    color: #141B2D;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
 .image-grid-section2 {
     display: grid;
     margin-block: 0px;

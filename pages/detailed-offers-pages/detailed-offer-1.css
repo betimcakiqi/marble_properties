@@ -238,7 +238,7 @@ input:focus {
     border-radius: 4px;
     cursor: pointer;
     border: 2px solid #1C3988;
-    transition: 0.3s;
+    transition: border 0.3s, background-color 0.3s;
 }
 
 .detailed-offer-get-a-mortgage-btn a {
@@ -335,7 +335,7 @@ input:focus {
 }
 
 .hover-img-p {
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
 
 .hover-img-p:hover {
@@ -387,7 +387,7 @@ input:focus {
 
 .name-tel-email-div input,
 #your-message-textarea {
-    transition: border 0.1s cubic-bezier(0.39, 0.58, 0.57, 1);
+    transition: border 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
 .name-tel-email-div p {
@@ -439,7 +439,7 @@ input:focus {
     border: 2px solid #1C3988;
     border-radius: 4px;
     cursor: pointer;
-    transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+    transition: background-color 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .agree-personal-data-custom-checkbox:checked+.agree-personal-data-custom-checkbox-label {
@@ -494,7 +494,7 @@ input:focus {
     font-weight: 700;
     color: #1C3988;
     cursor: pointer;
-    transition: 0.3s;
+    transition: color 0.3s, border 0.3s;
 }
 
 .send-message-form input:hover {
