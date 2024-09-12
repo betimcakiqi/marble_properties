@@ -45,6 +45,8 @@ customElements.define('custom-header', HeaderComponent)
 // Header end
 // Header responsive menu start
 
+// Header responsive menu start
+
 const menuListElement = document.getElementById('menuList');
 const menuIconElement = document.getElementById('menuIcon');
 const closeIconElement = document.getElementById('closeIcon');
@@ -77,4 +79,21 @@ const handleBurgerMenuAction = () => {
         }
     }
 };
+
+// Add this function to handle the screen resize
+window.addEventListener('resize', () => {
+    const isDesktopView = window.matchMedia("(min-width: 1167px)").matches;
+
+    if (isDesktopView) {
+        // Reset the styles for desktop view
+        menuListElement.style.maxHeight = '';
+        menuListElement.style.opacity = '';
+        menuIconElement.style.transform = '';
+        closeIconElement.style.transform = '';
+        menuIconElement.style.opacity = '';
+        closeIconElement.style.opacity = '';
+    }
+});
+
 // Header responsive menu end
+
