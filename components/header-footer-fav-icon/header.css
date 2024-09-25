@@ -120,7 +120,7 @@ li {
 /* MOBILE HEADER START */
 @media screen and (max-width: 1446px) and (min-width: 1167px) {
     .navigation-bar {
-        padding-inline: 50px;
+        padding-inline: 0px;
     }
 
     .logoandnavbar ul {
@@ -133,7 +133,7 @@ li {
     }
 
     #contactus button {
-        margin-inline-start: 258px;
+        margin-inline-start: 388px;
     }
 }
 
