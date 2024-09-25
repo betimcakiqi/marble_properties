@@ -3,14 +3,9 @@ var modal = document.getElementById("imageModal");
 var modalContent = document.querySelector(".modal-content");
 var modalImg = document.getElementById("modalImg");
 
-// Array to store image sources
+// Variables to track image count and current index
 var imageSources = [];
 var currentImageIndex = 0;
-
-// Store original overflow and overflow-x values for html and body
-var originalOverflow = document.body.style.overflow;
-var originalOverflowX = document.body.style.overflowX;
-var originalHtmlOverflowX = document.documentElement.style.overflowX;
 
 // Function to show modal
 function showModal() {
@@ -18,13 +13,9 @@ function showModal() {
     modalContent.style.opacity = "1"; // Show modal content by setting opacity to 1
     modal.style.pointerEvents = "auto"; // Allow interaction with modal
 
-    // Disable vertical scrolling
-    document.body.style.overflow = "hidden";
-    document.documentElement.style.overflow = "hidden";
-
-    // Temporarily allow horizontal scrolling by removing overflow-x: hidden
-    document.body.style.overflowX = "auto";
-    document.documentElement.style.overflowX = "auto";
+    // Disable scrolling
+    document.body.style.overflow = "hidden"; 
+    document.documentElement.style.overflowY = "hidden"; // Also prevent scrolling on html
 }
 
 // Function to hide modal
@@ -33,12 +24,9 @@ function hideModal() {
     modalContent.style.opacity = "0"; // Hide modal content by setting opacity to 0
     modal.style.pointerEvents = "none"; // Disable interaction with modal
 
-    // Restore original overflow-x and overflow settings
-    document.body.style.overflow = originalOverflow;
-    document.documentElement.style.overflow = originalOverflow;
-
-    document.body.style.overflowX = originalOverflowX || "hidden";
-    document.documentElement.style.overflowX = originalHtmlOverflowX || "hidden";
+    // Enable scrolling
+    document.body.style.overflow = "auto"; 
+    document.documentElement.style.overflowY = "auto"; // Re-enable scrolling on html
 }
 
 // Function to change modal image source with transition
@@ -50,7 +38,16 @@ function changeModalImage(src) {
     setTimeout(function () {
         modalImg.src = src; // Change image source
         modalContent.style.opacity = "1"; // Fade in new image
-    }, 300); // Adjust delay time as needed (300 milliseconds in this case)
+        updateImageCounter(); // Update the image counter display
+    }, 200); // Adjust delay time as needed (300 milliseconds in this case)
+}
+
+// Function to update the image counter display
+function updateImageCounter() {
+    var counter = document.getElementById("imageCounter");
+    if (counter) {
+        counter.textContent = `${currentImageIndex + 1} / ${imageSources.length}`;
+    }
 }
 
 // Get all small and big images and add click event listener to each
@@ -62,6 +59,7 @@ imgs.forEach(function (img, index) {
         modalImg.src = this.src;
         currentImageIndex = index;
         imageSources = Array.from(imgs).map(img => img.src); // Store all image sources
+        updateImageCounter(); // Update the counter when opening modal
     });
 });
 
@@ -88,11 +86,15 @@ document.addEventListener("keydown", function (event) {
 
     // Change image on arrow key press
     if (event.key === "ArrowLeft") {
-        currentImageIndex = (currentImageIndex - 1 + imageSources.length) % imageSources.length;
-        changeModalImage(imageSources[currentImageIndex]);
+        if (currentImageIndex > 0) {
+            currentImageIndex--; // Only decrement if not the first image
+            changeModalImage(imageSources[currentImageIndex]);
+        }
     } else if (event.key === "ArrowRight") {
-        currentImageIndex = (currentImageIndex + 1) % imageSources.length;
-        changeModalImage(imageSources[currentImageIndex]);
+        if (currentImageIndex < imageSources.length - 1) {
+            currentImageIndex++; // Only increment if not the last image
+            changeModalImage(imageSources[currentImageIndex]);
+        }
     }
 });
 
@@ -117,12 +119,16 @@ function handleSwipeGesture() {
 
     if (swipeDistance > 50) {
         // Swipe right, show the previous image
-        currentImageIndex = (currentImageIndex - 1 + imageSources.length) % imageSources.length;
-        changeModalImage(imageSources[currentImageIndex]);
+        if (currentImageIndex > 0) {
+            currentImageIndex--;
+            changeModalImage(imageSources[currentImageIndex]);
+        }
     } else if (swipeDistance < -50) {
         // Swipe left, show the next image
-        currentImageIndex = (currentImageIndex + 1) % imageSources.length;
-        changeModalImage(imageSources[currentImageIndex]);
+        if (currentImageIndex < imageSources.length - 1) {
+            currentImageIndex++;
+            changeModalImage(imageSources[currentImageIndex]);
+        }
     }
 }
 

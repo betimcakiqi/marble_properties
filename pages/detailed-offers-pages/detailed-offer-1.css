@@ -97,7 +97,7 @@ input:focus {
 
 #modalImg {
     max-width: 1200px;
-    max-height: 700px;
+    max-height: 600px;
     min-width: 400px;
     min-height: 300px;
     height: auto;
@@ -135,6 +135,26 @@ input:focus {
     transform: rotate(90deg);
     filter: brightness(0) saturate(100%) invert(12%) sepia(78%) saturate(5077%) hue-rotate(4deg) brightness(81%) contrast(120%);
 
+}
+.image-counter {
+    position: absolute; /* Position it inside the modal */
+    bottom: 5px; /* Keep the same bottom positioning */
+    color: #FFD700; /* Gold text color for elegance */
+    border: 1px solid #FFD700;
+    font-size: 16px; /* Slightly larger font size for better visibility */
+    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+    padding: 2px 6px; /* Increased padding for a bolder look */
+    border-radius: 8px; /* More pronounced rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.image-counter:hover {
+    color: black;
+    cursor: default;
+    background: rgba(255, 215, 0, 0.9); /* Change to a lighter background on hover */
 }
 
 
@@ -849,6 +869,10 @@ input:focus {
 }
 
 @media screen and (max-width: 449px) {
+    #modalImg {
+        max-height: 300px;
+        min-width: 380px;
+    }
     .detailed-offer-title-h1 {
         font-size: 2rem;
         max-width: 365px;
