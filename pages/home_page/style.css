@@ -43,15 +43,10 @@
     width: 16px;  /* Optional: Width for arrow buttons */
     height: 16px; /* Optional: Height for arrow buttons */
 }
-
-/* For Firefox */
-html {
-    scrollbar-width: thin; /* Sets the thickness of the scrollbar */
-    scrollbar-color: #1C3988 #FFFFFF; /* Thumb color and track color */
-}
-
 html,
 body {
+    scrollbar-width: thin; /* Sets the thickness of the scrollbar */
+    scrollbar-color: #1C3988 #FFFFFF; /* Thumb color and track color */
     position: relative;
     overflow-x: hidden;
 }
