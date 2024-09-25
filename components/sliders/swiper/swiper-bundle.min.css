@@ -278,6 +278,7 @@
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
+    user-select: none;
     margin-top: -67px;
     width: calc(var(--swiper-navigation-size)/ 44 * 27);
     height: var(--swiper-navigation-size);
