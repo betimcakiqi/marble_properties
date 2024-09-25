@@ -20,9 +20,33 @@
     padding: 0;
     color: #141B2D;
 }
+/* Scrollbar for webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 16px;  /* Width of the scrollbar */
+    height: 16px; /* Height for horizontal scrollbar */
+}
 
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+}
+
+/* Thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background-color: #1C3988;
+    /* border-radius: 10px; */
+}
+
+/* Scrollbar buttons (arrows) */
+::-webkit-scrollbar-button {
+    background-color: #1C3988;
+    width: 16px;  /* Optional: Width for arrow buttons */
+    height: 16px; /* Optional: Height for arrow buttons */
+}
 html,
 body {
+    scrollbar-width: thin; /* Sets the thickness of the scrollbar */
+    scrollbar-color: #1C3988 #FFFFFF; /* Thumb color and track color */
     position: relative;
     overflow-x: hidden;
 }
@@ -72,10 +96,11 @@ input:focus {
 
 #modalImg {
     max-width: 1200px;
-    min-width: 1200px;
-    max-height: 600px;
-    min-height: 600px;
-    border-radius: 25px;
+    max-height: 700px;
+    min-width: 450px;
+    height: auto;
+    width: 100%;
+    border-radius: 4px;
 }
 
 .small-img,
