@@ -92,14 +92,17 @@ input:focus {
     height: auto;
     /* Initially hidden */
     transition: opacity 0.3s;
+    
 }
 
 #modalImg {
     max-width: 1200px;
     max-height: 700px;
-    min-width: 450px;
+    min-width: 400px;
+    min-height: 300px;
     height: auto;
     width: 100%;
+    margin-inline: 10px;
     border-radius: 4px;
 }
 
@@ -129,7 +132,7 @@ input:focus {
 
 .close:hover,
 .close:focus {
-    transform: rotate(45deg);
+    transform: rotate(90deg);
     filter: brightness(0) saturate(100%) invert(12%) sepia(78%) saturate(5077%) hue-rotate(4deg) brightness(81%) contrast(120%);
 
 }
