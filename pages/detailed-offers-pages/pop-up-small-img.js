@@ -39,7 +39,7 @@ function changeModalImage(src) {
         modalImg.src = src; // Change image source
         modalContent.style.opacity = "1"; // Fade in new image
         updateImageCounter(); // Update the image counter display
-    }, 200); // Adjust delay time as needed (300 milliseconds in this case)
+    }, 200); // Adjust delay time as needed
 }
 
 // Function to update the image counter display
@@ -101,16 +101,54 @@ document.addEventListener("keydown", function (event) {
 // Variables to track touch start position for mobile swipe
 var touchStartX = 0;
 var touchEndX = 0;
+var touchStartDist = 0; // For tracking pinch-to-zoom gesture
+var isZooming = false; // To check if pinch zoom is happening
+
+// Function to calculate distance between two touch points
+function getTouchDistance(event) {
+    if (event.touches.length === 2) {
+        var touch1 = event.touches[0];
+        var touch2 = event.touches[1];
+        var distance = Math.sqrt(Math.pow(touch2.screenX - touch1.screenX, 2) + Math.pow(touch2.screenY - touch1.screenY, 2));
+        return distance;
+    }
+    return 0;
+}
 
 // Function to handle touch start
 function handleTouchStart(event) {
-    touchStartX = event.changedTouches[0].screenX;
+    if (event.touches.length === 2) {
+        // If two fingers, we are likely zooming
+        isZooming = true;
+        touchStartDist = getTouchDistance(event);
+    } else {
+        // Single finger swipe
+        isZooming = false;
+        touchStartX = event.changedTouches[0].screenX;
+    }
 }
 
 // Function to handle touch end and detect swipe direction
 function handleTouchEnd(event) {
-    touchEndX = event.changedTouches[0].screenX;
-    handleSwipeGesture();
+    if (!isZooming) {
+        // Only handle swipe gesture if not zooming
+        touchEndX = event.changedTouches[0].screenX;
+        handleSwipeGesture();
+    }
+}
+
+// Function to handle touch move for zoom detection
+function handleTouchMove(event) {
+    if (isZooming && event.touches.length === 2) {
+        var touchMoveDist = getTouchDistance(event);
+        var scaleChange = touchMoveDist / touchStartDist;
+
+        // If the scale change is significant, we don't want to treat this as a swipe
+        if (Math.abs(scaleChange - 1) > 0.1) {
+            // We are zooming, don't slide images
+            return;
+        }
+    }
 }
 
 // Function to detect the swipe direction
@@ -134,4 +172,5 @@ function handleSwipeGesture() {
 
 // Add touch event listeners to the modal content
 modalContent.addEventListener("touchstart", handleTouchStart, false);
+modalContent.addEventListener("touchmove", handleTouchMove, false); // Track touch movements
 modalContent.addEventListener("touchend", handleTouchEnd, false);
