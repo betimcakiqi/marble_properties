@@ -71,9 +71,9 @@ span.addEventListener("click", function () {
     hideModal();
 });
 
-// Close the modal when user clicks outside the modal content
-window.addEventListener("click", function (event) {
-    if (event.target === modal) {
+// Close the modal when user clicks outside the modal content (image)
+modal.addEventListener("click", function (event) {
+    if (event.target !== modalImg) {
         hideModal();
     }
 });
