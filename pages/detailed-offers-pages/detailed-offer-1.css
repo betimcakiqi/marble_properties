@@ -326,7 +326,7 @@ input:focus {
 }
 
 .detailed-offer-precise-location-map {
-    margin-inline-start: 85px;
+    margin-inline-start: 105px;
     margin-block-start: -10px;
     filter: drop-shadow(0px 4px 20px rgba(71, 100, 195, 0.1));
 }
@@ -754,12 +754,10 @@ input:focus {
     }
 
     .detailed-offer-precise-location-map {
-        margin-inline-start: 142.5px;
-        max-width: 530px;
+        margin-inline-start: 160px;
     }
-
-    .detailed-offer-precise-location-map img {
-        max-width: 530px;
+    .detailed-offer-precise-location-map iframe{
+        max-width: 500px;
     }
 
     .hover-img-p img {
@@ -831,11 +829,9 @@ input:focus {
     }
 
     .detailed-offer-precise-location-map {
-        margin-inline-start: 186.5px;
-        max-width: 440px;
+        margin-inline-start: 200px;
     }
-
-    .detailed-offer-precise-location-map img {
+    .detailed-offer-precise-location-map iframe{
         max-width: 440px;
     }
 
@@ -922,14 +918,11 @@ input:focus {
     }
 
     .detailed-offer-precise-location-map {
-        margin-inline-start: 225px;
-        max-width: 365px;
+        margin-inline-start: 249px;
     }
-
-    .detailed-offer-precise-location-map img {
-        max-width: 365px;
+    .detailed-offer-precise-location-map iframe{
+        max-width: 350px;
     }
-
     .interested-div {
         display: flex;
         justify-content: center;
@@ -969,10 +962,14 @@ input:focus {
         min-width: 365px;
     }
 }
-
+@media screen and (max-width: 410px) {
+    .detailed-offer-precise-location-map iframe{
+        max-width: 330px;
+    }
+}
 @media screen and (max-width: 375px) {
     .detailed-offer-title-h1 {
-        max-width: 310px;
+        max-width: 300px;
     }
     .big-apt-picture {
         max-width: 310px;
@@ -1011,7 +1008,9 @@ input:focus {
         margin-top: -56px;
         font-size: 1.2rem;
     }
-
+    .detailed-offer-precise-location-map {
+        margin-inline-start: 249px;
+    }
     .detailed-offer-contact-agent-apt-info {
         max-width: 310px;
         min-width: 310px;
