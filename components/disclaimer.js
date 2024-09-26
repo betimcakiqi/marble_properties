@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Check if the disclaimer has already been shown
     if (!localStorage.getItem('disclaimerShown')) {
+        console.log("Disclaimer hasn't been shown yet.");
 
         // Create the overlay and modal
         const disclaimerModal = document.createElement("div");
@@ -51,7 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Store the flag in localStorage to indicate the disclaimer has been shown
                 localStorage.setItem('disclaimerShown', 'true');
+                console.log("Disclaimer is now stored in localStorage.");
             }, 500); // Match the timeout with the animation duration
         });
+    } else {
+        console.log("Disclaimer already shown, skipping modal.");
     }
 });
