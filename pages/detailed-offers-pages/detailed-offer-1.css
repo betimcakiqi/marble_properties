@@ -78,6 +78,7 @@ input:focus {
     opacity: 0;
     transition: opacity 0.3s;
     pointer-events: none;
+    user-select: none;
 }
 
 /* Modal Content (image) */
@@ -178,7 +179,9 @@ input:focus {
     justify-content: center;
     margin-right: 12px;
 }
-
+.detailed-offer-pictures-info-and-contact-info img{
+    user-select: none;
+}
 .big-apt-div,
 .big-apt-picture {
     max-width: 750px;
