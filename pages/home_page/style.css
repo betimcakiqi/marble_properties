@@ -20,10 +20,13 @@
     padding: 0;
     color: #091638;
 }
+
 /* Scrollbar for webkit-based browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 16px;  /* Width of the scrollbar */
-    height: 16px; /* Height for horizontal scrollbar */
+    width: 16px;
+    /* Width of the scrollbar */
+    height: 16px;
+    /* Height for horizontal scrollbar */
 }
 
 /* Track (background of the scrollbar) */
@@ -34,19 +37,25 @@
 /* Thumb (the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
     background-color: #1C3988;
-    border-radius: 10px;  /* Makes the thumb rounded */
+    border-radius: 10px;
+    /* Makes the thumb rounded */
 }
 
 /* Scrollbar buttons (arrows) */
 ::-webkit-scrollbar-button {
     background-color: #1C3988;
-    width: 16px;  /* Optional: Width for arrow buttons */
-    height: 16px; /* Optional: Height for arrow buttons */
+    width: 16px;
+    /* Optional: Width for arrow buttons */
+    height: 16px;
+    /* Optional: Height for arrow buttons */
 }
+
 html,
 body {
-    scrollbar-width: thin; /* Sets the thickness of the scrollbar */
-    scrollbar-color: #1C3988 #FFFFFF; /* Thumb color and track color */
+    scrollbar-width: thin;
+    /* Sets the thickness of the scrollbar */
+    scrollbar-color: #1C3988 #FFFFFF;
+    /* Thumb color and track color */
     position: relative;
     overflow-x: hidden;
 }
@@ -67,6 +76,7 @@ input,
 select:focus {
     outline: none;
 }
+
 /* SECTION 1 START */
 
 
@@ -323,9 +333,11 @@ special-offers-sec {
     grid-template-columns: auto auto auto;
     width: 100%;
 }
-.offers-show-next-button{
+
+.offers-show-next-button {
     display: none;
 }
+
 /* SECTION 2 END */
 /* SECTION 3 START */
 
@@ -1002,6 +1014,37 @@ special-offers-sec {
     #ourteam {
         scroll-margin-top: -5em;
         max-width: 810px;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .blur-image {
+        background: url("../../assets/home/backgroung-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        display: flex;
+        background-size: cover;
+        width: 100%;
+        z-index: 0;
+        pointer-events: auto;
+        position: relative;
+    }
+    
+    .blur-image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(5px); /* Adjust the blur effect */
+        z-index: 1; /* Position it below the text and interactive elements */
+        pointer-events: none; /* Allow pointer events to pass through */
+    }
+    
+    .textwithimage {
+        position: relative; /* Ensure this element is positioned above the pseudo-element */
+        z-index: 2; /* Position above the blur overlay */
     }
 }
 
