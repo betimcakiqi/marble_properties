@@ -1021,7 +1021,7 @@ special-offers-sec {
     .blur-image {
         background: url("../../assets/home/backgroung-mobile.jpg");
         background-repeat: no-repeat;
-        background-position-x: center;
+        background-position: center;
         display: flex;
         background-size: cover;
         width: 100%;
