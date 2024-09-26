@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Check if the disclaimer has already been shown
-    const disclaimerShown = localStorage.getItem('disclaimerShown');
+    if (!localStorage.getItem('disclaimerShown')) {
 
-    // If the disclaimer has not been shown yet, create and display it
-    if (!disclaimerShown) {
         // Create the overlay and modal
         const disclaimerModal = document.createElement("div");
         disclaimerModal.innerHTML = `
@@ -31,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         overlay.style.display = "flex"; // Show overlay initially
 
         const content = document.getElementById("disclaimer-content");
-        
+
         // Add animation for modal appearance
         setTimeout(() => {
             content.style.opacity = "1"; // Fade in
@@ -51,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.body.style.overflowY = "auto"; 
                 document.documentElement.style.overflowY = "auto"; // Re-enable for browsers
 
-                // Set the flag in localStorage to indicate the disclaimer has been shown
+                // Store the flag in localStorage to indicate the disclaimer has been shown
                 localStorage.setItem('disclaimerShown', 'true');
             }, 500); // Match the timeout with the animation duration
         });
