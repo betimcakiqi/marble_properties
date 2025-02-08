@@ -8,7 +8,7 @@ var imageSources = [];
 var currentImageIndex = 0;
 
 // Function to show modal
-function showModal() {
+function showImageModal() {
     modal.style.opacity = "1"; // Show modal by setting opacity to 1
     modalContent.style.opacity = "1"; // Show modal content by setting opacity to 1
     modal.style.pointerEvents = "auto"; // Allow interaction with modal
@@ -16,10 +16,13 @@ function showModal() {
     // Disable scrolling
     document.body.style.overflow = "hidden"; 
     document.documentElement.style.overflowY = "hidden"; // Also prevent scrolling on html
+
+    // Show the tooltip for 5 seconds
+    showNavigationTooltip();
 }
 
 // Function to hide modal
-function hideModal() {
+function hideImageModal() {
     modal.style.opacity = "0"; // Hide modal by setting opacity to 0
     modalContent.style.opacity = "0"; // Hide modal content by setting opacity to 0
     modal.style.pointerEvents = "none"; // Disable interaction with modal
@@ -29,8 +32,20 @@ function hideModal() {
     document.documentElement.style.overflowY = "auto"; // Re-enable scrolling on html
 }
 
+// Function to show navigation tooltip for 5 seconds
+function showNavigationTooltip() {
+    var tooltip = document.getElementById("navigationTooltip");
+    if (tooltip) {
+        tooltip.style.opacity = "1";
+
+        setTimeout(function() {
+            tooltip.style.opacity = "0";
+        }, 3000);
+    }
+}
+
 // Function to change modal image source with transition
-function changeModalImage(src) {
+function updateImageInModal(src) {
     // Fade out modal content
     modalContent.style.opacity = "0";
 
@@ -55,7 +70,7 @@ var imgs = document.querySelectorAll(".small-img, .big-img");
 
 imgs.forEach(function (img, index) {
     img.addEventListener("click", function () {
-        showModal();
+        showImageModal();
         modalImg.src = this.src;
         currentImageIndex = index;
         imageSources = Array.from(imgs).map(img => img.src); // Store all image sources
@@ -68,32 +83,32 @@ var span = document.querySelector(".close");
 
 // When the user clicks on <span> (x), close the modal
 span.addEventListener("click", function () {
-    hideModal();
+    hideImageModal();
 });
 
 // Close the modal when user clicks outside the modal content (image)
 modal.addEventListener("click", function (event) {
     if (event.target !== modalImg) {
-        hideModal();
+        hideImageModal();
     }
 });
 
 // Close modal when Esc key is pressed
 document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
-        hideModal();
+        hideImageModal();
     }
 
     // Change image on arrow key press
     if (event.key === "ArrowLeft") {
         if (currentImageIndex > 0) {
             currentImageIndex--; // Only decrement if not the first image
-            changeModalImage(imageSources[currentImageIndex]);
+            updateImageInModal(imageSources[currentImageIndex]);
         }
     } else if (event.key === "ArrowRight") {
         if (currentImageIndex < imageSources.length - 1) {
             currentImageIndex++; // Only increment if not the last image
-            changeModalImage(imageSources[currentImageIndex]);
+            updateImageInModal(imageSources[currentImageIndex]);
         }
     }
 });
@@ -159,13 +174,13 @@ function handleSwipeGesture() {
         // Swipe right, show the previous image
         if (currentImageIndex > 0) {
             currentImageIndex--;
-            changeModalImage(imageSources[currentImageIndex]);
+            updateImageInModal(imageSources[currentImageIndex]);
         }
     } else if (swipeDistance < -50) {
         // Swipe left, show the next image
         if (currentImageIndex < imageSources.length - 1) {
             currentImageIndex++;
-            changeModalImage(imageSources[currentImageIndex]);
+            updateImageInModal(imageSources[currentImageIndex]);
         }
     }
 }

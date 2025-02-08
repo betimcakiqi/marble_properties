@@ -1,383 +1,396 @@
 @font-face {
-    font-family: 'Merriweather';
-    src: url(../../assets/fonts/Merriweather-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Merriweather";
+  src: url(../../assets/fonts/Merriweather-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(../../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
-    font-weight: auto;
-    font-style: normal;
+  font-family: "Open Sans";
+  src: url(../../assets/fonts/OpenSans-VariableFont_wdth\wght.ttf);
+  font-weight: auto;
+  font-style: normal;
 }
 
 * {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    font-family: 'Open Sans';
-    margin: 0;
-    padding: 0;
-    color: #141B2D;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+  color: #141b2d;
 }
 /* Scrollbar for webkit-based browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 16px;  /* Width of the scrollbar */
-    height: 16px; /* Height for horizontal scrollbar */
+  width: 16px; /* Width of the scrollbar */
+  height: 16px; /* Height for horizontal scrollbar */
 }
 
 /* Track (background of the scrollbar) */
 ::-webkit-scrollbar-track {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* Thumb (the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
-    background-color: #1C3988;
-    /* border-radius: 10px; */
+  background-color: #1c3988;
+  /* border-radius: 10px; */
 }
 
 /* Scrollbar buttons (arrows) */
 ::-webkit-scrollbar-button {
-    background-color: #1C3988;
-    width: 16px;  /* Optional: Width for arrow buttons */
-    height: 16px; /* Optional: Height for arrow buttons */
+  background-color: #1c3988;
+  width: 16px; /* Optional: Width for arrow buttons */
+  height: 16px; /* Optional: Height for arrow buttons */
 }
 html,
 body {
-    scrollbar-width: thin; /* Sets the thickness of the scrollbar */
-    scrollbar-color: #1C3988 #FFFFFF; /* Thumb color and track color */
-    position: relative;
-    overflow-x: hidden;
+  scrollbar-width: thin; /* Sets the thickness of the scrollbar */
+  scrollbar-color: #1c3988 #ffffff; /* Thumb color and track color */
+  position: relative;
+  overflow-x: hidden;
 }
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 ::placeholder {
-    color: rgba(20, 27, 45, 0.5);
-    font-weight: 500;
+  color: rgba(20, 27, 45, 0.5);
+  font-weight: 500;
 }
-
-
-
 
 /* Modal */
 .modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: 15;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000c2ccc;
-    backdrop-filter: blur(10px);
-    opacity: 0;
-    transition: opacity 0.3s;
-    pointer-events: none;
-    user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000c2ccc;
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  user-select: none;
 }
 
 /* Modal Content (image) */
 .modal-content {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    opacity: 0;
-    width: 100%;
-    height: auto;
-    transition: opacity 0.3s;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s;
 }
 
 #modalImg {
-    max-width: 1200px;
-    max-height: 600px;
-    min-width: 400px;
-    min-height: 300px;
-    height: auto;
-    width: 100%;
-    margin-inline: 10px;
-    border-radius: 4px;
+  max-width: 1200px;
+  max-height: 600px;
+  min-width: 400px;
+  min-height: 300px;
+  height: auto;
+  width: 100%;
+  margin-inline: 10px;
+  border-radius: 4px;
 }
 
 .small-img,
 .big-img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .modal.show {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Close button */
 .close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%);
-    user-select: none;
-
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(12%)
+    hue-rotate(103deg) brightness(105%) contrast(105%);
+  user-select: none;
 }
 
 .close:hover,
 .close:focus {
-    filter: brightness(0) saturate(100%) invert(12%) sepia(78%) saturate(5077%) hue-rotate(4deg) brightness(81%) contrast(120%);
-
+  filter: brightness(0) saturate(100%) invert(12%) sepia(78%) saturate(5077%)
+    hue-rotate(4deg) brightness(81%) contrast(120%);
 }
 .image-counter {
-    position: absolute; /* Position it inside the modal */
-    bottom: 5px; /* Keep the same bottom positioning */
-    color: #FFFFFF; /* White text for contrast */
-    border: 1px solid #007BFF; /* Light blue border */
-    font-size: 15px; /* Medium font size */
-    font-family: 'Open Sans', sans-serif; /* Bold sans-serif font */
-    background: rgba(0, 0, 0, 0.85); /* Dark semi-transparent background */
-    padding: 2px 6px; /* Increased padding for emphasis */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.6); /* Shadow for depth */
-    pointer-events: none; /* Prevent interactions */
-    text-align: center; /* Center the text */
-    user-select: none;
+  position: absolute; /* Position it inside the modal */
+  bottom: 5px; /* Keep the same bottom positioning */
+  color: #ffffff; /* White text for contrast */
+  border: 1px solid #007bff; /* Light blue border */
+  font-size: 15px; /* Medium font size */
+  font-family: "Open Sans", sans-serif; /* Bold sans-serif font */
+  background: rgba(0, 0, 0, 0.85); /* Dark semi-transparent background */
+  padding: 2px 6px; /* Increased padding for emphasis */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+  pointer-events: none; /* Prevent interactions */
+  text-align: center; /* Center the text */
+  user-select: none;
 }
 
+/* Tooltip styling */
+.navigation-tooltip {
+  position: absolute;
+  bottom: -50px;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  display: none;
+  transition: opacity 0.25s ease;
+}
 
-
+/* Display the tooltip only on desktop */
+@media screen and (min-width: 768px) {
+  .navigation-tooltip {
+    display: block; /* Show tooltip on desktop */
+  }
+}
 
 .detailed-offer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-right: 20px;
 }
 
 .detailed-offer-title {
-    display: flex;
-    justify-content: center;
-    margin-right: -30px;
+  display: flex;
+  justify-content: center;
+  margin-right: -30px;
 }
 
 .detailed-offer-title-h1 {
-    line-height: 69px;
-    font-family: 'Merriweather';
-    margin-top: 192px;
-    font-size: 53px;
-    max-width: 1150px;
+  line-height: 69px;
+  font-family: "Merriweather";
+  margin-top: 192px;
+  font-size: 53px;
+  max-width: 1150px;
 }
 
 .detailed-offer-pictures-info-and-contact-info {
-    display: flex;
-    margin-block: 40px;
-    justify-content: center;
-    margin-right: 12px;
+  display: flex;
+  margin-block: 40px;
+  justify-content: center;
+  margin-right: 12px;
 }
-.detailed-offer-pictures-info-and-contact-info img{
-    user-select: none;
+.detailed-offer-pictures-info-and-contact-info img {
+  user-select: none;
 }
 .big-apt-div,
 .big-apt-picture {
-    max-width: 750px;
-    min-width: 750px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
+  max-width: 750px;
+  min-width: 750px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
 }
 
 .big-apt-div {
-    margin-inline: 32px;
-    margin-block-end: 16px;
+  margin-inline: 32px;
+  margin-block-end: 16px;
 }
 
 .big-apt-picture {
-    max-height: 400px;
-    min-height: 400px;
+  max-height: 400px;
+  min-height: 400px;
 }
 
 .detailed-offer-pictures-and-info {
-    display: flex;
-    flex-direction: column;
-    max-width: 814px;
+  display: flex;
+  flex-direction: column;
+  max-width: 814px;
 }
 
 .swiper {
-    max-width: 620px;
-    margin-left: 0;
-    margin-right: 0;
+  max-width: 620px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .swiper-slide {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .swiper-slide img {
-    max-width: 205px;
-    max-height: 85px;
-    min-width: 191px;
-    border-radius: 4px;
+  max-width: 205px;
+  max-height: 85px;
+  min-width: 191px;
+  border-radius: 4px;
 }
 
 .info-icons-descriptions {
-    display: flex;
-    margin-block-start: 45px;
-    margin-inline: 85px;
-    width: 100%;
+  display: flex;
+  margin-block-start: 45px;
+  margin-inline: 85px;
+  width: 100%;
 }
 
 .detailed-offer-type-space-location {
-    display: flex;
-    align-items: center;
-    padding-inline: 20px;
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
 }
 
 .detailed-offer-type-space-location p {
-    font-size: 21px;
-    font-weight: bold;
-    font-family: 'Merriweather';
-    margin-inline: 20px;
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "Merriweather";
+  margin-inline: 20px;
 }
 
 .detailed-offer-mortgage {
-    display: flex;
-    align-items: center;
-    background-color: #F3F3FA;
-    margin-block-start: 44px;
-    margin-inline: 105px;
-    border-radius: 4px;
-    justify-content: space-between;
-    width: 609px;
-    height: 98px;
-    padding-inline: 25px;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3fa;
+  margin-block-start: 44px;
+  margin-inline: 105px;
+  border-radius: 4px;
+  justify-content: space-between;
+  width: 609px;
+  height: 98px;
+  padding-inline: 25px;
 }
 
 #mortgage-text {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 #mortgage-amount {
-    font-size: 21.25px;
-    font-family: 'Merriweather';
-    font-weight: bold;
+  font-size: 21.25px;
+  font-family: "Merriweather";
+  font-weight: bold;
 }
 
 .detailed-offer-get-a-mortgage-btn button {
-    width: 160px;
-    height: 48px;
-    background-color: #1C3988;
-    outline: none;
-    border-radius: 4px;
-    cursor: pointer;
-    border: 2px solid #1C3988;
-    transition: border 0.3s, background-color 0.3s;
+  width: 160px;
+  height: 48px;
+  background-color: #1c3988;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #1c3988;
+  transition: border 0.3s, background-color 0.3s;
 }
 
 .detailed-offer-get-a-mortgage-btn a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .detailed-offer-get-a-mortgage-btn button:hover {
-    background-color: #6E8AE9;
-    border: 2px solid #6E8AE9;
+  background-color: #6e8ae9;
+  border: 2px solid #6e8ae9;
 }
 
 .detailed-offer-paragraphs-only {
-    margin-block-start: 11px;
-    margin-block-end: 40px;
+  margin-block-start: 11px;
+  margin-block-end: 40px;
 }
 
 .detailed-offer-section1-paragraph {
-    max-width: 610px;
-    margin-inline: 105px;
+  max-width: 610px;
+  margin-inline: 105px;
 }
 
 .detailed-offer-section1-paragraph p {
-    font-size: 17px;
-    margin-block: 30px;
-    font-weight: 410;
+  font-size: 17px;
+  margin-block: 30px;
+  font-weight: 410;
 }
 
 #detailed-offer-paragraph-part-1 {
-    max-width: 550px;
+  max-width: 550px;
 }
 
 #detailed-offer-paragraph-part-2 {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 #detailed-offer-paragraph-part-3 {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .detailed-offer-info-title {
-    font-family: 'Merriweather';
-    font-size: 21px;
+  font-family: "Merriweather";
+  font-size: 21px;
 }
 
 .detailed-offer-info-txt-div p {
-    margin-block: 5px;
+  margin-block: 5px;
 }
 
 .detailed-offer-precise-location-map {
-    margin-inline-start: 105px;
-    margin-block-start: -10px;
-    filter: drop-shadow(0px 4px 20px rgba(71, 100, 195, 0.1));
+  margin-inline-start: 105px;
+  margin-block-start: -10px;
+  filter: drop-shadow(0px 4px 20px rgba(71, 100, 195, 0.1));
 }
 
 /* GRID INTERESTED IN */
 
 .interested-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-block-end: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-block-end: 100px;
 }
 
 .interested-in-title {
-    font-family: 'Merriweather';
-    margin-block: 50px;
-    font-size: 33.2px;
+  font-family: "Merriweather";
+  margin-block: 50px;
+  font-size: 33.2px;
 }
 
 .inline-interested-in-imgs {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .inline-interested-in-imgs p {
-    font-family: 'Merriweather';
-    color: #FFFFFF;
-    display: flex;
-    z-index: 1;
-    pointer-events: none;
-    justify-content: center;
-    font-size: 1.344rem;
+  font-family: "Merriweather";
+  color: #ffffff;
+  display: flex;
+  z-index: 1;
+  pointer-events: none;
+  justify-content: center;
+  font-size: 1.344rem;
 }
 
 .interested-txt-in-img-1 p,
 .interested-txt-in-img-2 p,
 .interested-txt-in-img-3 p,
 .interested-txt-in-img-4 p {
-    margin-top: -66px;
+  margin-top: -66px;
 }
 
 .hover-img-p {
-    transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .hover-img-p:hover {
-    transform: perspective(1000px) rotateY(-10deg) scale(1.05);
+  transform: perspective(1000px) rotateY(-10deg) scale(1.05);
 }
 
 /* GRID INTERESTED IN */
@@ -385,642 +398,643 @@ input:focus {
 /* CONTACT-AGENT-BRIEF */
 
 .contact-us-title-h2 {
-    font-family: 'Merriweather';
+  font-family: "Merriweather";
 }
 
 .detailed-offer-contact-agent-apt-info {
-    border-radius: 4px;
-    background-color: #F3F3FA;
-    max-height: 910px;
-    width: 352px;
+  border-radius: 4px;
+  background-color: #f3f3fa;
+  max-height: 910px;
+  width: 352px;
 }
 
 .detailed-offer-contact-info {
-    padding: 30px 20px 25px 25px;
-
+  padding: 30px 20px 25px 25px;
 }
 
 .name-tel-email-div {
-    margin-top: 20px;
-    font-size: 17px;
-    font-weight: 450;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 450;
 }
 
 .name-tel-email-div input {
-    font-weight: 410;
-    background-color: #FFFFFF;
-    border: 1px solid #DDDDDD;
-    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    font-size: 17px;
-    height: 56px;
-    padding-inline: 10px;
+  font-weight: 410;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-size: 17px;
+  height: 56px;
+  padding-inline: 10px;
 }
 
 .name-tel-email-div input:focus,
 #your-message-textarea:focus {
-    transition: border 0.05s cubic-bezier(0.39, 0.58, 0.57, 1);
-    border: 2px solid #1C3988;
+  transition: border 0.05s cubic-bezier(0.39, 0.58, 0.57, 1);
+  border: 2px solid #1c3988;
 }
 
 .name-tel-email-div input,
 #your-message-textarea {
-    transition: border 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
+  transition: border 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
 .name-tel-email-div p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 #full-name-input {
-    width: 304px;
+  width: 304px;
 }
 
 #phone-number-input {
-    width: 190px;
+  width: 190px;
 }
 
 #email-input {
-    width: 304px;
+  width: 304px;
 }
 
 #your-message-textarea {
-    font-weight: 410;
-    outline: none;
-    background-color: #FFFFFF;
-    border: 1px solid #DDDDDD;
-    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    font-size: 17px;
-    resize: none;
-    padding-inline: 10px;
-    padding-block: 15px;
-    width: 304px;
-    height: 308px;
+  font-weight: 410;
+  outline: none;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-size: 17px;
+  resize: none;
+  padding-inline: 10px;
+  padding-block: 15px;
+  width: 304px;
+  height: 308px;
 }
 
 .check-box-agree-personal-data {
-    display: flex;
-    margin-block: 20px;
+  display: flex;
+  margin-block: 20px;
 }
 
 .agree-personal-data-custom-checkbox {
-    display: none;
+  display: none;
 }
 
 .agree-personal-data-custom-checkbox-label {
-    position: relative;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-color: white;
-    border: 2px solid #1C3988;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s cubic-bezier(0, 0, 0.2, 1);
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: 2px solid #1c3988;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.agree-personal-data-custom-checkbox:checked+.agree-personal-data-custom-checkbox-label {
-    background-color: #1C3988;
+.agree-personal-data-custom-checkbox:checked
+  + .agree-personal-data-custom-checkbox-label {
+  background-color: #1c3988;
 }
 
 .agree-personal-data-custom-checkbox-label::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 16px;
-    height: 12px;
-    background-image: url('../../assets/icons/checkbox-arrow.svg');
-    /* Path to your SVG file */
-    transform: translate(-50%, -50%);
-    opacity: 0;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 12px;
+  background-image: url("../../assets/icons/checkbox-arrow.svg");
+  /* Path to your SVG file */
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 /* Show the checkmark/indicator when checked */
-.agree-personal-data-custom-checkbox:checked+.agree-personal-data-custom-checkbox-label::after {
-    opacity: 1;
+.agree-personal-data-custom-checkbox:checked
+  + .agree-personal-data-custom-checkbox-label::after {
+  opacity: 1;
 }
 
 /* Style the text label */
 .agree-personal-data-text {
-    vertical-align: middle;
-    margin-left: 10px;
-    font-size: 17px;
-    max-width: 250px;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-size: 17px;
+  max-width: 250px;
 }
 
 .agree-personal-data-text a {
-    text-decoration: underline;
-    font-weight: 410;
-    color: #1C3988;
-    transition: color 0.3s;
+  text-decoration: underline;
+  font-weight: 410;
+  color: #1c3988;
+  transition: color 0.3s;
 }
 
 .agree-personal-data-text a:hover,
 .detailed-offer-agent-information a:hover {
-    color: #003CFF;
+  color: #003cff;
 }
 
 .send-message-form input {
-    border: 2px solid #1C3988;
-    background-color: transparent;
-    border-radius: 4px;
-    height: 48px;
-    width: 304px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #1C3988;
-    cursor: pointer;
-    transition: color 0.3s, border 0.3s;
+  border: 2px solid #1c3988;
+  background-color: transparent;
+  border-radius: 4px;
+  height: 48px;
+  width: 304px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1c3988;
+  cursor: pointer;
+  transition: color 0.3s, border 0.3s;
 }
 
 .send-message-form input:hover {
-    border: 2px solid #6E8AE9;
-    color: #6E8AE9;
+  border: 2px solid #6e8ae9;
+  color: #6e8ae9;
 }
 
 .detailed-offer-agent-information {
-    margin-block: 50px;
-    background-color: #F3F3FA;
-    border-radius: 4px;
-    height: 323px;
-    width: 352px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin-block: 50px;
+  background-color: #f3f3fa;
+  border-radius: 4px;
+  height: 323px;
+  width: 352px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .broker-fullname {
-    font-family: 'Merriweather';
+  font-family: "Merriweather";
 }
 
 .detailed-offer-agent-information img {
-    margin-block: 24px;
-    max-width: 126px;
-    min-width: 126px;
-    max-height: 126px;
-    min-height: 126px;
-    width: 100%;
-    height: 100%;
-    border-radius: 63px;
+  margin-block: 24px;
+  max-width: 126px;
+  min-width: 126px;
+  max-height: 126px;
+  min-height: 126px;
+  width: 100%;
+  height: 100%;
+  border-radius: 63px;
 }
 
 .detailed-offer-agent-information span {
-    margin-block: 2.5px;
-    font-size: 17px;
-    font-weight: 450;
+  margin-block: 2.5px;
+  font-size: 17px;
+  font-weight: 450;
 }
 
 .detailed-offer-agent-information a {
-    margin-block-start: 10px;
-    margin-block-end: 40px;
-    color: #1C3988;
-    font-weight: 450;
-    font-size: 17px;
-    transition: color 0.3s;
+  margin-block-start: 10px;
+  margin-block-end: 40px;
+  color: #1c3988;
+  font-weight: 450;
+  font-size: 17px;
+  transition: color 0.3s;
 }
 
 .detailed-offer-brief-characteristics-information {
-    background-color: #F3F3FA;
-    width: 352px;
-    border-radius: 4px;
+  background-color: #f3f3fa;
+  width: 352px;
+  border-radius: 4px;
 }
 
 .detailed-offer-brief-char-info-second-div {
-    padding: 20px 20px;
+  padding: 20px 20px;
 }
 
 .brief-char-title {
-    font-family: 'Merriweather';
+  font-family: "Merriweather";
 }
 
 .detailed-offer-brief-characteristics-information p {
-    margin-block: 20px;
-    font-size: 17px;
-    font-weight: 450;
+  margin-block: 20px;
+  font-size: 17px;
+  font-weight: 450;
 }
 
 /* CONTACT-AGENT-BRIEF */
 @media screen and (max-width: 1166px) {
-    .big-apt-picture {
-        min-width: 850px;
-        max-height: 500px;
-    }
+  .big-apt-picture {
+    min-width: 850px;
+    max-height: 500px;
+  }
 
-    .detailed-offer-container {
-        margin-right: 0px;
-    }
+  .detailed-offer-container {
+    margin-right: 0px;
+  }
 
-    .detailed-offer-pictures-info-and-contact-info {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0px;
-    }
+  .detailed-offer-pictures-info-and-contact-info {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+  }
 
-    .detailed-offer-title {
-        /* text-align: center; */
-        margin-right: 0px;
-        max-width: 850px;
-    }
+  .detailed-offer-title {
+    /* text-align: center; */
+    margin-right: 0px;
+    max-width: 850px;
+  }
 
-    .interested-div {
-        margin-block-start: 900px;
-    }
+  .interested-div {
+    margin-block-start: 900px;
+  }
 
-    .inline-interested-in-imgs {
-        row-gap: 30px;
-        grid-template-columns: auto auto;
-    }
+  .inline-interested-in-imgs {
+    row-gap: 30px;
+    grid-template-columns: auto auto;
+  }
 
-    /* CONTACT-AGENT-BRIEF */
-    .detailed-offer-contact-agent-apt-info {
-        margin-block-start: 50px;
-        min-width: 850px;
-    }
+  /* CONTACT-AGENT-BRIEF */
+  .detailed-offer-contact-agent-apt-info {
+    margin-block-start: 50px;
+    min-width: 850px;
+  }
 
-    #full-name-input,
-    #phone-number-input,
-    #email-input,
-    #your-message-textarea {
-        width: 100%;
-    }
+  #full-name-input,
+  #phone-number-input,
+  #email-input,
+  #your-message-textarea {
+    width: 100%;
+  }
 
-    .check-box-agree-personal-data {
-        justify-content: center;
-    }
+  .check-box-agree-personal-data {
+    justify-content: center;
+  }
 
-    .agree-personal-data-text {
-        max-width: 100%;
-    }
+  .agree-personal-data-text {
+    max-width: 100%;
+  }
 
-    .send-message-form {
-        display: flex;
-        justify-content: center;
-    }
+  .send-message-form {
+    display: flex;
+    justify-content: center;
+  }
 
-    .detailed-offer-agent-information {
-        margin-block-start: 50px;
-        margin-block-end: 13px;
-        width: 100%;
-    }
+  .detailed-offer-agent-information {
+    margin-block-start: 50px;
+    margin-block-end: 13px;
+    width: 100%;
+  }
 
-    .detailed-offer-brief-characteristics-information {
-        width: 100%;
-        text-align: center;
-    }
+  .detailed-offer-brief-characteristics-information {
+    width: 100%;
+    text-align: center;
+  }
 
-    /* CONTACT-AGENT-BRIEF */
+  /* CONTACT-AGENT-BRIEF */
 }
 
 @media screen and (max-width: 899px) {
-    .detailed-offer-title-h1 {
-        font-size: 45px;
-        max-width: 770px;
-    }
+  .detailed-offer-title-h1 {
+    font-size: 45px;
+    max-width: 770px;
+  }
 
-    .big-apt-picture {
-        max-width: 770px;
-        min-width: 770px;
-    }
+  .big-apt-picture {
+    max-width: 770px;
+    min-width: 770px;
+  }
 
-    .swiper {
-        max-width: 410px;
-    }
+  .swiper {
+    max-width: 410px;
+  }
 
-    .detailed-offer-contact-agent-apt-info {
-        min-width: 770px;
-    }
+  .detailed-offer-contact-agent-apt-info {
+    min-width: 770px;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .detailed-offer-title-h1 {
-        font-size: 45px;
-        max-width: 650px;
-    }
+  .detailed-offer-title-h1 {
+    font-size: 45px;
+    max-width: 650px;
+  }
 
-    .big-apt-picture {
-        max-width: 650px;
-        min-width: 650px;
-    }
+  .big-apt-picture {
+    max-width: 650px;
+    min-width: 650px;
+  }
 
-    .detailed-offer-contact-agent-apt-info {
-        min-width: 650px;
-    }
+  .detailed-offer-contact-agent-apt-info {
+    min-width: 650px;
+  }
 }
 
 @media screen and (max-width: 680px) {
-    .detailed-offer-title-h1 {
-        font-size: 40px;
-        max-width: 530px;
-    }
+  .detailed-offer-title-h1 {
+    font-size: 40px;
+    max-width: 530px;
+  }
 
-    .big-apt-picture {
-        max-width: 530px;
-        min-width: 530px;
-    }
+  .big-apt-picture {
+    max-width: 530px;
+    min-width: 530px;
+  }
 
-    .info-icons-descriptions {
-        display: flex;
-        justify-content: center;
-        margin-inline: 0px;
-    }
+  .info-icons-descriptions {
+    display: flex;
+    justify-content: center;
+    margin-inline: 0px;
+  }
 
-    .detailed-offer-type-space-location {
-        padding-inline: 10px;
-    }
+  .detailed-offer-type-space-location {
+    padding-inline: 10px;
+  }
 
-    .detailed-offer-type-space-location img {
-        width: 35px;
-        height: 35px;
-    }
+  .detailed-offer-type-space-location img {
+    width: 35px;
+    height: 35px;
+  }
 
-    .detailed-offer-type-space-location p {
-        font-size: 1.3rem;
-        margin-inline: 10px;
-    }
+  .detailed-offer-type-space-location p {
+    font-size: 1.3rem;
+    margin-inline: 10px;
+  }
 
-    .detailed-offer-mortgage {
-        margin-inline: 141.5px;
-        width: 530px;
-    }
+  .detailed-offer-mortgage {
+    margin-inline: 141.5px;
+    width: 530px;
+  }
 
-    .detailed-offer-section1-paragraph {
-        margin-inline: 158px;
-    }
+  .detailed-offer-section1-paragraph {
+    margin-inline: 158px;
+  }
 
-    #detailed-offer-paragraph-part-1,
-    #detailed-offer-paragraph-part-2,
-    #detailed-offer-paragraph-part-3 {
-        max-width: 520px;
-    }
+  #detailed-offer-paragraph-part-1,
+  #detailed-offer-paragraph-part-2,
+  #detailed-offer-paragraph-part-3 {
+    max-width: 520px;
+  }
 
-    .detailed-offer-precise-location-map {
-        margin-inline-start: 160px;
-    }
-    .detailed-offer-precise-location-map iframe{
-        max-width: 500px;
-    }
+  .detailed-offer-precise-location-map {
+    margin-inline-start: 160px;
+  }
+  .detailed-offer-precise-location-map iframe {
+    max-width: 500px;
+  }
 
-    .hover-img-p img {
-        max-width: 280px;
-    }
+  .hover-img-p img {
+    max-width: 280px;
+  }
 
-    .detailed-offer-contact-agent-apt-info {
-        min-width: 530px;
-    }
+  .detailed-offer-contact-agent-apt-info {
+    min-width: 530px;
+  }
 }
 
 @media screen and (max-width: 549px) {
-    .detailed-offer-title-h1 {
-        line-height: 45px;
-        font-size: 2.2rem;
-        margin-top: 100px;
-        max-width: 440px;
-    }
+  .detailed-offer-title-h1 {
+    line-height: 45px;
+    font-size: 2.2rem;
+    margin-top: 100px;
+    max-width: 440px;
+  }
 
-    .big-apt-picture {
-        max-width: 440px;
-        min-width: 440px;
-    }
+  .big-apt-picture {
+    max-width: 440px;
+    min-width: 440px;
+  }
 
-    .swiper {
-        max-width: 290px;
-    }
+  .swiper {
+    max-width: 290px;
+  }
 
-    .swiper-slide img {
-        max-width: 140px;
-        min-width: 140px;
-        min-height: 85px;
-    }
+  .swiper-slide img {
+    max-width: 140px;
+    min-width: 140px;
+    min-height: 85px;
+  }
 
-    .info-icons-descriptions {
-        display: flex;
-        justify-content: center;
-        margin-inline: 0px;
-    }
+  .info-icons-descriptions {
+    display: flex;
+    justify-content: center;
+    margin-inline: 0px;
+  }
 
-    .detailed-offer-type-space-location {
-        padding-inline: 5px;
-    }
+  .detailed-offer-type-space-location {
+    padding-inline: 5px;
+  }
 
-    .detailed-offer-type-space-location img {
-        width: 30px;
-        height: 30px;
-    }
+  .detailed-offer-type-space-location img {
+    width: 30px;
+    height: 30px;
+  }
 
-    .detailed-offer-type-space-location p {
-        font-size: 1.3rem;
-        margin-inline: 5px;
-    }
+  .detailed-offer-type-space-location p {
+    font-size: 1.3rem;
+    margin-inline: 5px;
+  }
 
-    .detailed-offer-mortgage {
-        display: flex;
-        margin-inline: 187px;
-        width: 440px;
-    }
+  .detailed-offer-mortgage {
+    display: flex;
+    margin-inline: 187px;
+    width: 440px;
+  }
 
-    .detailed-offer-section1-paragraph {
-        margin-inline: 200px;
-    }
+  .detailed-offer-section1-paragraph {
+    margin-inline: 200px;
+  }
 
-    #detailed-offer-paragraph-part-1,
-    #detailed-offer-paragraph-part-2,
-    #detailed-offer-paragraph-part-3 {
-        max-width: 440px;
-    }
+  #detailed-offer-paragraph-part-1,
+  #detailed-offer-paragraph-part-2,
+  #detailed-offer-paragraph-part-3 {
+    max-width: 440px;
+  }
 
-    .detailed-offer-precise-location-map {
-        margin-inline-start: 200px;
-    }
-    .detailed-offer-precise-location-map iframe{
-        max-width: 440px;
-    }
+  .detailed-offer-precise-location-map {
+    margin-inline-start: 200px;
+  }
+  .detailed-offer-precise-location-map iframe {
+    max-width: 440px;
+  }
 
-    .hover-img-p img {
-        max-width: 230px;
-    }
+  .hover-img-p img {
+    max-width: 230px;
+  }
 
-    .interested-txt-in-img-1 p,
-    .interested-txt-in-img-2 p,
-    .interested-txt-in-img-3 p,
-    .interested-txt-in-img-4 p {
-        margin-top: -50px;
-        font-size: 1.1rem;
-    }
+  .interested-txt-in-img-1 p,
+  .interested-txt-in-img-2 p,
+  .interested-txt-in-img-3 p,
+  .interested-txt-in-img-4 p {
+    margin-top: -50px;
+    font-size: 1.1rem;
+  }
 
-    .detailed-offer-contact-agent-apt-info {
-        min-width: 440px;
-    }
+  .detailed-offer-contact-agent-apt-info {
+    min-width: 440px;
+  }
 }
 
 @media screen and (max-width: 449px) {
-    #modalImg {
-        max-height: 300px;
-        min-width: 380px;
-    }
-    .detailed-offer-title-h1 {
-        font-size: 2rem;
-        max-width: 365px;
-    }
+  #modalImg {
+    max-height: 300px;
+    min-width: 380px;
+  }
+  .detailed-offer-title-h1 {
+    font-size: 2rem;
+    max-width: 365px;
+  }
 
-    .big-apt-picture {
-        max-width: 365px;
-        min-width: 365px;
-        max-height: 290px;
-        min-height: 290px;
-    }
+  .big-apt-picture {
+    max-width: 365px;
+    min-width: 365px;
+    max-height: 290px;
+    min-height: 290px;
+  }
 
-    .swiper {
-        max-width: 280px;
-    }
+  .swiper {
+    max-width: 280px;
+  }
 
-    .swiper-slide img {
-        max-width: 135px;
-        min-width: 135px;
-    }
+  .swiper-slide img {
+    max-width: 135px;
+    min-width: 135px;
+  }
 
-    .info-icons-descriptions {
-        display: grid;
-        margin-block: 20px;
-        row-gap: 5px;
-        justify-content: center;
-    }
+  .info-icons-descriptions {
+    display: grid;
+    margin-block: 20px;
+    row-gap: 5px;
+    justify-content: center;
+  }
 
-    .detailed-offer-type-space-location img {
-        width: 30px;
-        height: 30px;
-        margin-block: 5px;
-    }
+  .detailed-offer-type-space-location img {
+    width: 30px;
+    height: 30px;
+    margin-block: 5px;
+  }
 
-    .detailed-offer-type-space-location p {
-        font-size: 1.3rem;
-        margin-inline: 25px;
-    }
+  .detailed-offer-type-space-location p {
+    font-size: 1.3rem;
+    margin-inline: 25px;
+  }
 
-    .detailed-offer-mortgage {
-        margin-block: 5px;
-        margin-inline: 224px;
-        width: 365px;
-        padding-inline: 5px;
-    }
+  .detailed-offer-mortgage {
+    margin-block: 5px;
+    margin-inline: 224px;
+    width: 365px;
+    padding-inline: 5px;
+  }
 
-    #mortgage-amount {
-        font-size: 1.1rem;
-    }
+  #mortgage-amount {
+    font-size: 1.1rem;
+  }
 
-    .detailed-offer-section1-paragraph {
-        margin-inline: 250px;
-    }
+  .detailed-offer-section1-paragraph {
+    margin-inline: 250px;
+  }
 
-    #detailed-offer-paragraph-part-1,
-    #detailed-offer-paragraph-part-2,
-    #detailed-offer-paragraph-part-3 {
-        max-width: 365px;
-    }
+  #detailed-offer-paragraph-part-1,
+  #detailed-offer-paragraph-part-2,
+  #detailed-offer-paragraph-part-3 {
+    max-width: 365px;
+  }
 
-    .detailed-offer-precise-location-map {
-        margin-inline-start: 249px;
-    }
-    .detailed-offer-precise-location-map iframe{
-        max-width: 350px;
-    }
-    .interested-div {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
+  .detailed-offer-precise-location-map {
+    margin-inline-start: 249px;
+  }
+  .detailed-offer-precise-location-map iframe {
+    max-width: 350px;
+  }
+  .interested-div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .interested-in-title {
-        font-size: 1.9rem;
-        margin-inline: 90px;
-        text-align: center
-    }
+  .interested-in-title {
+    font-size: 1.9rem;
+    margin-inline: 90px;
+    text-align: center;
+  }
 
-    .inline-interested-in-imgs {
-        justify-content: center;
-        grid-template-columns: auto;
-    }
-    .interested-txt-in-img-1 p,
-    .interested-txt-in-img-2 p,
-    .interested-txt-in-img-3 p,
-    .interested-txt-in-img-4 p {
-        margin-top: -65px;
-        font-size: 1.2rem;
-    }
-    .hover-img-p {
-        max-width: 290px;
-    }
+  .inline-interested-in-imgs {
+    justify-content: center;
+    grid-template-columns: auto;
+  }
+  .interested-txt-in-img-1 p,
+  .interested-txt-in-img-2 p,
+  .interested-txt-in-img-3 p,
+  .interested-txt-in-img-4 p {
+    margin-top: -65px;
+    font-size: 1.2rem;
+  }
+  .hover-img-p {
+    max-width: 290px;
+  }
 
-    .hover-img-p img {
-        max-width: 290px;
-    }
-    .agree-personal-data-custom-checkbox-label {
-        width: 30px;
-        height: 25px;
-        margin-left: 10px;
-    }
-    .detailed-offer-contact-agent-apt-info {
-        min-width: 365px;
-    }
+  .hover-img-p img {
+    max-width: 290px;
+  }
+  .agree-personal-data-custom-checkbox-label {
+    width: 30px;
+    height: 25px;
+    margin-left: 10px;
+  }
+  .detailed-offer-contact-agent-apt-info {
+    min-width: 365px;
+  }
 }
 @media screen and (max-width: 410px) {
-    .detailed-offer-precise-location-map iframe{
-        max-width: 330px;
-    }
+  .detailed-offer-precise-location-map iframe {
+    max-width: 330px;
+  }
 }
 @media screen and (max-width: 375px) {
-    .detailed-offer-title-h1 {
-        max-width: 300px;
-    }
-    .big-apt-picture {
-        max-width: 310px;
-        min-width: 310px;
-    }
+  .detailed-offer-title-h1 {
+    max-width: 300px;
+  }
+  .big-apt-picture {
+    max-width: 310px;
+    min-width: 310px;
+  }
 
-    .swiper {
-        max-width: 260px;
-    }
+  .swiper {
+    max-width: 260px;
+  }
 
-    .swiper-slide img {
-        max-width: 125px;
-        min-width: 125px;
-    }
-    .detailed-offer-mortgage {
-        flex-direction: column;
-        height: 150px;
-        padding-block: 20px;
-    }
-    .inline-interested-in-imgs {
-        grid-template-columns: auto;
-    }
+  .swiper-slide img {
+    max-width: 125px;
+    min-width: 125px;
+  }
+  .detailed-offer-mortgage {
+    flex-direction: column;
+    height: 150px;
+    padding-block: 20px;
+  }
+  .inline-interested-in-imgs {
+    grid-template-columns: auto;
+  }
 
-    .hover-img-p {
-        max-width: 250px;
-    }
+  .hover-img-p {
+    max-width: 250px;
+  }
 
-    .hover-img-p img {
-        max-width: 250px;
-    }
+  .hover-img-p img {
+    max-width: 250px;
+  }
 
-    .interested-txt-in-img-1 p,
-    .interested-txt-in-img-2 p,
-    .interested-txt-in-img-3 p,
-    .interested-txt-in-img-4 p {
-        margin-top: -56px;
-        font-size: 1.2rem;
-    }
-    .detailed-offer-precise-location-map {
-        margin-inline-start: 249px;
-    }
-    .detailed-offer-contact-agent-apt-info {
-        max-width: 310px;
-        min-width: 310px;
-    }
+  .interested-txt-in-img-1 p,
+  .interested-txt-in-img-2 p,
+  .interested-txt-in-img-3 p,
+  .interested-txt-in-img-4 p {
+    margin-top: -56px;
+    font-size: 1.2rem;
+  }
+  .detailed-offer-precise-location-map {
+    margin-inline-start: 249px;
+  }
+  .detailed-offer-contact-agent-apt-info {
+    max-width: 310px;
+    min-width: 310px;
+  }
 
-    .agree-personal-data-custom-checkbox-label {
-        width: 30px;
-        height: 25px;
-    }
+  .agree-personal-data-custom-checkbox-label {
+    width: 30px;
+    height: 25px;
+  }
 }
