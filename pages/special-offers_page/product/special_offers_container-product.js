@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const minRange = document.querySelector(".min-range");
     const maxRange = document.querySelector(".max-range");
 
-    const productsPerClick = 12; 
+    const productsPerClick = 12;
     let currentIndex = productsPerClick;
     let filteredProducts = [...productsData];
 
@@ -313,7 +313,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Check if we are on the homepage (index.html or /)
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '/marble_properties/') {
+    const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '/marble_properties/';
+
+    if (isHomePage) {
+        // Show the top 6 products on the homepage
         const topProducts = [...productsData]
             .sort((a, b) => parseInt(b.price.replace(/\D/g, "")) - parseInt(a.price.replace(/\D/g, "")))
             .slice(0, 6);
