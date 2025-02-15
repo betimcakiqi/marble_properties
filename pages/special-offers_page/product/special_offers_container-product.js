@@ -241,7 +241,7 @@ customElements.define('special-offer-product', ProductComponent);
 document.addEventListener("DOMContentLoaded", () => {
     const productsContainer = document.querySelector('.image-grid-section2');
     const showNextBtn = document.getElementById('show-next-btn');
-    const endOfResultsText = document.getElementById('end-of-results');
+    // const endOfResultsText = document.getElementById('end-of-results');
     const searchInput = document.getElementById("enter-a-keyword");
     const searchButton = document.getElementById("searchbuton");
     const minRange = document.querySelector(".min-range");
