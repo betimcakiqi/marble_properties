@@ -241,58 +241,85 @@ customElements.define('special-offer-product', ProductComponent);
 document.addEventListener("DOMContentLoaded", () => {
     const productsContainer = document.querySelector('.image-grid-section2');
     const showNextBtn = document.getElementById('show-next-btn');
-    const endOfResultsText = document.getElementById('end-of-results'); // Reference to end of results text
-    const productsPerClick = 12; // Number of products to add/remove per click
-    let initialProductsToShow = 6; // Default number of products to show
-    let currentIndex;
+    const endOfResultsText = document.getElementById('end-of-results');
+    const searchInput = document.getElementById("enter-a-keyword");
+    const searchButton = document.getElementById("searchbuton");
+    const minRange = document.querySelector(".min-range");
+    const maxRange = document.querySelector(".max-range");
 
-    // Hide the "End of results" text initially
-    endOfResultsText.style.display = 'none';
+    const productsPerClick = 12; 
+    let currentIndex = productsPerClick;
+    let filteredProducts = [...productsData];
 
-    // Determine the number of products to show based on the page
-    if (window.location.pathname.includes('special_offers_page.html')) {
-        initialProductsToShow = 12;
-    }
-    currentIndex = initialProductsToShow;
-
-    // Function to show next batch of products
-    function showNextProducts() {
-        // Calculate the remaining products to show
-        const remainingProducts = productsData.slice(currentIndex, currentIndex + productsPerClick);
-
-        // Render each remaining product
-        remainingProducts.forEach((productData) => {
+    // Function to render products
+    const renderProducts = (products, limit) => {
+        productsContainer.innerHTML = "";
+        products.slice(0, limit).forEach(productData => {
             const productElement = document.createElement('special-offer-product');
-            productElement.setAttribute('data-href', productData.href);
-            productElement.setAttribute('data-img-src', productData.imgSrc);
-            productElement.setAttribute('data-title', productData.title);
-            productElement.setAttribute('data-price', productData.price);
-            productElement.setAttribute('data-city', productData.city);
+            Object.entries({
+                'data-href': productData.href,
+                'data-img-src': productData.imgSrc,
+                'data-title': productData.title,
+                'data-price': productData.price,
+                'data-city': productData.city
+            }).forEach(([key, value]) => productElement.setAttribute(key, value));
             productsContainer.appendChild(productElement);
         });
 
-        currentIndex += productsPerClick;
-
-        // Update button text and behavior when reaching the end of products
-        if (currentIndex >= productsData.length) {
-            showNextBtn.style.display = 'none'; // Hide the button when no more products to show
-            endOfResultsText.style.display = 'block'; // Show "End of results" text
+        // Handle "Show More" and "End of Results" for search page
+        if (!window.location.pathname.includes('index.html')) {
+            const isMoreProducts = products.length > currentIndex;
+            showNextBtn.style.display = isMoreProducts ? "block" : "none";
+            endOfResultsText.style.display = isMoreProducts ? "none" : "block";
         }
-    }
+    };
 
-    // Initial setup for Show More button
+    // Function to filter products based on search and price range
+    const filterProducts = () => {
+        const searchValue = searchInput.value.trim().toLowerCase();
+        const minPrice = parseInt(minRange.value) || 0;
+        const maxPrice = parseInt(maxRange.value) || 50000000;
+
+        filteredProducts = productsData.filter(product => {
+            const title = product.title.toLowerCase();
+            const city = product.city.toLowerCase();
+            const price = parseInt(product.price.replace(/\D/g, "")) || 0;
+            return (!searchValue || title.includes(searchValue) || city.includes(searchValue)) && (price >= minPrice && price <= maxPrice);
+        });
+
+        currentIndex = productsPerClick;
+        renderProducts(filteredProducts, currentIndex);
+    };
+
+    // Show next products for the search page
     if (showNextBtn) {
-        showNextBtn.addEventListener('click', showNextProducts);
+        showNextBtn.addEventListener('click', () => {
+            currentIndex += productsPerClick;
+            renderProducts(filteredProducts, currentIndex);
+        });
     }
 
-    // Initially render the first set of products
-    productsData.slice(0, initialProductsToShow).forEach((productData) => {
-        const productElement = document.createElement('special-offer-product');
-        productElement.setAttribute('data-href', productData.href);
-        productElement.setAttribute('data-img-src', productData.imgSrc);
-        productElement.setAttribute('data-title', productData.title);
-        productElement.setAttribute('data-price', productData.price);
-        productElement.setAttribute('data-city', productData.city);
-        productsContainer.appendChild(productElement);
-    });
+    // Homepage: Show the top 6 products by price
+    if (window.location.pathname.includes('index.html')) {
+        const topProducts = [...productsData]
+            .sort((a, b) => parseInt(b.price.replace(/\D/g, "")) - parseInt(a.price.replace(/\D/g, "")))
+            .slice(0, 6);
+        renderProducts(topProducts, 6);
+    } else {
+        // Search page: Show filtered products
+        renderProducts(filteredProducts, currentIndex);
+    }
+
+    // Event listener for search button
+    if (searchButton) {
+        searchButton.addEventListener("click", e => {
+            e.preventDefault();
+            filterProducts();
+        });
+    }
+
+    // Event listeners for price range filters
+    if (minRange && maxRange) {
+        [minRange, maxRange].forEach(input => input.addEventListener("input", filterProducts));
+    }
 });
