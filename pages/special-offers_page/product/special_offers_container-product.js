@@ -253,7 +253,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to render products
     const renderProducts = (products, limit) => {
-        productsContainer.innerHTML = "";
+        productsContainer.innerHTML = ""; // Clear the container first
+
+        // Loop through products and add to the page
         products.slice(0, limit).forEach(productData => {
             const productElement = document.createElement('special-offer-product');
             Object.entries({
@@ -266,11 +268,13 @@ document.addEventListener("DOMContentLoaded", () => {
             productsContainer.appendChild(productElement);
         });
 
-        // Handle "Show More" and "End of Results" for the search page
-        if (!window.location.pathname.includes('index.html') && !window.location.pathname.includes('/marble_properties/')) {
-            const isMoreProducts = products.length > currentIndex;
-            showNextBtn.style.display = isMoreProducts ? "block" : "none";
-            endOfResultsText.style.display = isMoreProducts ? "none" : "block";
+        // Handle "Show More" and "End of Results"
+        if (products.length > currentIndex) {
+            showNextBtn.style.display = "block";
+            endOfResultsText.style.display = "none";
+        } else {
+            showNextBtn.style.display = "none";
+            endOfResultsText.style.display = "block";
         }
     };
 
@@ -312,17 +316,17 @@ document.addEventListener("DOMContentLoaded", () => {
         [minRange, maxRange].forEach(input => input.addEventListener("input", filterProducts));
     }
 
-    // Check if we are on the homepage (index.html or /)
-    const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '/marble_properties/';
+    // Detect current page (Home page or Search page)
+    const currentPath = window.location.pathname;
 
-    if (isHomePage) {
-        // Show the top 6 products on the homepage
+    // Render products on Home page (6 most expensive)
+    if (currentPath === '/' || currentPath === '/index.html') {
         const topProducts = [...productsData]
-            .sort((a, b) => parseInt(b.price.replace(/\D/g, "")) - parseInt(a.price.replace(/\D/g, "")))
-            .slice(0, 6);
-        renderProducts(topProducts, 6);
+            .sort((a, b) => parseInt(b.price.replace(/\D/g, "")) - parseInt(a.price.replace(/\D/g, "")))  // Sort by price descending
+            .slice(0, 6);  // Get the top 6
+        renderProducts(topProducts, 6);  // Display the top 6 products on the homepage
     } else {
-        // Regular page logic for search page
+        // Otherwise, render filtered products (search page or special offers page)
         renderProducts(filteredProducts, currentIndex);
     }
 });
