@@ -266,8 +266,8 @@ document.addEventListener("DOMContentLoaded", () => {
             productsContainer.appendChild(productElement);
         });
 
-        // Handle "Show More" and "End of Results" for search page
-        if (!window.location.pathname.includes('index.html')) {
+        // Handle "Show More" and "End of Results" for the search page
+        if (!window.location.pathname.includes('index.html') && !window.location.pathname.includes('/marble_properties/')) {
             const isMoreProducts = products.length > currentIndex;
             showNextBtn.style.display = isMoreProducts ? "block" : "none";
             endOfResultsText.style.display = isMoreProducts ? "none" : "block";
@@ -299,17 +299,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Homepage: Show the top 6 products by price
-    if (window.location.pathname.includes('index.html')) {
-        const topProducts = [...productsData]
-            .sort((a, b) => parseInt(b.price.replace(/\D/g, "")) - parseInt(a.price.replace(/\D/g, "")))
-            .slice(0, 6);
-        renderProducts(topProducts, 6);
-    } else {
-        // Search page: Show filtered products
-        renderProducts(filteredProducts, currentIndex);
-    }
-
     // Event listener for search button
     if (searchButton) {
         searchButton.addEventListener("click", e => {
@@ -321,5 +310,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Event listeners for price range filters
     if (minRange && maxRange) {
         [minRange, maxRange].forEach(input => input.addEventListener("input", filterProducts));
+    }
+
+    // Check if we are on the homepage (index.html or /)
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '/marble_properties/') {
+        const topProducts = [...productsData]
+            .sort((a, b) => parseInt(b.price.replace(/\D/g, "")) - parseInt(a.price.replace(/\D/g, "")))
+            .slice(0, 6);
+        renderProducts(topProducts, 6);
+    } else {
+        // Regular page logic for search page
+        renderProducts(filteredProducts, currentIndex);
     }
 });
