@@ -238,15 +238,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const minRange = document.querySelector(".min-range");
   const maxRange = document.querySelector(".max-range");
 
-  const productsPerClick = 12; // Number of products per click (for "Show More")
+  const productsPerClick = 12; 
   let currentIndex = productsPerClick;
   let filteredProducts = [...productsData];
 
-  // Function to render products
   const renderProducts = (products, limit) => {
-    productsContainer.innerHTML = ""; // Clear the container first
+    productsContainer.innerHTML = ""; 
 
-    // Loop through products and add to the page
     products.slice(0, limit).forEach((productData) => {
       const productElement = document.createElement("special-offer-product");
       Object.entries({
@@ -259,8 +257,7 @@ document.addEventListener("DOMContentLoaded", () => {
       productsContainer.appendChild(productElement);
     });
 
-    // Handle "Show More" and "End of Results"
-    if (products.length > currentIndex) {
+    if (products.length > limit) {
       showNextBtn.style.display = "block";
       endOfResultsText.style.display = "none";
     } else {
@@ -269,7 +266,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Function to filter products based on search and price range
   const filterProducts = () => {
     const searchValue = searchInput.value.trim().toLowerCase();
     const minPrice = parseInt(minRange.value) || 0;
@@ -292,7 +288,6 @@ document.addEventListener("DOMContentLoaded", () => {
     renderProducts(filteredProducts, currentIndex);
   };
 
-  // Show next products for the search page
   if (showNextBtn) {
     showNextBtn.addEventListener("click", () => {
       currentIndex += productsPerClick;
@@ -300,7 +295,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Event listener for search button
   if (searchButton) {
     searchButton.addEventListener("click", (e) => {
       e.preventDefault();
@@ -308,28 +302,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Event listeners for price range filters
   if (minRange && maxRange) {
     [minRange, maxRange].forEach((input) =>
       input.addEventListener("input", filterProducts)
     );
   }
 
-  // Check if we're on the homepage (index.html)
-  const isHomePage = window.location.pathname === "/" || window.location.pathname === "/index.html";
+  // Check if we are on the home page or special offers page
+  const isHomePage = window.location.pathname === "/marble_properties/" || window.location.pathname === "/index.html";
+  const isSpecialOffersPage = window.location.pathname === "/special_offers_page.html";
 
-  // Render products on Home page (6 most expensive)
   if (isHomePage) {
     const topProducts = [...productsData]
-      .sort(
-        (a, b) =>
-          parseInt(b.price.replace(/\D/g, "")) -
-          parseInt(a.price.replace(/\D/g, "")) // Sort by price descending
-      ) // Sort by price descending
-      .slice(0, 6); // Get the top 6 most expensive products
-    renderProducts(topProducts, 6); // Display the top 6 products on the homepage
+      .sort((a, b) =>
+        parseInt(b.price.replace(/\D/g, "")) - parseInt(a.price.replace(/\D/g, ""))
+      )
+      .slice(0, 6);
+    renderProducts(topProducts, 6);
+  } else if (isSpecialOffersPage) {
+    renderProducts(filteredProducts, productsPerClick); // 12 products by default
   } else {
-    // Otherwise, render filtered products (search page or special offers page)
-    renderProducts(filteredProducts, currentIndex);
+    renderProducts(filteredProducts, productsPerClick); // For other pages, default to 12
   }
 });
