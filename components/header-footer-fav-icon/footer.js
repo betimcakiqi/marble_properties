@@ -42,7 +42,7 @@ class FooterComponent extends HTMLElement {
                         <img class="copyrigt-marble-footer-logo" src="./assets/marble-logo/footer-logo.svg" alt="">
 
                         <p class="copyrigt-marble-footer-name">
-                            ©2024 Marble Properties
+                            ©2025 Marble Properties
                         </p>
                     </div>
                 </div>
