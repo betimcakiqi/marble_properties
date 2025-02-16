@@ -238,12 +238,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const minRange = document.querySelector(".min-range");
   const maxRange = document.querySelector(".max-range");
 
-  const productsPerClick = 12; 
+  const productsPerClick = 12;
   let currentIndex = productsPerClick;
   let filteredProducts = [...productsData];
 
   const renderProducts = (products, limit) => {
-    productsContainer.innerHTML = ""; 
+    productsContainer.innerHTML = "";
 
     products.slice(0, limit).forEach((productData) => {
       const productElement = document.createElement("special-offer-product");
@@ -309,7 +309,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Check if we are on the home page or special offers page
-  const isHomePage = window.location.pathname === "/marble_properties/" || window.location.pathname === "/index.html";
+  const isHomePage =
+    window.location.pathname === "/marble_properties/" ||
+    window.location.pathname === "/marble_properties/index.html" ||
+    window.location.pathname === "/index.html";
   const isSpecialOffersPage = window.location.pathname === "/special_offers_page.html";
 
   if (isHomePage) {
@@ -317,7 +320,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .sort((a, b) =>
         parseInt(b.price.replace(/\D/g, "")) - parseInt(a.price.replace(/\D/g, ""))
       )
-      .slice(0, 6);
+      .slice(0, 6); // Only show the top 6 products
     renderProducts(topProducts, 6);
   } else if (isSpecialOffersPage) {
     renderProducts(filteredProducts, productsPerClick); // 12 products by default
