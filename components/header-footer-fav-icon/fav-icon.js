@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Check which page is being loaded and update the title accordingly
     const pathname = window.location.pathname;
   
-    if (pathname === "index.html" || pathname === "/index.html") {
+    if (pathname === "/marble_properties" || pathname === "/index.html") {
       updateTitle("Marble Properties - Home");
     } else if (pathname.includes("special_offers_page.html")) {
       updateTitle("Marble Properties - Special Offers");
