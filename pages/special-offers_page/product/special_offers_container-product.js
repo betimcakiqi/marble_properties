@@ -242,6 +242,16 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentIndex = productsPerClick;
   let filteredProducts = [...productsData];
 
+  // Get search query from the URL (if available)
+  const urlParams = new URLSearchParams(window.location.search);
+  const searchQuery = urlParams.get('enter-keyword') || ""; // Default to empty if not found
+
+  // Set the value in the input field if a query is provided
+  if (searchQuery) {
+    searchInput.value = searchQuery;
+  }
+
+  // Render the products based on the current filter
   const renderProducts = (products, limit) => {
     productsContainer.innerHTML = "";
 
@@ -266,6 +276,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  // Function to filter products based on keyword (title or city) and price range
   const filterProducts = () => {
     const searchValue = searchInput.value.trim().toLowerCase();
     const minPrice = parseInt(minRange.value) || 0;
@@ -275,10 +286,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const title = product.title.toLowerCase();
       const city = product.city.toLowerCase();
       const price = parseInt(product.price.replace(/\D/g, "")) || 0;
+      
+      // Check if the search value matches either the title or the city
       return (
         (!searchValue ||
-          title.includes(searchValue) ||
-          city.includes(searchValue)) &&
+          title.includes(searchValue) ||   // Matches title
+          city.includes(searchValue)) &&   // Matches city
         price >= minPrice &&
         price <= maxPrice
       );
@@ -288,6 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderProducts(filteredProducts, currentIndex);
   };
 
+  // Show next batch of products
   if (showNextBtn) {
     showNextBtn.addEventListener("click", () => {
       currentIndex += productsPerClick;
@@ -295,13 +309,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Handle search button click (if not submitting the form)
   if (searchButton) {
     searchButton.addEventListener("click", (e) => {
-      e.preventDefault();
-      filterProducts();
+      e.preventDefault(); // Prevent default form behavior
+    
+      const searchValue = searchInput.value.trim(); // Get the input value
+      if (searchValue) {
+        window.location.href = `./special_offers_page.html?enter-keyword=${encodeURIComponent(searchValue)}`;
+      }
     });
   }
 
+  // Filter products based on the URL query when the page loads
+  if (searchQuery) {
+    filteredProducts = productsData.filter((product) => {
+      const title = product.title.toLowerCase();
+      const city = product.city.toLowerCase();
+      return title.includes(searchQuery.toLowerCase()) || city.includes(searchQuery.toLowerCase());
+    });
+    renderProducts(filteredProducts, productsPerClick); // Initial render with filtered products
+  }
+
+  // Price range filter event listeners
   if (minRange && maxRange) {
     [minRange, maxRange].forEach((input) =>
       input.addEventListener("input", filterProducts)
@@ -315,16 +345,17 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.pathname === "/index.html";
   const isSpecialOffersPage = window.location.pathname === "/special_offers_page.html";
 
+  // Home page logic (show top 6 products)
   if (isHomePage) {
     const topProducts = [...productsData]
       .sort((a, b) =>
-        parseInt(b.price.replace(/\D/g, "")) - parseInt(a.price.replace(/\D/g, ""))
+        parseInt(b.price.replace(/\D/g, "")) - parseInt(a.price.replace(/\D/g, "")) // Sort by price
       )
       .slice(0, 6); // Only show the top 6 products
     renderProducts(topProducts, 6);
   } else if (isSpecialOffersPage) {
-    renderProducts(filteredProducts, productsPerClick); // 12 products by default
+    renderProducts(filteredProducts, productsPerClick); // Show filtered products
   } else {
-    renderProducts(filteredProducts, productsPerClick); // For other pages, default to 12
+    renderProducts(filteredProducts, productsPerClick); // Show default 12 products
   }
 });
